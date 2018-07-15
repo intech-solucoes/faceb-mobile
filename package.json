@@ -1,0 +1,36 @@
+{
+  "name": "faceb-mobile",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "cpx": "^1.5.0",
+    "cpy-cli": "^2.0.0",
+    "jest": "^23.3.0",
+    "jest-react-native": "^18.0.0",
+    "mkdirp": "^0.5.1",
+    "react-test-renderer": "16.3.1",
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "android": "yarn build:config-dev && react-native run-android",
+    "ios": "yarn build:config-dev && react-native run-ios",
+    "test": "jest",
+    "build:config-dev": "./node_modules/.bin/cpy configs/config.dev.json . --rename=config.json",
+    "build:config-test": "./node_modules/.bin/cpy configs/config.test.json . --rename=config.json",
+    "build:config-prod": "./node_modules/.bin/cpy configs/config.prod.json . --rename=config.json",
+    "build:prod": "react-scripts build",
+    "build:lib": "cd ../lib/react-lib && yarn build && cd ../../advanced-service && yarn build && cd ../faceb-mobile && yarn add \"../advanced-service\" \"../lib/react-lib\"",
+    "start": "haul"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "dependencies": {
+    "advanced-service": "../advanced-service",
+    "react": "16.4.1",
+    "react-lib": "../lib/react-lib",
+    "react-native": "0.55.3",
+    "react-navigation": "^2.6.2"
+  }
+}
