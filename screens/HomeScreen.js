@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
-import { Text, View } from "react-native";
+import { Text, View, Image, StyleSheet } from "react-native";
 
 export default class HomeScreen extends Component {
     static navigationOptions = {
-        title: 'Faceb',
-        drawerLabel: 'Home',
-        drawerIcon: ({ tintColor }) => (
-            <Image
-              source={require('../assets/icon.png')}
-              style={[styles.icon, {tintColor: tintColor}]}
-            />
-          )
+        title: 'Faceb'
     };
     
     render() {
@@ -23,3 +16,10 @@ export default class HomeScreen extends Component {
         )
     }
 };
+
+const styles = StyleSheet.create({
+    icon: {
+        width: 24,
+        height: 24,
+    },
+});

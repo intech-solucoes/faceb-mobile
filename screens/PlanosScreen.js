@@ -68,11 +68,7 @@ export default class PlanosScreen extends React.Component {
 
     selecionarPlano(plano) {
         AsyncStorage.setItem('plano', plano, () => {
-            const resetAction = StackActions.reset({
-                index: 0,
-                actions: [NavigationActions.navigate({ routeName: 'Main' })],
-              });
-              this.props.navigation.dispatch(resetAction);
+            this.props.navigation.navigate('MainStack')
         });
     }
 

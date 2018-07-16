@@ -1,6 +1,6 @@
 {
-  "name": "faceb-mobile",
-  "version": "0.0.1",
+  "name": "faceb",
+  "version": "0.1.0",
   "private": true,
   "devDependencies": {
     "babel-preset-react-native-stage-0": "^1.0.1",
@@ -14,23 +14,24 @@
   },
   "scripts": {
     "android": "yarn build:config-dev && react-native run-android",
+    "android:rony": "yarn build:config-rony && react-native run-android",
     "ios": "yarn build:config-dev && react-native run-ios",
     "test": "jest",
     "build:config-dev": "./node_modules/.bin/cpy configs/config.dev.json . --rename=config.json",
+    "build:config-rony": "./node_modules/.bin/cpy configs/config.rony.json . --rename=config.json",
     "build:config-test": "./node_modules/.bin/cpy configs/config.test.json . --rename=config.json",
     "build:config-prod": "./node_modules/.bin/cpy configs/config.prod.json . --rename=config.json",
     "build:prod": "react-scripts build",
-    "build:lib": "cd ../lib/react-lib && yarn build && cd ../../advanced-service && yarn build && cd ../faceb-mobile && yarn add \"../advanced-service\" \"../lib/react-lib\"",
-    "start": "haul"
+    "build:lib": "cd ../lib/react-lib && yarn build && cd ../../advanced-service && yarn build && cd ../faceb-mobile && yarn add \"../advanced-service\" \"../lib/react-lib\""
   },
   "jest": {
     "preset": "react-native"
   },
   "dependencies": {
     "advanced-service": "../advanced-service",
-    "react": "16.4.1",
+    "react": "16.3.1",
     "react-lib": "../lib/react-lib",
-    "react-native": "0.55.3",
+    "react-native": "~0.55.2",
     "react-navigation": "^2.6.2"
   }
 }

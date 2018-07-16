@@ -21,9 +21,4 @@ allprojects {
             url "$rootDir/../node_modules/react-native/android"
         }
     }
-    tasks.withType(JavaCompile) {
-        configure(options) {
-            incremental = true
-        }
-    }
 }

@@ -67,13 +67,19 @@ export default class LoginScreen extends React.Component {
     }
 
     login() {
+
         usuarioService.Login(this.state.cpf, this.state.senha)
             .then(async (result) => {
                 await AsyncStorage.setItem('token', result.data.AccessToken);
                 this.props.navigation.navigate('Planos');
             })
             .catch((err) => {
-                alert(err.response.data);
+                if(err.response) {
+                    alert(err.response.data);
+                } else {
+                    alert(config.apiUrl);
+                    //alert("Ocorreu um erro ao processar a requisião.");
+                }
             });
     }
 
