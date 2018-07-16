@@ -41,7 +41,8 @@ const loginStyles = {
 
 export default class LoginScreen extends React.Component {
     static navigationOptions = {
-        header: null
+        header: null,
+        drawerLabel: "Teste"
     };
 
     constructor(props) {
@@ -77,8 +78,7 @@ export default class LoginScreen extends React.Component {
                 if(err.response) {
                     alert(err.response.data);
                 } else {
-                    alert(config.apiUrl);
-                    //alert("Ocorreu um erro ao processar a requisião.");
+                    alert("Ocorreu um erro ao processar a requisição.");
                 }
             });
     }
@@ -86,10 +86,11 @@ export default class LoginScreen extends React.Component {
     render() {
         return (
             <ImageBackground source={require("../assets/LoginBackground.jpg")} style={[Styles.backgroundImage, loginStyles.container]}>
-                <StatusBar barStyle="light-content" backgroundColor={Variables.colors.primary} />
+                
+                <StatusBar translucent backgroundColor="rgba(0, 0, 0, 0.20)" animated />
                 
                 <View style={[Styles.content, loginStyles.content]}>
-                    <Image source={require("../assets/faceb.png")} style={loginStyles.logo} />
+                    <Image source={require("../assets/facebNegativa.png")} style={loginStyles.logo} />
                 </View>
 
                 <View style={loginStyles.footer}>

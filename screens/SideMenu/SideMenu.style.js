@@ -1,20 +1,37 @@
+import { Variables } from "../../styles";
+
 export default {
     container: {
-        paddingTop: 20,
-        flex: 1
+        flex: 1,
     },
-    navItemStyle: {
-        padding: 10
+    header: {
+        backgroundColor: Variables.colors.primary,
+        flex: 1,
+        padding: 50,
+        paddingTop: 70,
+        alignItems: "center"
+    },
+    headerImage: {
+        height: 80,
+        width: 200
     },
     navSectionStyle: {
-        backgroundColor: 'lightgrey'
+        paddingTop: 10
     },
-    sectionHeadingStyle: {
-        paddingVertical: 10,
-        paddingHorizontal: 5
+    navItemStyle: {
+        padding: 10,
+        flex: 1, 
+        flexDirection: 'row'
+    },
+    navIcon: {
+        width: 26,
+        height: 26,
+        marginRight: 10
+    },
+    navText: {
+        marginTop: 5
     },
     footerContainer: {
-        padding: 20,
-        backgroundColor: 'lightgrey'
+        padding: 20
     }
 };

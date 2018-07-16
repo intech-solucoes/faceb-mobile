@@ -1,6 +1,5 @@
 import React from "react";
-import { View, Text, TouchableHighlight, AsyncStorage } from 'react-native';
-import { StackActions, NavigationActions } from "react-navigation";
+import { View, Text, AsyncStorage, StatusBar } from 'react-native';
 import Styles, { Variables } from "../styles";
 import { Button } from "../components";
 
@@ -68,13 +67,15 @@ export default class PlanosScreen extends React.Component {
 
     selecionarPlano(plano) {
         AsyncStorage.setItem('plano', plano, () => {
-            this.props.navigation.navigate('MainStack')
+            this.props.navigation.navigate('Home');
         });
     }
 
     render() {
         return (
             <View style={[Styles.content, { paddingTop: 50 }]}>
+                
+                <StatusBar translucent backgroundColor="rgba(0, 0, 0, 0.20)" animated />
 
                 <Text style={Styles.h3}>Olá,</Text>
                 <Text style={[ Styles.h1, styles.header ]}>{this.state.usuario.NO_PESSOA}</Text>

@@ -1,8 +1,23 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import styles from './SideMenu.style';
+import { ScrollView, Text, View, Image, TouchableHighlight } from 'react-native';
 import { NavigationActions } from 'react-navigation';
-import { ScrollView, Text, View } from 'react-native';
+
+import styles from './SideMenu.style';
+import { Variables } from '../../styles';
+
+const MenuItem = (props) => {
+    return (
+        <TouchableHighlight onPress={props.onPress} underlayColor={Variables.colors.gray}>
+            <View style={styles.navItemStyle}>
+                <Image source={props.icon} style={styles.navIcon} />
+                <Text style={styles.navText}>
+                    {props.title}
+                </Text>
+            </View>
+        </TouchableHighlight>
+    );
+}
 
 class SideMenu extends Component {
     navigateToScreen = (route) => () => {
@@ -16,32 +31,21 @@ class SideMenu extends Component {
         return (
             <View style={styles.container}>
                 <ScrollView>
-                    <View>
-                        <Text style={styles.sectionHeadingStyle}>
-                            Section 1
-                        </Text>
-                        <View style={styles.navSectionStyle}>
-                            <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Home')}>
-                                Page1
-                            </Text>
-                        </View>
+                    <View style={styles.header}>
+                        <Image source={require("../../assets/facebNegativa.png")} style={styles.headerImage} />
                     </View>
-                    <View>
-                        <Text style={styles.sectionHeadingStyle}>
-                            Section 2
-                        </Text>
-                        <View style={styles.navSectionStyle}>
-                            <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Page2')}>
-                                Page2
-                            </Text>
-                            <Text style={styles.navItemStyle} onPress={this.navigateToScreen('Page3')}>
-                                Page3
-                            </Text>
-                        </View>
+
+                    <View style={styles.navSectionStyle}>
+
+                        <MenuItem onPress={this.navigateToScreen('Home')} icon={require("../../assets/ic_home.png")} title="Início" />
+                        <MenuItem onPress={this.navigateToScreen('Dados')} icon={require("../../assets/ic_dados.png")} title="Seus Dados" />
+                        <MenuItem onPress={this.navigateToScreen('Contribuicao')} icon={require("../../assets/ic_contribuicao.png")} title="Sua Contribuição" />
+
                     </View>
                 </ScrollView>
+
                 <View style={styles.footerContainer}>
-                    <Text>This is my fixed footer</Text>
+                    <Text>Versão 0.0.1</Text>
                 </View>
             </View>
         );
