@@ -42,6 +42,16 @@ export default Styles = StyleSheet.create({
     },
     h3: {
         fontSize: 16
+    },
+    h4: {
+        fontSize: 12
+    },
+    h5: {
+        fontSize: 10
+    },
+    scrollContainer: {
+        padding: 20,
+        paddingBottom: 100
     }
 });
 

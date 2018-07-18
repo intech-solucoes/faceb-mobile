@@ -1,10 +1,19 @@
 import React from "react";
-import { Text } from "react-native";
+import { View, Text, TouchableOpacity, Button } from "react-native";
 //import { KeyboardAvoidingView } from "./components/KeyboardAvoidingView";
 import { createStackNavigator, createDrawerNavigator } from 'react-navigation'
-import { LoginScreen, PlanosScreen, HomeScreen, DadosScreen, ContribuicaoScreen } from "./screens";
+import { 
+    LoginScreen, 
+    PlanosScreen, 
+    HomeScreen, 
+    DadosScreen, 
+    ContribuicaoScreen,
+    SaldoBDScreen,
+    SaldoCDScreen,
+    ContrachequeScreen
+} from "./src/screens";
 
-import SideMenu from "./screens/SideMenu/SideMenu";
+import SideMenu from "./src/screens/SideMenu/SideMenu";
 
 // const LoginStack = createStackNavigator({
 //     Login: { screen: LoginScreen },
@@ -50,7 +59,10 @@ const RootStack = createDrawerNavigator({
     Planos: PlanosScreen,
     Home: HomeScreen,
     Dados: DadosScreen,
-    Contribuicao: ContribuicaoScreen
+    Contribuicao: ContribuicaoScreen,
+    SaldoBD: SaldoBDScreen,
+    SaldoCD: SaldoCDScreen,
+    Contracheque: ContrachequeScreen
 }, {
     contentComponent: SideMenu,
     navigationOptions: {

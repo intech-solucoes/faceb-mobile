@@ -17,10 +17,10 @@
     "android:rony": "yarn build:config-rony && react-native run-android",
     "ios": "yarn build:config-dev && react-native run-ios",
     "test": "jest",
-    "build:config-dev": "./node_modules/.bin/cpy configs/config.dev.json . --rename=config.json",
-    "build:config-rony": "./node_modules/.bin/cpy configs/config.rony.json . --rename=config.json",
-    "build:config-test": "./node_modules/.bin/cpy configs/config.test.json . --rename=config.json",
-    "build:config-prod": "./node_modules/.bin/cpy configs/config.prod.json . --rename=config.json",
+    "build:config-dev": "./node_modules/.bin/cpy src/configs/config.dev.json ./src/ --rename=config.json",
+    "build:config-rony": "./node_modules/.bin/cpy src/configs/config.rony.json ./src/ --rename=config.json",
+    "build:config-test": "./node_modules/.bin/cpy src/configs/config.test.json ./src/ --rename=config.json",
+    "build:config-prod": "./node_modules/.bin/cpy src/configs/config.prod.json ./src/ --rename=config.json",
     "build:prod": "react-scripts build",
     "build:lib": "cd ../lib/react-lib && yarn build && cd ../../advanced-service && yarn build && cd ../faceb-mobile && yarn add \"../advanced-service\" \"../lib/react-lib\""
   },
@@ -29,9 +29,13 @@
   },
   "dependencies": {
     "advanced-service": "../advanced-service",
+    "lodash": "^4.17.10",
     "react": "16.3.1",
     "react-lib": "../lib/react-lib",
     "react-native": "~0.55.2",
-    "react-navigation": "^2.6.2"
+    "react-native-loading-spinner-overlay": "^0.5.2",
+    "react-native-masked-text": "^1.7.2",
+    "react-navigation": "^2.6.2",
+    "react-number-format": "^3.4.4"
   }
 }

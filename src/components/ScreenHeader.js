@@ -21,7 +21,7 @@ export default class ScreenHeader extends Component {
                         elevation: 4,
                     }}
                     titleColor="white"
-                    title={this.props.title}
+                    title={this.props.titulo}
                 />
                 <StatusBar translucent backgroundColor="rgba(0, 0, 0, 0.20)" animated />
             </View>

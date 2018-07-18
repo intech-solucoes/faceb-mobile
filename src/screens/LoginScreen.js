@@ -1,5 +1,7 @@
 import React from "react";
 import { Text, View, ImageBackground, Image, TextInput, Switch, AsyncStorage, StatusBar } from "react-native";
+import Spinner from 'react-native-loading-spinner-overlay';
+
 import Styles, { Variables } from "../styles";
 import { Button } from "../components";
 
@@ -40,10 +42,6 @@ const loginStyles = {
 }
 
 export default class LoginScreen extends React.Component {
-    static navigationOptions = {
-        header: null,
-        drawerLabel: "Teste"
-    };
 
     constructor(props) {
         super(props);
@@ -53,9 +51,10 @@ export default class LoginScreen extends React.Component {
 
         // Cria o state do componente
         this.state = {
-            cpf: "formula",
+            cpf: "vanusa",
             senha: "123",
-            lembrar: false
+            lembrar: false,
+            loading: false
         };
 
         // Realiza o bind das funções do componente
@@ -67,25 +66,21 @@ export default class LoginScreen extends React.Component {
         this.inputs[id].focus();
     }
 
-    login() {
+    async login() {
+        await this.setState({ loading: true });
 
-        usuarioService.Login(this.state.cpf, this.state.senha)
-            .then(async (result) => {
-                await AsyncStorage.setItem('token', result.data.AccessToken);
-                this.props.navigation.navigate('Planos');
-            })
-            .catch((err) => {
-                if(err.response) {
-                    alert(err.response.data);
-                } else {
-                    alert("Ocorreu um erro ao processar a requisição.");
-                }
-            });
+        var result = await usuarioService.Login(this.state.cpf, this.state.senha);
+        await AsyncStorage.setItem('token', result.data.AccessToken);
+        await this.setState({ loading: false });
+
+        this.props.navigation.navigate('Planos');
     }
 
     render() {
         return (
             <ImageBackground source={require("../assets/LoginBackground.jpg")} style={[Styles.backgroundImage, loginStyles.container]}>
+
+                <Spinner visible={this.state.loading} />
                 
                 <StatusBar translucent backgroundColor="rgba(0, 0, 0, 0.20)" animated />
                 

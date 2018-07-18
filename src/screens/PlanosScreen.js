@@ -1,5 +1,7 @@
 import React from "react";
 import { View, Text, AsyncStorage, StatusBar } from 'react-native';
+import Spinner from 'react-native-loading-spinner-overlay';
+
 import Styles, { Variables } from "../styles";
 import { Button } from "../components";
 
@@ -28,52 +30,44 @@ const styles = {
 }
 
 export default class PlanosScreen extends React.Component {
-    static navigationOptions = {
-        title: 'Planos'
-    };
-
     constructor(props) {
         super(props);
 
         this.state = {
+            loading: false,
             usuario: {},
             planos: []
         }
 
         this.selecionarPlano = this.selecionarPlano.bind(this);
+        this.carregarDadosPessoais = this.carregarDadosPessoais.bind(this);
+        this.carregarPlanos = this.carregarPlanos.bind(this);
     }
 
     componentDidMount() {
-        dadosPessoaisService.Buscar()
-            .then(result => {
-                this.setState({
-                    usuario: result.data
-                });
-            })
-            .catch(err => {
-                alert(err);
-            });
-
-        planoVinculadoService.Buscar()
-            .then(result => {
-                this.setState({
-                    planos: result.data
-                });
-            })
-            .catch(err => {
-                alert(err);
-            });
+        this.setState({ loading: true }, this.carregarDadosPessoais);
     }
 
-    selecionarPlano(plano) {
-        AsyncStorage.setItem('plano', plano, () => {
-            this.props.navigation.navigate('Home');
-        });
+    async carregarDadosPessoais() {
+        var result = await dadosPessoaisService.Buscar();
+        this.setState({ usuario: result.data }, this.carregarPlanos);
+    }
+
+    async carregarPlanos() {
+        var result = await planoVinculadoService.Buscar();
+        await this.setState({ planos: result.data, loading: false });
+    }
+
+    async selecionarPlano(plano) {
+        await AsyncStorage.setItem('plano', plano.toString());
+        this.props.navigation.navigate('Home');
     }
 
     render() {
         return (
             <View style={[Styles.content, { paddingTop: 50 }]}>
+
+                <Spinner visible={this.state.loading} />
                 
                 <StatusBar translucent backgroundColor="rgba(0, 0, 0, 0.20)" animated />
 
