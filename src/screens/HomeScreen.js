@@ -24,12 +24,13 @@ const MenuItem = (props) => {
 
 export default class HomeScreen extends Component {
     constructor(props) {
-    super(props);
+        super(props);
 
         this.state = {
             loading: false,
             plano: 1,
             planoBD: true,
+            assistido: false
         }
     }
 
@@ -39,6 +40,13 @@ export default class HomeScreen extends Component {
         await this.carregarPlano();
 
         this.setState({ loading: false });
+    }
+
+    navigateToScreen = (route) => () => {
+        const navigateAction = NavigationActions.navigate({
+            routeName: route
+        });
+        this.props.navigation.dispatch(navigateAction);
     }
 
     async carregarPlano() {
@@ -51,13 +59,6 @@ export default class HomeScreen extends Component {
             planoBD,
             assistido: assistido === "true"
         });
-    }
-
-    navigateToScreen = (route) => () => {
-        const navigateAction = NavigationActions.navigate({
-            routeName: route
-        });
-        this.props.navigation.dispatch(navigateAction);
     }
 
     render() {
@@ -82,7 +83,12 @@ export default class HomeScreen extends Component {
                     {this.state.assistido && 
                         <MenuItem title={"Contracheque"} subtitle={"Consulte aqui seus contracheques"} icon={require("../assets/ic_contracheque.png")} onPress={this.navigateToScreen("Contracheque")} />}
                     
-                    <MenuItem title={"Sua Aposentadoria"} subtitle={"Simule aqui sua aposentadoria futura"} icon={require("../assets/ic_sim_beneficio.png")} />
+                        {!this.state.assistido && this.state.planoBD &&
+                            <MenuItem title={"Sua Aposentadoria"} subtitle={"Simule aqui sua aposentadoria futura"} icon={require("../assets/ic_sim_beneficio.png")} onPress={this.navigateToScreen("SimuladorBD")} />}
+                    
+                        {!this.state.assistido && !this.state.planoBD &&
+                            <MenuItem title={"Sua Aposentadoria"} subtitle={"Simule aqui sua aposentadoria futura"} icon={require("../assets/ic_sim_beneficio.png")} onPress={this.navigateToScreen("SimuladorCD")} />}
+                    
                     <MenuItem title={"Relacionamento"} subtitle={"Envie aqui suas mensagens com suas duvidas"} icon={require("../assets/ic_chat.png")} />
                     <MenuItem title={"Selecionar Plano"} subtitle={"Escolha outro plano"} icon={require("../assets/ic_plano.png")} />
                     <MenuItem title={"Sair"} subtitle={"Sair do aplicativo"} icon={require("../assets/ic_out.png")} />

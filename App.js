@@ -11,7 +11,12 @@ import {
     SaldoBDScreen,
     SaldoCDScreen,
     ContrachequeScreen,
-    ContrachequeDetalheScreen
+    ContrachequeDetalheScreen,
+    SimuladorBDScreen,
+    SimuladorBDResultadoScreen,
+    SimuladorCDScreen,
+    SimuladorCDPasso2Screen,
+    SimuladorCDResultadoScreen
 } from "./src/screens";
 
 import SideMenu from "./src/screens/SideMenu/SideMenu";
@@ -64,7 +69,12 @@ const RootStack = createDrawerNavigator({
     SaldoBD: SaldoBDScreen,
     SaldoCD: SaldoCDScreen,
     Contracheque: ContrachequeScreen,
-    ContrachequeDetalhe: ContrachequeDetalheScreen
+    ContrachequeDetalhe: ContrachequeDetalheScreen,
+    SimuladorBD: SimuladorBDScreen,
+    SimuladorBDResultado: SimuladorBDResultadoScreen,
+    SimuladorCD: SimuladorCDScreen,
+    SimuladorCDPasso2: SimuladorCDPasso2Screen,
+    SimuladorCDResultado: SimuladorCDResultadoScreen
 }, {
     contentComponent: SideMenu,
     navigationOptions: {

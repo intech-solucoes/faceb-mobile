@@ -30,17 +30,17 @@ export default class CampoEstatico extends Component {
                     <Text style={Styles.h5}>{this.props.subtitulo}</Text>}
 
                 {this.props.tipo === "dinheiro" && 
-                    <TextMask style={[Styles.h2, styles.valorDinheiro]} type={'money'} value={this.props.valor} />}
+                    <TextMask style={[Styles.h2, styles.valor]} type={'money'} value={this.props.valor} />}
 
                 {this.props.tipo === "texto" &&
-                    <Text style={Styles.h2}>{this.props.valor}</Text>}
+                    <Text style={[Styles.h2, styles.valor]}>{this.props.valor}</Text>}
             </View>
         );
     }
 }
 
 const styles = StyleSheet.create({
-    valorDinheiro: {
+    valor: {
         color: Variables.colors.primary
     }
 });

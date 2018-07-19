@@ -52,7 +52,6 @@ export default class ContrachequeDetalheScreen extends Component {
 
     async carregarContracheque() {
         var cronograma = this.props.navigation.getParam("cronograma", "0");
-        alert(cronograma);
         var result = await contrachequeService.BuscarPorPlanoCronograma(this.state.plano, cronograma);
 
         var contracheque = result.data.rubricas;

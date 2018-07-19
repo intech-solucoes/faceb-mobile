@@ -51,7 +51,8 @@ export default class LoginScreen extends React.Component {
 
         // Cria o state do componente
         this.state = {
-            cpf: "vanusa",
+            //cpf: "vanusa",
+            cpf: "formula",
             senha: "123",
             lembrar: false,
             loading: false
@@ -67,13 +68,18 @@ export default class LoginScreen extends React.Component {
     }
 
     async login() {
-        await this.setState({ loading: true });
+        try {
+            await this.setState({ loading: true });
 
-        var result = await usuarioService.Login(this.state.cpf, this.state.senha);
-        await AsyncStorage.setItem('token', result.data.AccessToken);
-        await this.setState({ loading: false });
+            var result = await usuarioService.Login(this.state.cpf, this.state.senha);
+            await AsyncStorage.setItem('token', result.data.AccessToken);
+            await this.setState({ loading: false });
 
-        this.props.navigation.navigate('Planos');
+            this.props.navigation.navigate('Planos');
+        } catch (ex) {
+            alert(ex);
+            this.setState({ loading: false });
+        }
     }
 
     render() {
@@ -81,9 +87,9 @@ export default class LoginScreen extends React.Component {
             <ImageBackground source={require("../assets/LoginBackground.jpg")} style={[Styles.backgroundImage, loginStyles.container]}>
 
                 <Spinner visible={this.state.loading} />
-                
+
                 <StatusBar translucent backgroundColor="rgba(0, 0, 0, 0.20)" animated />
-                
+
                 <View style={[Styles.content, loginStyles.content]}>
                     <Image source={require("../assets/facebNegativa.png")} style={loginStyles.logo} />
                 </View>
