@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Text, View, ScrollView, StyleSheet, BackHandler, AsyncStorage } from "react-native";
+import { Text, View, ScrollView, StyleSheet, BackHandler, AsyncStorage, FlatList, TouchableHighlight } from "react-native";
 import Spinner from 'react-native-loading-spinner-overlay';
+import { TextMask } from "react-native-masked-text";
 
 import Styles, { Variables } from "../styles";
-import { ScreenHeader, ElevatedView, CampoEstatico } from "../components";
+import { ScreenHeader, ElevatedView, Button } from "../components";
 
 import { ContrachequeService } from "advanced-service";
 
@@ -17,8 +18,11 @@ export default class ContrachequeScreen extends Component {
 
         this.state = {
             loading: false,
+            plano: 0,
             contracheques: {},
-            contrachequeSelecionado: {}
+            contrachequeSelecionado: {
+                resumo: {}
+            }
         }
     }
 
@@ -65,29 +69,43 @@ export default class ContrachequeScreen extends Component {
                     
                     <ElevatedView elevation={3} style={{justifyContent: 'center', alignItems: 'center', padding: 20 }}>
                         <Text style={[Styles.h2, { marginBottom: 10 }]}>
-                            CONTRACHEQUE DE 00/00/0000
+                            CONTRACHEQUE DE {this.state.contrachequeSelecionado.resumo.referencia}
                         </Text>
 
                         <View style={{ alignItems: 'center',  flexDirection: "row" }}>
                             <View style={{ flex: 1, alignItems: 'center' }}>
                                 <Text>BRUTO</Text>
-                                <Text>0,00</Text>
+                                <TextMask type={'money'} value={this.state.contrachequeSelecionado.resumo.bruto} />
                             </View>
 
                             <View style={{ flex: 1, alignItems: 'center' }}>
                                 <Text>DESCONTOS</Text>
-                                <Text>0,00</Text>
+                                <TextMask type={'money'} value={this.state.contrachequeSelecionado.resumo.descontos} />
                             </View>
 
                             <View style={{ flex: 1, alignItems: 'center' }}>
                                 <Text>LÍQUIDO</Text>
-                                <Text>0,00</Text>
+                                <TextMask type={'money'} value={this.state.contrachequeSelecionado.resumo.liquido} />
                             </View>
+                        </View>
+
+                        <View style={{ marginTop: 20 }}>
+                            <Button title="Detalhar" style={{ width: 300 }} onClick={() => this.props.navigation.navigate("ContrachequeDetalhe", { cronograma: this.state.contrachequeSelecionado.rubricas[0].SQ_CRONOGRAMA })} />
                         </View>
                     </ElevatedView>
 
                     <View>
-                        <Text style={Styles.h1}>Lista</Text>
+                        <FlatList data={this.state.contracheques}
+                            renderItem={
+                                ({item}) => (
+                                    <TouchableHighlight
+                                                        style={styles.rowContainer} underlayColor={Variables.colors.gray}
+                                                        onPress={() => this.carregarContracheque(item.SQ_CRONOGRAMA)}>
+                                        <Text>{item.DT_REFERENCIA}</Text>
+                                    </TouchableHighlight>
+                                )
+                            }
+                            keyExtractor={(item, index) => index.toString()} />
                     </View>
 
                 </View>
@@ -95,3 +113,17 @@ export default class ContrachequeScreen extends Component {
         );
     }
 };
+
+const styles = StyleSheet.create({
+    rowContainer: {
+        flex: 1,
+        padding: 12,
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    separator: {
+        flex: 1,
+        height: StyleSheet.hairlineWidth,
+        backgroundColor: '#000',
+    }
+});

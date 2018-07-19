@@ -59,7 +59,8 @@ export default class PlanosScreen extends React.Component {
     }
 
     async selecionarPlano(plano) {
-        await AsyncStorage.setItem('plano', plano.toString());
+        await AsyncStorage.setItem('plano', plano.SQ_PLANO_PREVIDENCIAL.toString());
+        await AsyncStorage.setItem('assistido', (plano.DS_SIT_PLANO === "ASSISTIDO").toString());
         this.props.navigation.navigate('Home');
     }
 
@@ -79,7 +80,7 @@ export default class PlanosScreen extends React.Component {
                     this.state.planos.map((plano, index) => (
                         <Button key={index} title={plano.DS_PLANO_PREVIDENCIAL} subtitle={plano.DS_SIT_PLANO} 
                                 style={[Styles.button, styles.button]} titleStyle={[Styles.h2, styles.buttonText]}
-                                onClick={() => this.selecionarPlano(plano.SQ_PLANO_PREVIDENCIAL)} />
+                                onClick={() => this.selecionarPlano(plano)} />
                     ))
                 }
             </View>

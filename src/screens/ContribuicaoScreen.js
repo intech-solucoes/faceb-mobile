@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Text, View, ScrollView, StyleSheet, BackHandler, AsyncStorage } from "react-native";
 import Spinner from 'react-native-loading-spinner-overlay';
 import { TextMask } from "react-native-masked-text";
-import _ from 'lodash'
+import _ from 'lodash';
 
 import Styles, { Variables } from "../styles";
 import { ScreenHeader, ElevatedView, CampoEstatico } from "../components";

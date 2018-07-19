@@ -43,11 +43,13 @@ export default class HomeScreen extends Component {
 
     async carregarPlano() {
         var plano = await AsyncStorage.getItem("plano");
+        var assistido = await AsyncStorage.getItem("assistido");
         var planoBD = plano === "1";
 
         await this.setState({ 
             plano, 
-            planoBD
+            planoBD,
+            assistido: assistido === "true"
         });
     }
 
@@ -67,15 +69,19 @@ export default class HomeScreen extends Component {
 
                 <ScrollView contentContainerStyle={Styles.scrollContainer}>
                     <MenuItem title={"Dados Pessoais"} subtitle={"Confira seus dados cadastrais"} icon={require("../assets/ic_dados.png")} onPress={this.navigateToScreen("Dados")} />
-                    <MenuItem title={"Sua Contribuição"} subtitle={"Visualize e entenda sua contribuição"} icon={require("../assets/ic_contribuicao.png")} onPress={this.navigateToScreen("Contribuicao")} />
 
-                    {this.state.planoBD && 
+                    {!this.state.assistido && 
+                        <MenuItem title={"Sua Contribuição"} subtitle={"Visualize e entenda sua contribuição"} icon={require("../assets/ic_contribuicao.png")} onPress={this.navigateToScreen("Contribuicao")} />}
+
+                    {this.state.planoBD && !this.state.assistido && 
                         <MenuItem title={"Seu Saldo"} subtitle={"Visualize seu saldo"} icon={require("../assets/ic_saldo.png")} onPress={this.navigateToScreen("SaldoBD")} />}
 
-                    {!this.state.planoBD && 
+                    {!this.state.planoBD && !this.state.assistido && 
                         <MenuItem title={"Seu Saldo"} subtitle={"Visualize seu saldo"} icon={require("../assets/ic_saldo.png")} onPress={this.navigateToScreen("SaldoCD")} />}
-
-                    <MenuItem title={"Contracheque"} subtitle={"Consulte aqui seus contracheques"} icon={require("../assets/ic_contracheque.png")} onPress={this.navigateToScreen("Contracheque")} />
+                    
+                    {this.state.assistido && 
+                        <MenuItem title={"Contracheque"} subtitle={"Consulte aqui seus contracheques"} icon={require("../assets/ic_contracheque.png")} onPress={this.navigateToScreen("Contracheque")} />}
+                    
                     <MenuItem title={"Sua Aposentadoria"} subtitle={"Simule aqui sua aposentadoria futura"} icon={require("../assets/ic_sim_beneficio.png")} />
                     <MenuItem title={"Relacionamento"} subtitle={"Envie aqui suas mensagens com suas duvidas"} icon={require("../assets/ic_chat.png")} />
                     <MenuItem title={"Selecionar Plano"} subtitle={"Escolha outro plano"} icon={require("../assets/ic_plano.png")} />

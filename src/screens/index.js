@@ -6,6 +6,7 @@ import ContribuicaoScreen from "./ContribuicaoScreen";
 import SaldoBDScreen from "./SaldoBDScreen";
 import SaldoCDScreen from "./SaldoCDScreen";
 import ContrachequeScreen from "./ContrachequeScreen";
+import ContrachequeDetalheScreen from "./ContrachequeDetalheScreen";
 
 export {
     LoginScreen,
@@ -15,5 +16,6 @@ export {
     ContribuicaoScreen,
     SaldoBDScreen,
     SaldoCDScreen,
-    ContrachequeScreen
+    ContrachequeScreen,
+    ContrachequeDetalheScreen
 }

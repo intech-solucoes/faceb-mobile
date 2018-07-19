@@ -10,7 +10,8 @@ import {
     ContribuicaoScreen,
     SaldoBDScreen,
     SaldoCDScreen,
-    ContrachequeScreen
+    ContrachequeScreen,
+    ContrachequeDetalheScreen
 } from "./src/screens";
 
 import SideMenu from "./src/screens/SideMenu/SideMenu";
@@ -62,7 +63,8 @@ const RootStack = createDrawerNavigator({
     Contribuicao: ContribuicaoScreen,
     SaldoBD: SaldoBDScreen,
     SaldoCD: SaldoCDScreen,
-    Contracheque: ContrachequeScreen
+    Contracheque: ContrachequeScreen,
+    ContrachequeDetalhe: ContrachequeDetalheScreen
 }, {
     contentComponent: SideMenu,
     navigationOptions: {
