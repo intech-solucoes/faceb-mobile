@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import { Text, View, ScrollView, StyleSheet, BackHandler, AsyncStorage, Slider, TextInput } from "react-native";
-import { TextMask } from "react-native-masked-text";
+import { TextMask, TextInputMask } from "react-native-masked-text";
 import Spinner from 'react-native-loading-spinner-overlay';
 import _ from "lodash";
 
 import Styles, { Variables } from "../styles";
 import { ScreenHeader, ElevatedView, CampoEstatico, Button } from "../components";
 
-import { SimuladorService } from "advanced-service";
+import { ContribuicaoService, SimuladorService } from "advanced-service";
 
 const config = require("../config.json");
 const simuladorService  = new SimuladorService(config);
+const contribuicaoService  = new ContribuicaoService(config);
 
 export default class SimuladorCDScreen extends Component {
+
+    static navigationOptions = {
+        title: "Sua Aposentadoria"
+    }
     
     constructor(props) {
         super(props);
@@ -21,29 +26,23 @@ export default class SimuladorCDScreen extends Component {
             loading: false,
             plano: 0,
             dadosSimulacao: {},
-            percentual: 5,
-            contribuicaoBasica: {},
-            contribuicaoFacultativa: {}
+            percentual: 6,
+            contribuicaoBasica: "0",
+            contribuicaoFacultativa: "0"
         }
 
         this.alterarPercentual = this.alterarPercentual.bind(this);
     }
 
     async componentDidMount() {
-        BackHandler.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
-
         await this.setState({ loading: true });
 
         await this.carregarPlano();
         await this.carregarDados();
-        await this.alterarPercentual(5);
+        await this.carregarContribuicaoFacultativa();
+        await this.alterarPercentual(this.state.dadosSimulacao.percentual);
 
         await this.setState({ loading: false });
-    }
-
-    onBackPress() {
-        this.props.navigation.navigate('Home');
-        return false;
     }
 
     async carregarPlano() {
@@ -54,6 +53,17 @@ export default class SimuladorCDScreen extends Component {
     async carregarDados() {
         var result = await simuladorService.BuscarDadosSimuladorCD(this.state.plano);
         this.setState({ dadosSimulacao: result.data });
+    }
+
+    async carregarContribuicaoFacultativa() {
+        var result = await contribuicaoService.BuscarPorPlano(this.state.plano);
+
+        var facultativa = _.filter(result.data, { SQ_TIPO_COBRANCA: 13 })[0];
+        var contribFacultativa = facultativa.VL_CONTRIBUICAO.toFixed(2);
+
+        await this.setState({ 
+            contribuicaoFacultativa: contribFacultativa
+        });
     }
 
     alterarPercentual(value) {
@@ -73,10 +83,21 @@ export default class SimuladorCDScreen extends Component {
         return (
             <View>
                 <Spinner visible={this.state.loading} />
-                
-                <ScreenHeader titulo={"Sua Aposentadoria"} />
 
                 <ScrollView contentContainerStyle={Styles.scrollContainer}>
+
+                    <View style={{ padding: 10 }}>
+                        <Text style={[Styles.h2, { color: Variables.colors.primary, marginBottom: 10, textAlign: 'center' }]}>
+                            Bem vindo ao simulador de aposentadoria do plano CEBPREV!
+                        </Text>
+
+                        <Text style={{ marginBottom: 10, textAlign: 'center' }}>
+                            Primeiro, vamos compor a sua contribuição. 
+                            Atualmente você contribui com {this.state.dadosSimulacao.percentual}% sobre o seu salário de participação. 
+                            Para efeitos de simulação, você pode alterar esse percentual, bem como realizar contribuições facultativas.
+                        </Text>
+                    </View>
+
                     <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
                         
                         <CampoEstatico titulo={"Salário de Participação"} subtitulo={this.state.dadosSimulacao.dataReferencia} tipo={"dinheiro"} valor={this.state.dadosSimulacao.salarioParticipacao} />
@@ -85,9 +106,9 @@ export default class SimuladorCDScreen extends Component {
                         <View style={{ alignItems: "center" }}>
                             <Text style={Styles.h4}>Arraste para alterar o percentual</Text>
                         </View>
-                        <Slider maximumValue={10} minimumValue={5} onValueChange={this.alterarPercentual} />
+                        <Slider maximumValue={10} minimumValue={5} onValueChange={this.alterarPercentual} value={this.state.percentual} />
                         <View style={{ alignItems: "center" }}>
-                            <Text style={[Styles.h2, { color: Variables.colors.primary}]}>
+                            <Text style={[Styles.h2, { color: Variables.colors.primary }]}>
                                 {this.state.percentual}% - <TextMask value={this.state.contribuicaoBasica} type={"money"} />
                             </Text>
                         </View>
@@ -96,12 +117,12 @@ export default class SimuladorCDScreen extends Component {
 
                     <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
                         <Text>Contribuição Facultativa (R$)</Text>
-                        <TextInput name={"contribuicaoFacultativa"} style={Styles.textInput} placeholder="0,00" keyboardType={"phone-pad"} step={1} underlineColorAndroid="transparent"
-                            onChangeText={value => this.setState({ contribuicaoFacultativa: value })} />
+                        <TextInputMask name={"contribuicaoFacultativa"} type={"money"} style={Styles.textInput} placeholder="R$0,00"keyboardType={"phone-pad"} step={1} underlineColorAndroid="transparent"
+                                       value={this.state.contribuicaoFacultativa} onChangeText={value => this.setState({ contribuicaoFacultativa: value.replace("R$", "") })} />
                     </ElevatedView>
 
-                    <Button title={"Simular"} 
-                        onClick={() => this.props.navigation.navigate("SimuladorCDPasso2", { 
+                    <Button title={"Próximo"} 
+                            onClick={() => this.props.navigation.navigate("SimuladorCDPasso2", { 
                             contribBasica: this.state.contribuicaoBasica, 
                             contribFacultativa: this.state.contribuicaoFacultativa })} />
                 </ScrollView>

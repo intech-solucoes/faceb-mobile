@@ -12,6 +12,10 @@ const dadosPessoaisService  = new DadosPessoaisService(config);
 const planoVinculadoService = new PlanoVinculadoService(config);
 
 export default class DadosScreen extends Component {
+
+    static navigationOptions = {
+        title: "Seus Dados"
+    }
     
     constructor(props) {
         super(props);
@@ -24,19 +28,12 @@ export default class DadosScreen extends Component {
     }
 
     async componentDidMount() {
-        BackHandler.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
-
         await this.setState({ loading: true });
 
         await this.carregarDadosPessoais();
         await this.carregarPlano();
 
         await this.setState({ loading: false });
-    }
-
-    onBackPress() {
-        this.props.navigation.navigate('Home');
-        return false;
     }
 
     async carregarDadosPessoais() {
@@ -54,8 +51,6 @@ export default class DadosScreen extends Component {
         return (
             <View>
                 <Spinner visible={this.state.loading} />
-                
-                <ScreenHeader titulo={"Dados Pessoais"} />
 
                 <ScrollView contentContainerStyle={Styles.scrollContainer}>
                     <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>

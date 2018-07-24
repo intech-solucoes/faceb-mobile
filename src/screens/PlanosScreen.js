@@ -30,6 +30,7 @@ const styles = {
 }
 
 export default class PlanosScreen extends React.Component {
+
     constructor(props) {
         super(props);
 
@@ -69,8 +70,6 @@ export default class PlanosScreen extends React.Component {
             <View style={[Styles.content, { paddingTop: 50 }]}>
 
                 <Spinner visible={this.state.loading} />
-                
-                <StatusBar translucent backgroundColor="rgba(0, 0, 0, 0.20)" animated />
 
                 <Text style={Styles.h3}>Olá,</Text>
                 <Text style={[ Styles.h1, styles.header ]}>{this.state.usuario.NO_PESSOA}</Text>

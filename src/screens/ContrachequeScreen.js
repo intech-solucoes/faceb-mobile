@@ -13,6 +13,10 @@ const contrachequeService  = new ContrachequeService(config);
 
 export default class ContrachequeScreen extends Component {
 
+    static navigationOptions = {
+        title: "Contracheque"
+    }
+
     constructor(props) {
         super(props);
 
@@ -62,8 +66,6 @@ export default class ContrachequeScreen extends Component {
         return (
             <View>
                 <Spinner visible={this.state.loading} />
-                
-                <ScreenHeader titulo={"Contracheques"} />
 
                 <View>
                     

@@ -27,6 +27,10 @@ const ViewRubricas = (props) => (
 
 export default class ContribuicaoScreen extends Component {
 
+    static navigationOptions = {
+        title: "Sua Contribuicao"
+    }
+
     constructor(props) {
         super(props);
 
@@ -49,8 +53,6 @@ export default class ContribuicaoScreen extends Component {
     }
 
     async componentDidMount() {
-        BackHandler.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
-
         this.setState({ loading: true });
         
         await this.carregarPlano();
@@ -59,11 +61,6 @@ export default class ContribuicaoScreen extends Component {
         await this.filtrarContribuicoes();
 
         this.setState({ loading: false });
-    }
-
-    onBackPress() {
-        this.props.navigation.navigate('Home');
-        return false;
     }
 
     async carregarPlano() {
@@ -111,8 +108,6 @@ export default class ContribuicaoScreen extends Component {
         return (
             <View>
                 <Spinner visible={this.state.loading} />
-                
-                <ScreenHeader titulo={"Faceb"} />
 
                 <ScrollView contentContainerStyle={Styles.scrollContainer}>
                     

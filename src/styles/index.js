@@ -50,8 +50,7 @@ export default Styles = StyleSheet.create({
         fontSize: 10
     },
     scrollContainer: {
-        padding: 20,
-        paddingBottom: 100
+        padding: 20
     }
 });
 

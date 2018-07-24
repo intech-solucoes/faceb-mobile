@@ -11,6 +11,10 @@ const config = require("../config.json");
 const saldoService  = new SaldoService(config);
 
 export default class SaldoBDScreen extends Component {
+
+    static navigationOptions = {
+        title: "Seu Saldo"
+    }
     
     constructor(props) {
         super(props);
@@ -22,18 +26,11 @@ export default class SaldoBDScreen extends Component {
     }
 
     async componentDidMount() {
-        BackHandler.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
-
         await this.setState({ loading: true });
 
         await this.carregarSaldo();
 
         await this.setState({ loading: false });
-    }
-
-    onBackPress() {
-        this.props.navigation.navigate('Home');
-        return false;
     }
 
     async carregarSaldo() {
@@ -45,8 +42,6 @@ export default class SaldoBDScreen extends Component {
         return (
             <View>
                 <Spinner visible={this.state.loading} />
-                
-                <ScreenHeader titulo={"Seu Saldo"} />
 
                 <ScrollView contentContainerStyle={Styles.scrollContainer}>
                     <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>

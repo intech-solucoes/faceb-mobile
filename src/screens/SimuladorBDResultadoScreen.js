@@ -11,6 +11,10 @@ const config = require("../config.json");
 const simuladorService  = new SimuladorService(config);
 
 export default class SimuladorBDResultadoScreen extends Component {
+
+    static navigationOptions = {
+        title: "Sua Aposentadoria"
+    }
     
     constructor(props) {
         super(props);
@@ -23,19 +27,12 @@ export default class SimuladorBDResultadoScreen extends Component {
     }
 
     async componentDidMount() {
-        BackHandler.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
-
         await this.setState({ loading: true });
 
         await this.carregarPlano();
         await this.carregarDados();
 
         await this.setState({ loading: false });
-    }
-
-    onBackPress() {
-        this.props.navigation.navigate('Home');
-        return false;
     }
 
     async carregarPlano() {
@@ -52,8 +49,6 @@ export default class SimuladorBDResultadoScreen extends Component {
         return (
             <View>
                 <Spinner visible={this.state.loading} />
-                
-                <ScreenHeader titulo={"Sua Aposentadoria"} />
 
                 <ScrollView contentContainerStyle={Styles.scrollContainer}>
                     <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>

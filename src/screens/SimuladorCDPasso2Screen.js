@@ -13,6 +13,10 @@ const config = require("../config.json");
 const simuladorService  = new SimuladorService(config);
 
 export default class SimuladorCDPasso2Screen extends Component {
+
+    static navigationOptions = {
+        title: "Sua Aposentadoria"
+    }
     
     constructor(props) {
         super(props);
@@ -31,19 +35,12 @@ export default class SimuladorCDPasso2Screen extends Component {
     }
 
     async componentDidMount() {
-        BackHandler.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
-
         await this.setState({ loading: true });
 
         await this.carregarPlano();
         await this.carregarDados();
 
         await this.setState({ loading: false });
-    }
-
-    onBackPress() {
-        this.props.navigation.navigate('Home');
-        return false;
     }
 
     async carregarPlano() {
@@ -54,8 +51,6 @@ export default class SimuladorCDPasso2Screen extends Component {
     async carregarDados() {
         var contribBasica = this.props.navigation.getParam("contribBasica", "0");
         var contribFacultativa = this.props.navigation.getParam("contribFacultativa", "0");
-
-        alert(contribBasica);
 
         var result = await simuladorService.BuscarDadosSimuladorCDPasso2(this.state.plano);
         this.setState({ 
@@ -77,17 +72,13 @@ export default class SimuladorCDPasso2Screen extends Component {
         return (
             <View>
                 <Spinner visible={this.state.loading} />
-                
-                <ScreenHeader titulo={"Sua Aposentadoria"} />
 
                 <ScrollView contentContainerStyle={Styles.scrollContainer}>
                     <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
-                        
-                        <CampoEstatico titulo={"Esse é o seu saldo de conta atualizado"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.saldo} />
 
                         <Text style={[Styles.h3, { marginBottom: 10 }]}>Com quantos anos você pretende se aposentar?</Text>
                         <View style={{ alignItems: "center" }}>
-                            <Text style={Styles.h4}>Arraste para alterar o percentual</Text>
+                            <Text style={Styles.h4}>Arraste para alterar a idade</Text>
                         </View>
                         <Slider maximumValue={70} minimumValue={55} onValueChange={this.alterarIdade} />
                         <View style={{ alignItems: "center" }}>
@@ -97,6 +88,10 @@ export default class SimuladorCDPasso2Screen extends Component {
                         </View>
 
                     </ElevatedView>
+                        
+                    <View style={{ padding: 10, paddingBottom: 0 }}>
+                        <CampoEstatico titulo={"Esse é o seu saldo de conta atualizado"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.saldo} />
+                    </View>
 
                     <Text style={{ padding: 10, marginBottom: 10 }}>
                         Para a simulação da sua aposentadoria, o seu saldo de contas atual será projetado acrescendo as contribuições mensais futuras até a data da sua aposentadoria. 

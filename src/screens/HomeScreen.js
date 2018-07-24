@@ -23,6 +23,11 @@ const MenuItem = (props) => {
 }
 
 export default class HomeScreen extends Component {
+
+    static navigationOptions = {
+        title: "Faceb"
+    }
+
     constructor(props) {
         super(props);
 
@@ -43,10 +48,7 @@ export default class HomeScreen extends Component {
     }
 
     navigateToScreen = (route) => () => {
-        const navigateAction = NavigationActions.navigate({
-            routeName: route
-        });
-        this.props.navigation.dispatch(navigateAction);
+        this.props.navigation.navigate(route);
     }
 
     async carregarPlano() {
@@ -65,8 +67,6 @@ export default class HomeScreen extends Component {
         return (
             <View>
                 <Spinner visible={this.state.loading} />
-
-                <ScreenHeader titulo={"Faceb"} />
 
                 <ScrollView contentContainerStyle={Styles.scrollContainer}>
                     <MenuItem title={"Dados Pessoais"} subtitle={"Confira seus dados cadastrais"} icon={require("../assets/ic_dados.png")} onPress={this.navigateToScreen("Dados")} />

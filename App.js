@@ -19,50 +19,11 @@ import {
     SimuladorCDResultadoScreen
 } from "./src/screens";
 
+import { ScreenHeader } from "./src/components"
+
 import SideMenu from "./src/screens/SideMenu/SideMenu";
 
-// const LoginStack = createStackNavigator({
-//     Login: { screen: LoginScreen },
-//     Planos: { screen: PlanosScreen }
-// }, {
-//     headerMode: 'none',
-//     navigationOptions: {
-//         headerTintColor: "#fff",
-        
-//         headerStyle: {
-//             backgroundColor: Variables.colors.primary,
-//             height: 56
-//         }
-//     }
-// });
-
-// const MainDrawerStack = createDrawerNavigator({
-//     HomeScreen: HomeScreen
-// });
-
-// const MainStack = createStackNavigator({
-//     MainDrawerStack: MainDrawerStack
-// }, {
-//     navigationOptions: {
-//         headerTintColor: "#fff",
-        
-//         headerStyle: {
-//             backgroundColor: Variables.colors.primary,
-//             height: 56
-//         }
-//     }
-// });
-
-// const RootStack = createStackNavigator({
-//     LoginStack: LoginStack,
-//     MainStack: MainStack
-// }, {
-//     headerMode: 'none'
-// });
-
-const RootStack = createDrawerNavigator({
-    Login: LoginScreen,
-    Planos: PlanosScreen,
+const MainStack = createStackNavigator({
     Home: HomeScreen,
     Dados: DadosScreen,
     Contribuicao: ContribuicaoScreen,
@@ -76,15 +37,30 @@ const RootStack = createDrawerNavigator({
     SimuladorCDPasso2: SimuladorCDPasso2Screen,
     SimuladorCDResultado: SimuladorCDResultadoScreen
 }, {
+    navigationOptions: {
+        header: (navigationOptions) => <ScreenHeader {...navigationOptions} />
+    }
+});
+
+const MainDrawer = createDrawerNavigator({
+    DrawerStack: MainStack
+}, {
     contentComponent: SideMenu,
     navigationOptions: {
-        headerTintColor: "#fff",
-        
-        headerStyle: {
-            backgroundColor: Variables.colors.primary,
-            height: 56
-        }
+      header: null
     }
+})
+
+const RootStack = createStackNavigator({
+    Login: LoginScreen,
+    Planos: PlanosScreen,
+    Main: MainDrawer
+},
+{
+  initialRouteName: 'Login',
+  navigationOptions: {
+    header: null
+  }
 });
 
 export default class App extends React.Component {
