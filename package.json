@@ -1,0 +1,42 @@
+{
+  "name": "faceb",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "cpx": "^1.5.0",
+    "cpy-cli": "^2.0.0",
+    "jest": "^23.3.0",
+    "jest-react-native": "^18.0.0",
+    "mkdirp": "^0.5.1",
+    "react-test-renderer": "16.3.1",
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "android": "yarn build:config-dev && react-native run-android",
+    "android:rony": "yarn build:config-rony && react-native run-android",
+    "ios": "yarn build:config-dev && react-native run-ios",
+    "test": "jest",
+    "build:config-dev": "./node_modules/.bin/cpy src/configs/config.dev.json ./src/ --rename=config.json",
+    "build:config-rony": "./node_modules/.bin/cpy src/configs/config.rony.json ./src/ --rename=config.json",
+    "build:config-test": "./node_modules/.bin/cpy src/configs/config.test.json ./src/ --rename=config.json",
+    "build:config-prod": "./node_modules/.bin/cpy src/configs/config.prod.json ./src/ --rename=config.json",
+    "build:prod": "yarn build:config-prod && cd android && ./gradlew assembleRelease",
+    "build:lib": "cd ../lib/react-lib && yarn build && cd ../../advanced-service && yarn build && cd ../faceb-mobile && yarn add \"../advanced-service\" \"../lib/react-lib\""
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "dependencies": {
+    "advanced-service": "../advanced-service",
+    "lodash": "^4.17.10",
+    "react": "16.3.1",
+    "react-lib": "../lib/react-lib",
+    "react-native": "~0.55.2",
+    "react-native-loading-spinner-overlay": "^0.5.2",
+    "react-native-masked-text": "^1.7.2",
+    "react-native-vector-icons": "^4.6.0",
+    "react-navigation": "^2.6.2",
+    "react-number-format": "^3.4.4"
+  }
+}
