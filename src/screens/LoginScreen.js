@@ -51,7 +51,7 @@ export default class LoginScreen extends React.Component {
         // Cria o state do componente
         this.state = {
             //cpf: "vanusa",
-            cpf: "formula",
+            cpf: "lucilia",
             senha: "123",
             lembrar: false,
             loading: false
