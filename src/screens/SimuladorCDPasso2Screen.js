@@ -23,10 +23,9 @@ export default class SimuladorCDPasso2Screen extends Component {
 
         this.state = {
             loading: false,
-            plano: 0,
             dadosSimulacao: {},
             idadeAposentadoria: 55,
-            saque: {},
+            saque: "N",
             contribBasica: "",
             contribFacultativa: ""
         }
@@ -37,22 +36,16 @@ export default class SimuladorCDPasso2Screen extends Component {
     async componentDidMount() {
         await this.setState({ loading: true });
 
-        await this.carregarPlano();
         await this.carregarDados();
 
         await this.setState({ loading: false });
-    }
-
-    async carregarPlano() {
-        var plano = await AsyncStorage.getItem("plano");
-        await this.setState({ plano });
     }
 
     async carregarDados() {
         var contribBasica = this.props.navigation.getParam("contribBasica", "0");
         var contribFacultativa = this.props.navigation.getParam("contribFacultativa", "0");
 
-        var result = await simuladorService.BuscarDadosSimuladorCDPasso2(this.state.plano);
+        var result = await simuladorService.BuscarDadosSimuladorCDPasso2();
         this.setState({ 
             dadosSimulacao: result.data,
             contribBasica,
@@ -102,10 +95,10 @@ export default class SimuladorCDPasso2Screen extends Component {
                         <Text style={[Styles.h3, { marginBottom: 10 }]}>Você deseja sacar à vista um percentual do seu saldo de contas na concessão do benefício?</Text>
                         <Picker
                             selectedValue={this.state.saque}
-                            onValueChange={(itemValue, itemIndex) => this.setState({saque: itemValue})}>
+                            onValueChange={(itemValue, itemIndex) => this.setState({ saque: itemValue })}>
                             <Picker.Item label="Não" value="N" />
                             {_.range(1, 26).map((percentual, index) => {
-                                return <Picker.Item key={index} label={percentual + "%"} value={percentual} />
+                                return <Picker.Item key={index} label={percentual + "%"} value={percentual.toString()} />
                             })}
                         </Picker>
                     </ElevatedView>
@@ -113,7 +106,8 @@ export default class SimuladorCDPasso2Screen extends Component {
                     <Button title={"Continuar"} onClick={() => this.props.navigation.navigate("SimuladorCDResultado", { 
                             contribBasica: this.state.contribBasica, 
                             contribFacultativa: this.state.contribFacultativa,
-                            idadeAposentadoria: this.state.idadeAposentadoria })} />
+                            idadeAposentadoria: this.state.idadeAposentadoria,
+                            saque: this.state.saque })} />
                 </ScrollView>
             </View>
         );

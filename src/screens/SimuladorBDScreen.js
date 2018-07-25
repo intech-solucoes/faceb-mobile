@@ -21,7 +21,6 @@ export default class SimuladorBDScreen extends Component {
 
         this.state = {
             loading: false,
-            plano: 0,
             dadosSimulacao: {}
         }
     }
@@ -29,19 +28,13 @@ export default class SimuladorBDScreen extends Component {
     async componentDidMount() {
         await this.setState({ loading: true });
 
-        await this.carregarPlano();
         await this.carregarDados();
 
         await this.setState({ loading: false });
     }
 
-    async carregarPlano() {
-        var plano = await AsyncStorage.getItem("plano");
-        await this.setState({ plano });
-    }
-
     async carregarDados() {
-        var result = await simuladorService.BuscarDadosSimuladorBD(this.state.plano);
+        var result = await simuladorService.BuscarDadosSimuladorBD();
         this.setState({ dadosSimulacao: result.data });
     }
 

@@ -1,4 +1,4 @@
-#Tue Jul 24 19:10:48 BRT 2018
+#Wed Jul 25 15:34:00 BRT 2018
 base.0=/Users/ronymoura/Documents/Intech/faceb-mobile/android/app/build/intermediates/transforms/dex/release/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/Users/ronymoura/Documents/Intech/faceb-mobile/android/app/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex

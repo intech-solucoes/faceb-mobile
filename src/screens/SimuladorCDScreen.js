@@ -51,7 +51,7 @@ export default class SimuladorCDScreen extends Component {
     }
 
     async carregarDados() {
-        var result = await simuladorService.BuscarDadosSimuladorCD(this.state.plano);
+        var result = await simuladorService.BuscarDadosSimuladorCD();
         this.setState({ dadosSimulacao: result.data });
     }
 
@@ -118,7 +118,7 @@ export default class SimuladorCDScreen extends Component {
                     <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
                         <Text>Contribuição Facultativa (R$)</Text>
                         <TextInputMask name={"contribuicaoFacultativa"} type={"money"} style={Styles.textInput} placeholder="R$0,00"keyboardType={"phone-pad"} step={1} underlineColorAndroid="transparent"
-                                       value={this.state.contribuicaoFacultativa} onChangeText={value => this.setState({ contribuicaoFacultativa: value.replace("R$", "") })} />
+                                       value={this.state.contribuicaoFacultativa} onChangeText={value => this.setState({ contribuicaoFacultativa: value.replace("R$", "").replace(',', '.') })} />
                     </ElevatedView>
 
                     <Button title={"Próximo"} 

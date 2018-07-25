@@ -77,6 +77,9 @@ class SideMenu extends Component {
                         
                         {!this.state.assistido && this.state.planoBD &&
                             <MenuItem onPress={this.navigateToScreen('SimuladorBD')} icon={require("../../assets/ic_sim_beneficio.png")} title="Sua Aposentadoria" />}
+
+                        {!this.state.assistido && !this.state.planoBD &&
+                            <MenuItem onPress={this.navigateToScreen('SimuladorCD')} icon={require("../../assets/ic_sim_beneficio.png")} title="Sua Aposentadoria" />}
                             
                         <MenuItem onPress={this.navigateToScreen('Relacionamento')} icon={require("../../assets/ic_chat.png")} title="Relacionamento" />
                         <MenuItem onPress={this.navigateToScreen('Planos')} icon={require("../../assets/ic_plano.png")} title="Selecionar Plano" />
