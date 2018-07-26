@@ -5,7 +5,7 @@ import { TextMask } from "react-native-masked-text";
 import _ from 'lodash'
 
 import Styles, { Variables } from "../styles";
-import { ScreenHeader, ElevatedView, Button } from "../components";
+import { ScreenHeader, ElevatedView, Button, CampoEstatico } from "../components";
 
 import { ContrachequeService } from "advanced-service";
 
@@ -34,19 +34,12 @@ export default class ContrachequeDetalheScreen extends Component {
     }
 
     async componentDidMount() {
-        BackHandler.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
-
         await this.setState({ loading: true });
 
         await this.carregarPlano();
         await this.carregarContracheque();
 
         await this.setState({ loading: false });
-    }
-
-    onBackPress() {
-        this.props.navigation.navigate('Home');
-        return false;
     }
 
     async carregarPlano() {
@@ -59,10 +52,11 @@ export default class ContrachequeDetalheScreen extends Component {
         var result = await contrachequeService.BuscarPorPlanoCronograma(this.state.plano, cronograma);
 
         var contracheque = result.data.rubricas;
+        var referencia = result.data.resumo.referencia;
         var rendimentos = _.filter(contracheque, { IR_LANCAMENTO: "P" });
         var descontos = _.filter(contracheque, { IR_LANCAMENTO: "D" });
 
-        await this.setState({ contracheque, rendimentos, descontos });
+        await this.setState({ contracheque, rendimentos, descontos, referencia });
     }
 
     render() {
@@ -70,27 +64,33 @@ export default class ContrachequeDetalheScreen extends Component {
             <View>
                 <Spinner visible={this.state.loading} />
 
-                <View>
-                    <View>
-                        <Text style={Styles.h1}>RENDIMENTOS</Text>
-                        
-                        <FlatList data={this.state.rendimentos}
-                            renderItem={
-                                ({item}) => <Text>{item.DS_RUBRICA}</Text>
-                            }
-                            keyExtractor={(item, index) => index.toString()} />
-                    </View>
+                <ScrollView contentContainerStyle={Styles.scrollContainer}>
 
-                    <View>
-                        <Text style={Styles.h1}>DESCONTOS</Text>
-                        
-                        <FlatList data={this.state.descontos}
-                            renderItem={
-                                ({item}) => <Text>{item.DS_RUBRICA}</Text>
-                            }
-                            keyExtractor={(item, index) => index.toString()} />
-                    </View>
-                </View>
+                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
+                        <CampoEstatico titulo={"Referência"} valor={this.state.referencia} />
+                    </ElevatedView>
+
+                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
+                        <Text style={[Styles.h2, { color: Variables.colors.primary, marginBottom: 10 }]}>
+                            RENDIMENTOS
+                        </Text>
+
+                        {this.state.rendimentos.map((rubrica, index) => {
+                            return <CampoEstatico key={index} titulo={rubrica.DS_RUBRICA} tipo={"dinheiro"} valor={rubrica.VL_CALCULO} style={{ marginBottom: 0, color: Variables.colors.rgray }} />;
+                        })}
+                    </ElevatedView>
+
+                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
+                        <Text style={[Styles.h2, { color: Variables.colors.red, marginBottom: 10 }]}>
+                            DESCONTOS
+                        </Text>
+
+                        {this.state.descontos.map((rubrica, index) => {
+                            return <CampoEstatico key={index} titulo={rubrica.DS_RUBRICA} tipo={"dinheiro"} valor={rubrica.VL_CALCULO} style={{ marginBottom: 0, color: Variables.colors.rgray }} />;
+                        })}
+                    </ElevatedView>
+
+                </ScrollView>
             </View>
         );
     }

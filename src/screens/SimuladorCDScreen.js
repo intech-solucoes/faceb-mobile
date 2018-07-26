@@ -59,11 +59,14 @@ export default class SimuladorCDScreen extends Component {
         var result = await contribuicaoService.BuscarPorPlano(this.state.plano);
 
         var facultativa = _.filter(result.data, { SQ_TIPO_COBRANCA: 13 })[0];
-        var contribFacultativa = facultativa.VL_CONTRIBUICAO.toFixed(2);
+        
+        if(facultativa) {
+            var contribFacultativa = facultativa.VL_CONTRIBUICAO.toFixed(2);
 
-        await this.setState({ 
-            contribuicaoFacultativa: contribFacultativa
-        });
+            await this.setState({ 
+                contribuicaoFacultativa: contribFacultativa
+            });
+        }
     }
 
     alterarPercentual(value) {
@@ -82,7 +85,7 @@ export default class SimuladorCDScreen extends Component {
     render() {
         return (
             <View>
-                <Spinner visible={this.state.loading} />
+                <Spinner visible={this.state.loading} cancelable={true} />
 
                 <ScrollView contentContainerStyle={Styles.scrollContainer}>
 

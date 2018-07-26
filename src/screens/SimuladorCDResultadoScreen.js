@@ -42,6 +42,7 @@ export default class SimuladorCDResultadoScreen extends Component {
         var contribBasica = this.props.navigation.getParam("contribBasica", "0");
         var contribFacultativa = this.props.navigation.getParam("contribFacultativa", "0");
         var idadeAposentadoria = this.props.navigation.getParam("idadeAposentadoria", "0");
+
         var saque = this.props.navigation.getParam("saque", "0");
 
         var result = await simuladorService.SimularCD(contribBasica, contribFacultativa, idadeAposentadoria, saque);
@@ -51,7 +52,7 @@ export default class SimuladorCDResultadoScreen extends Component {
     render() {
         return (
             <View>
-                <Spinner visible={this.state.loading} />
+                <Spinner visible={this.state.loading} cancelable={true} />
 
                 <ScrollView contentContainerStyle={Styles.scrollContainer}>
 
