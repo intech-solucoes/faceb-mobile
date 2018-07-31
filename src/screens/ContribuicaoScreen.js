@@ -7,7 +7,7 @@ import _ from 'lodash';
 import Styles, { Variables } from "../styles";
 import { ScreenHeader, ElevatedView, CampoEstatico } from "../components";
 
-import { ContribuicaoService, SalarioContribuicaoService } from "advanced-service";
+import { ContribuicaoService, SalarioContribuicaoService } from "@intechprev/advanced-service";
 
 const config = require("../config.json");
 const contribuicaoService  = new ContribuicaoService(config);

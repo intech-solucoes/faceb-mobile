@@ -27,6 +27,8 @@
 		"preset": "react-native"
 	},
 	"dependencies": {
+		"@intechprev/advanced-service": "^0.0.1",
+		"@intechprev/react-lib": "^0.0.1",
 		"lodash": "^4.17.10",
 		"react": "16.3.1",
 		"react-native": "~0.55.2",
@@ -37,5 +39,8 @@
 		"react-navigation": "^2.6.2",
 		"react-number-format": "^3.4.4"
 	},
-	"workspaces": ["../lib/react-lib", "../advanced-service"]
+	"workspaces": [
+		"../lib/react-lib",
+		"../advanced-service"
+	]
 }

@@ -5,7 +5,7 @@ import Spinner from 'react-native-loading-spinner-overlay';
 import Styles, { Variables } from "../styles";
 import { ScreenHeader, ElevatedView, CampoEstatico, Button } from "../components";
 
-import { SimuladorService } from "advanced-service";
+import { SimuladorService } from "@intechprev/advanced-service";
 
 const config = require("../config.json");
 const simuladorService  = new SimuladorService(config);

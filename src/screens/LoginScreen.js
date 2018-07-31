@@ -6,7 +6,7 @@ import VersionNumber from 'react-native-version-number';
 import Styles, { Variables } from "../styles";
 import { Button } from "../components";
 
-import { UsuarioService } from "advanced-service";
+import { UsuarioService } from "@intechprev/advanced-service";
 
 const config = require("../config.json");
 const usuarioService = new UsuarioService(config);
