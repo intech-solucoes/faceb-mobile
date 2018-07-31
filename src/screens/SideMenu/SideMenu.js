@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { ScrollView, Text, View, Image, TouchableHighlight, AsyncStorage } from 'react-native';
 import { NavigationActions } from 'react-navigation';
+import VersionNumber from 'react-native-version-number';
 
 import styles from './SideMenu.style';
 import { Variables } from '../../styles';
@@ -92,7 +93,7 @@ class SideMenu extends Component {
                 </ScrollView>
 
                 <View style={styles.footerContainer}>
-                    <Text>Versão 0.0.1</Text>
+                    <Text>Versão {VersionNumber.appVersion}</Text>
                 </View>
             </View>
         );

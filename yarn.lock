@@ -486,11 +486,6 @@ acorn@^5.0.0, acorn@^5.3.0:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.1.tgz#f095829297706a7c9776958c0afc8930a9b9d9d8"
 
-advanced-service@../advanced-service:
-  version "0.0.1"
-  dependencies:
-    axios "^0.18.0"
-
 ajv@^5.1.0:
   version "5.5.2"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-5.5.2.tgz#73b5eeca3fab653e3d3f9422b341ad42205dc965"
@@ -4655,9 +4650,6 @@ react-is@^16.3.1:
   version "16.4.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.4.1.tgz#d624c4650d2c65dbd52c72622bbf389435d9776e"
 
-react-lib@../lib/react-lib:
-  version "1.0.0"
-
 react-lifecycles-compat@^3, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
@@ -4722,6 +4714,10 @@ react-native-vector-icons@^4.6.0:
     lodash "^4.0.0"
     prop-types "^15.5.10"
     yargs "^8.0.2"
+
+react-native-version-number@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/react-native-version-number/-/react-native-version-number-0.3.4.tgz#4850e1a40ea719ee43092812d0693f9dc3be5f40"
 
 react-native@~0.55.2:
   version "0.55.4"

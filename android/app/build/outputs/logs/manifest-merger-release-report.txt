@@ -69,6 +69,7 @@ ADDED from /Users/ronymoura/Documents/Intech/faceb-mobile/android/app/src/main/A
 		ADDED from /Users/ronymoura/Documents/Intech/faceb-mobile/android/app/src/main/AndroidManifest.xml:24:17-81
 uses-sdk
 INJECTED from /Users/ronymoura/Documents/Intech/faceb-mobile/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [faceb:react-native-version-number:unspecified] /Users/ronymoura/Documents/Intech/faceb-mobile/android/app/build/intermediates/exploded-aar/faceb/react-native-version-number/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [faceb:react-native-vector-icons:unspecified] /Users/ronymoura/Documents/Intech/faceb-mobile/android/app/build/intermediates/exploded-aar/faceb/react-native-vector-icons/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] /Users/ronymoura/Documents/Intech/faceb-mobile/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/ronymoura/Documents/Intech/faceb-mobile/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:20:5-43
