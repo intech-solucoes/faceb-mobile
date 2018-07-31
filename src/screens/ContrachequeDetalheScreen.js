@@ -7,7 +7,7 @@ import _ from 'lodash'
 import Styles, { Variables } from "../styles";
 import { ScreenHeader, ElevatedView, Button, CampoEstatico } from "../components";
 
-import { ContrachequeService } from "advanced-service";
+import { ContrachequeService } from "@intechprev/advanced-service";
 
 const config = require("../config.json");
 const contrachequeService  = new ContrachequeService(config);

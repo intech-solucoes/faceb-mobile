@@ -7,7 +7,7 @@ import _ from "lodash";
 import Styles, { Variables } from "../styles";
 import { ScreenHeader, ElevatedView, CampoEstatico, Button } from "../components";
 
-import { DadosPessoaisService, RelacionamentoService } from "advanced-service";
+import { DadosPessoaisService, RelacionamentoService } from "@intechprev/advanced-service";
 
 const config = require("../config.json");
 const dadosPessoaisService  = new DadosPessoaisService(config);

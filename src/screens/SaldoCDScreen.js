@@ -5,7 +5,7 @@ import Spinner from 'react-native-loading-spinner-overlay';
 import Styles, { Variables } from "../styles";
 import { ScreenHeader, ElevatedView, CampoEstatico } from "../components";
 
-import { SaldoService } from "advanced-service";
+import { SaldoService } from "@intechprev/advanced-service";
 
 const config = require("../config.json");
 const saldoService  = new SaldoService(config);

@@ -5,7 +5,7 @@ import Spinner from 'react-native-loading-spinner-overlay';
 import Styles, { Variables } from "../styles";
 import { Button } from "../components";
 
-import { DadosPessoaisService, PlanoVinculadoService } from "advanced-service";
+import { DadosPessoaisService, PlanoVinculadoService } from "@intechprev/advanced-service";
 
 const config = require("../config.json");
 const dadosPessoaisService  = new DadosPessoaisService(config);

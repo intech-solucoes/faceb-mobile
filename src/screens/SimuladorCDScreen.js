@@ -7,7 +7,7 @@ import _ from "lodash";
 import Styles, { Variables } from "../styles";
 import { ScreenHeader, ElevatedView, CampoEstatico, Button } from "../components";
 
-import { ContribuicaoService, SimuladorService } from "advanced-service";
+import { ContribuicaoService, SimuladorService } from "@intechprev/advanced-service";
 
 const config = require("../config.json");
 const simuladorService  = new SimuladorService(config);
