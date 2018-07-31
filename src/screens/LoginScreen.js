@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, View, ImageBackground, Image, TextInput, Switch, AsyncStorage, StatusBar } from "react-native";
 import Spinner from 'react-native-loading-spinner-overlay';
+import VersionNumber from 'react-native-version-number';
 
 import Styles, { Variables } from "../styles";
 import { Button } from "../components";
@@ -24,7 +25,7 @@ const loginStyles = {
         width: 200
     },
     footer: {
-        height: 200,
+        height: 210,
         padding: 10
     },
     loginButton: {
@@ -51,7 +52,7 @@ export default class LoginScreen extends React.Component {
         // Cria o state do componente
         this.state = {
             //cpf: "vanusa",
-            cpf: "formula",
+            cpf: "31640834168",
             senha: "123",
             lembrar: false,
             loading: false
@@ -108,6 +109,10 @@ export default class LoginScreen extends React.Component {
                     </View>
 
                     <Button title="Entrar" onClick={this.login} style={loginStyles.loginButton} />
+
+                    <Text style={{ backgroundColor: "rgba(0,0,0,0.5)", marginVertical: 10, padding: 5, textAlign:"center", color: "#FFF" }}>
+                        Versão {VersionNumber.appVersion}
+                    </Text>
                 </View>
             </ImageBackground>
         );

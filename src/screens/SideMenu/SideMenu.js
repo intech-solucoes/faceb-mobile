@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { ScrollView, Text, View, Image, TouchableHighlight } from 'react-native';
+import { ScrollView, Text, View, Image, TouchableHighlight, AsyncStorage } from 'react-native';
 import { NavigationActions } from 'react-navigation';
+import VersionNumber from 'react-native-version-number';
 
 import styles from './SideMenu.style';
 import { Variables } from '../../styles';
@@ -30,6 +31,10 @@ class SideMenu extends Component {
             assistido: false
         }
     }
+
+    async componentDidMount() {
+        await this.carregarPlano();
+    }
     
     navigateToScreen = (route) => () => {
         const navigateAction = NavigationActions.navigate({
@@ -43,7 +48,7 @@ class SideMenu extends Component {
         var assistido = await AsyncStorage.getItem("assistido");
         var planoBD = plano === "1";
 
-        await this.setState({ 
+        this.setState({ 
             plano, 
             planoBD,
             assistido: assistido === "true"
@@ -77,6 +82,9 @@ class SideMenu extends Component {
                         
                         {!this.state.assistido && this.state.planoBD &&
                             <MenuItem onPress={this.navigateToScreen('SimuladorBD')} icon={require("../../assets/ic_sim_beneficio.png")} title="Sua Aposentadoria" />}
+
+                        {!this.state.assistido && !this.state.planoBD &&
+                            <MenuItem onPress={this.navigateToScreen('SimuladorCD')} icon={require("../../assets/ic_sim_beneficio.png")} title="Sua Aposentadoria" />}
                             
                         <MenuItem onPress={this.navigateToScreen('Relacionamento')} icon={require("../../assets/ic_chat.png")} title="Relacionamento" />
                         <MenuItem onPress={this.navigateToScreen('Planos')} icon={require("../../assets/ic_plano.png")} title="Selecionar Plano" />
@@ -85,7 +93,7 @@ class SideMenu extends Component {
                 </ScrollView>
 
                 <View style={styles.footerContainer}>
-                    <Text>Versão 0.0.1</Text>
+                    <Text>Versão {VersionNumber.appVersion}</Text>
                 </View>
             </View>
         );

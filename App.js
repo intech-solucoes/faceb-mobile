@@ -16,7 +16,8 @@ import {
     SimuladorBDResultadoScreen,
     SimuladorCDScreen,
     SimuladorCDPasso2Screen,
-    SimuladorCDResultadoScreen
+    SimuladorCDResultadoScreen,
+    RelacionamentoScreen
 } from "./src/screens";
 
 import { ScreenHeader } from "./src/components"
@@ -35,7 +36,8 @@ const MainStack = createStackNavigator({
     SimuladorBDResultado: SimuladorBDResultadoScreen,
     SimuladorCD: SimuladorCDScreen,
     SimuladorCDPasso2: SimuladorCDPasso2Screen,
-    SimuladorCDResultado: SimuladorCDResultadoScreen
+    SimuladorCDResultado: SimuladorCDResultadoScreen,
+    Relacionamento: RelacionamentoScreen
 }, {
     navigationOptions: {
         header: (navigationOptions) => <ScreenHeader {...navigationOptions} />

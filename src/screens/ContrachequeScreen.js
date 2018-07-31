@@ -31,8 +31,6 @@ export default class ContrachequeScreen extends Component {
     }
 
     async componentDidMount() {
-        BackHandler.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
-
         await this.setState({ loading: true });
 
         await this.carregarPlano();
@@ -40,11 +38,6 @@ export default class ContrachequeScreen extends Component {
         await this.carregarContracheque(this.state.contracheques[0].SQ_CRONOGRAMA);
 
         await this.setState({ loading: false });
-    }
-
-    onBackPress() {
-        this.props.navigation.navigate('Home');
-        return false;
     }
 
     async carregarPlano() {
@@ -77,17 +70,17 @@ export default class ContrachequeScreen extends Component {
                         <View style={{ alignItems: 'center',  flexDirection: "row" }}>
                             <View style={{ flex: 1, alignItems: 'center' }}>
                                 <Text>BRUTO</Text>
-                                <TextMask type={'money'} value={this.state.contrachequeSelecionado.resumo.bruto} />
+                                <TextMask type={'money'} value={this.state.contrachequeSelecionado.resumo.bruto} style={{ color: Variables.colors.primary }} />
                             </View>
 
                             <View style={{ flex: 1, alignItems: 'center' }}>
                                 <Text>DESCONTOS</Text>
-                                <TextMask type={'money'} value={this.state.contrachequeSelecionado.resumo.descontos} />
+                                <TextMask type={'money'} value={this.state.contrachequeSelecionado.resumo.descontos} style={{ color: Variables.colors.red }} />
                             </View>
 
                             <View style={{ flex: 1, alignItems: 'center' }}>
                                 <Text>LÍQUIDO</Text>
-                                <TextMask type={'money'} value={this.state.contrachequeSelecionado.resumo.liquido} />
+                                <TextMask type={'money'} value={this.state.contrachequeSelecionado.resumo.liquido} style={{ color: Variables.colors.blue }} />
                             </View>
                         </View>
 

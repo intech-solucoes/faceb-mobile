@@ -3833,6 +3833,23 @@ bolts.Task$7
 bolts.Task$8
 bolts.Task$9
 bolts.Task$TaskCompletionSource
+com.apsl.versionnumber.BuildConfig
+com.apsl.versionnumber.R
+com.apsl.versionnumber.R$anim
+com.apsl.versionnumber.R$attr
+com.apsl.versionnumber.R$bool
+com.apsl.versionnumber.R$color
+com.apsl.versionnumber.R$dimen
+com.apsl.versionnumber.R$drawable
+com.apsl.versionnumber.R$id
+com.apsl.versionnumber.R$integer
+com.apsl.versionnumber.R$layout
+com.apsl.versionnumber.R$string
+com.apsl.versionnumber.R$style
+com.apsl.versionnumber.R$styleable
+com.apsl.versionnumber.R$xml
+com.apsl.versionnumber.RNVersionNumberPackage:
+    22:22:public java.util.List createJSModules()
 com.facebook.binaryresource.BinaryResource:
     public abstract byte[] read()
 com.facebook.binaryresource.ByteArrayBinaryResource
