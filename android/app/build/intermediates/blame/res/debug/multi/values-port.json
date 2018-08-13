@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\ronymoura\\Documents\\Intech\\faceb-mobile\\android\\C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+        "outputFile": "C:\\Users\\ronymoura\\Documents\\Intech\\faceb-mobile\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 106
                 },
                 "from": {
-                    "file": "C:\\Users\\ronymoura\\Documents\\Intech\\faceb-mobile\\android\\C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-port\\values-port.xml",
+                    "file": "C:\\Users\\ronymoura\\Documents\\Intech\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-port\\values-port.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -48,7 +48,7 @@
         ]
     },
     {
-        "outputFile": "C:\\Users\\ronymoura\\Documents\\Intech\\faceb-mobile\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+        "outputFile": "C:\\Users\\ronymoura\\Documents\\Intech\\faceb-mobile\\android\\C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
         "map": [
             {
                 "to": {
@@ -59,7 +59,7 @@
                     "endOffset": 106
                 },
                 "from": {
-                    "file": "C:\\Users\\ronymoura\\Documents\\Intech\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-port\\values-port.xml",
+                    "file": "C:\\Users\\ronymoura\\Documents\\Intech\\faceb-mobile\\android\\C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-port\\values-port.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

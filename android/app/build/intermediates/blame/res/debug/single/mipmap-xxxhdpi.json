@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\ronymoura\\Documents\\Intech\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
-        "source": "C:\\Users\\ronymoura\\Documents\\Intech\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
         "source": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ronymoura\\Documents\\Intech\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\ronymoura\\Documents\\Intech\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     }
 ]

@@ -16,7 +16,7 @@ export default class ScreenHeader extends Component {
             if(openDrawer)
                 this.props.navigation.openDrawer();
             else
-            this.props.navigation.pop();
+                this.props.navigation.pop();
         }
 
         return (
