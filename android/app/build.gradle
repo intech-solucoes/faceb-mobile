@@ -94,15 +94,15 @@ def enableSeparateBuildPerCPUArchitecture = false
 def enableProguardInReleaseBuilds = true
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "com.intech.faceb"
         minSdkVersion 16
-        targetSdkVersion 22
-        versionCode 31
-        versionName "0.6.2"
+        targetSdkVersion 26
+        versionCode 32
+        versionName "0.6.3"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }

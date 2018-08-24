@@ -91,7 +91,7 @@ export default class SimuladorCDScreen extends Component {
 
                     <View style={{ padding: 10 }}>
                         <Text style={[Styles.h2, { color: Variables.colors.primary, marginBottom: 10, textAlign: 'center' }]}>
-                            Bem vindo ao simulador de aposentadoria do plano CEBPREV!
+                            Bem-Vindo ao simulador de aposentadoria do plano CEBPREV!
                         </Text>
 
                         <Text style={{ marginBottom: 10, textAlign: 'center' }}>

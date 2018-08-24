@@ -24,16 +24,16 @@ export default class CampoEstatico extends Component {
     render() {
         return (
             <View style={{marginBottom: 15}}>
-                <Text style={Styles.h4}>{this.props.titulo}</Text>
+                <Text style={[Styles.h4, styles.label, this.props.tituloStyle]}>{this.props.titulo}</Text>
 
                 {this.props.subtitulo &&
-                    <Text style={Styles.h5}>{this.props.subtitulo}</Text>}
+                    <Text style={[Styles.h5, this.props.subtituloStyle]}>{this.props.subtitulo}</Text>}
 
                 {this.props.tipo === "dinheiro" && 
                     <TextMask style={[Styles.h2, styles.valor, this.props.style]} type={'money'} value={this.props.valor} />}
 
                 {this.props.tipo === "texto" &&
-                    <Text style={[Styles.h2, styles.valor]}>{this.props.valor}</Text>}
+                    <Text style={[Styles.h2, styles.valor, this.props.style]}>{this.props.valor}</Text>}
             </View>
         );
     }
@@ -42,5 +42,8 @@ export default class CampoEstatico extends Component {
 const styles = StyleSheet.create({
     valor: {
         color: Variables.colors.primary
+    },
+    label: {
+        fontWeight: 'bold'
     }
 });

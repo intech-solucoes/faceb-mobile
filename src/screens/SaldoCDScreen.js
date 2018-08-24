@@ -5,9 +5,10 @@ import Spinner from 'react-native-loading-spinner-overlay';
 import Styles, { Variables } from "../styles";
 import { ScreenHeader, ElevatedView, CampoEstatico } from "../components";
 
-import { SaldoService } from "@intechprev/advanced-service";
+import { SaldoService, DadosPessoaisService } from "@intechprev/advanced-service";
 
 const config = require("../config.json");
+const dadosPessoaisService  = new DadosPessoaisService(config);
 const saldoService  = new SaldoService(config);
 
 export default class SaldoCDScreen extends Component {
@@ -21,19 +22,28 @@ export default class SaldoCDScreen extends Component {
 
         this.state = {
             loading: false,
-            saldo: {}
+            saldo: {},
+            nome: null
         }
     }
 
     async componentDidMount() {
         await this.setState({ loading: true });
 
+        await this.carregarDadosPessoais();
         await this.carregarSaldo();
 
         await this.setState({ loading: false });
     }
 
-    async carregarSaldo() {
+    carregarDadosPessoais = async () =>{
+        var result = await dadosPessoaisService.Buscar();
+        await this.setState({ 
+            nome: result.data.NO_PESSOA.split(" ")[0]
+        });
+    }
+
+    carregarSaldo = async () => {
         var result = await saldoService.BuscarSaldoCD();
         await this.setState({ saldo: result.data });
     }
@@ -41,11 +51,12 @@ export default class SaldoCDScreen extends Component {
     render() {
         return (
             <View>
-                <Spinner visible={this.state.loading} />
+                <Spinner visible={this.state.loading} cancelable={true} />
 
                 <ScrollView contentContainerStyle={Styles.scrollContainer}>
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
-                        <CampoEstatico titulo={"Parabéns! Você acumulou até agora:"} tipo={"dinheiro"} valor={this.state.saldo.Total} />
+                    <ElevatedView elevation={3} style={{ padding: 10, paddingBottom: 0, marginBottom: 10 }}>
+                        <CampoEstatico titulo={`PARABÉNS ${this.state.nome}! VOCÊ ACUMULOU ATÉ AGORA:`} tipo={"dinheiro"} valor={this.state.saldo.Total}
+                                       tituloStyle={{ fontSize: 16 }} />
                     </ElevatedView>
 
                     <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>

@@ -96,9 +96,9 @@ export default class SimuladorCDPasso2Screen extends Component {
                             <CampoEstatico titulo={"Esse é o seu saldo de conta atualizado"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.saldo} />
                         </View>
 
-                        <Text style={{ padding: 10, marginBottom: 10 }}>
+                        <Text style={{ padding: 10, marginBottom: 10, fontSize: 16 }}>
                             Para a simulação da sua aposentadoria, o seu saldo de contas atual será projetado acrescendo as contribuições mensais futuras até a data da sua aposentadoria. 
-                            Os valores sofrerão uma valorização de {this.state.dadosSimulacao.taxaJuros}% ao ano (valorização fictícia, válida apenas para essa simulação).
+                            Os valores sofrerão uma valorização de <Text style={{ fontWeight: "bold", color: Variables.colors.primary }}>{this.state.dadosSimulacao.taxaJuros}%</Text> ao ano (valorização fictícia, válida apenas para essa simulação).
                         </Text>
 
                         <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>

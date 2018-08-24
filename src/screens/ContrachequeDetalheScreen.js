@@ -62,7 +62,7 @@ export default class ContrachequeDetalheScreen extends Component {
     render() {
         return (
             <View>
-                <Spinner visible={this.state.loading} />
+                <Spinner visible={this.state.loading} cancelable={true} />
 
                 <ScrollView contentContainerStyle={Styles.scrollContainer}>
 
@@ -76,7 +76,7 @@ export default class ContrachequeDetalheScreen extends Component {
                         </Text>
 
                         {this.state.rendimentos.map((rubrica, index) => {
-                            return <CampoEstatico key={index} titulo={rubrica.DS_RUBRICA} tipo={"dinheiro"} valor={rubrica.VL_CALCULO} style={{ marginBottom: 0, color: Variables.colors.rgray }} />;
+                            return <CampoEstatico key={index} titulo={rubrica.DS_RUBRICA} tipo={"dinheiro"} valor={rubrica.VL_CALCULO} style={{ marginBottom: 0, color: Variables.colors.gray }} />;
                         })}
                     </ElevatedView>
 
@@ -86,7 +86,7 @@ export default class ContrachequeDetalheScreen extends Component {
                         </Text>
 
                         {this.state.descontos.map((rubrica, index) => {
-                            return <CampoEstatico key={index} titulo={rubrica.DS_RUBRICA} tipo={"dinheiro"} valor={rubrica.VL_CALCULO} style={{ marginBottom: 0, color: Variables.colors.rgray }} />;
+                            return <CampoEstatico key={index} titulo={rubrica.DS_RUBRICA} tipo={"dinheiro"} valor={rubrica.VL_CALCULO} style={{ marginBottom: 0, color: Variables.colors.gray }} />;
                         })}
                     </ElevatedView>
 
