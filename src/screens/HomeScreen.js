@@ -66,7 +66,7 @@ export default class HomeScreen extends Component {
     render() {
         return (
             <View>
-                <Spinner visible={this.state.loading} />
+                <Spinner visible={this.state.loading} cancelable={true} />
 
                 <ScrollView contentContainerStyle={Styles.scrollContainer}>
                     <MenuItem title={"Dados Pessoais"} subtitle={"Confira seus dados cadastrais"} icon={require("../assets/ic_dados.png")} onPress={this.navigateToScreen("Dados")} />
@@ -89,7 +89,7 @@ export default class HomeScreen extends Component {
                     {!this.state.assistido && !this.state.planoBD &&
                         <MenuItem title={"Sua Aposentadoria"} subtitle={"Simule aqui sua aposentadoria futura"} icon={require("../assets/ic_sim_beneficio.png")} onPress={this.navigateToScreen("SimuladorCD")} />}
                     
-                    <MenuItem title={"Relacionamento"} subtitle={"Envie aqui suas mensagens com suas duvidas"} icon={require("../assets/ic_chat.png")} onPress={this.navigateToScreen("Relacionamento")} />
+                    <MenuItem title={"Relacionamento"} subtitle={"Envie aqui suas dúvidas"} icon={require("../assets/ic_chat.png")} onPress={this.navigateToScreen("Relacionamento")} />
                     <MenuItem title={"Selecionar Plano"} subtitle={"Escolha outro plano"} icon={require("../assets/ic_plano.png")} onPress={this.navigateToScreen("Planos")} />
                     <MenuItem title={"Sair"} subtitle={"Sair do aplicativo"} icon={require("../assets/ic_out.png")} onPress={this.navigateToScreen("Login")} />
                 </ScrollView>
@@ -104,7 +104,8 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderRadius: 2,
         borderColor: '#ddd',
-        marginBottom: 10
+        marginBottom: 10,
+        backgroundColor: "#FFF"
     },
     menuItemInner: {
         flexDirection: 'row'

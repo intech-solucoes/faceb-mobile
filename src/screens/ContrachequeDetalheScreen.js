@@ -62,7 +62,7 @@ export default class ContrachequeDetalheScreen extends Component {
     render() {
         return (
             <View>
-                <Spinner visible={this.state.loading} />
+                <Spinner visible={this.state.loading} cancelable={true} />
 
                 <ScrollView contentContainerStyle={Styles.scrollContainer}>
 

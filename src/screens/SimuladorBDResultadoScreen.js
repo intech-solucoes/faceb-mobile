@@ -41,7 +41,7 @@ export default class SimuladorBDResultadoScreen extends Component {
     render() {
         return (
             <View>
-                <Spinner visible={this.state.loading} />
+                <Spinner visible={this.state.loading} cancelable={true} />
 
                 <ScrollView contentContainerStyle={Styles.scrollContainer}>
                     <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
@@ -58,7 +58,7 @@ export default class SimuladorBDResultadoScreen extends Component {
                         Os cálculos apresentados não são definitivos e resultam de projeções de caráter apenas ilustrativo, 
                         não gerando qualquer direito ao recebimento. O presente cálculo poderá sofrer alterações quando da concessão 
                         definitiva do benefício. Esta simulação observou as regras do Regulamento do Plano de Benefícios ao qual 
-                        o participante se vinculará, vigentes na data da realização do cálculo do benefício.
+                        o participante se vinculou, vigentes na data da realização do cálculo do benefício.
                     </Text>
                 </ScrollView>
             </View>

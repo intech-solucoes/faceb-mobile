@@ -76,8 +76,22 @@ export default class SimuladorCDResultadoScreen extends Component {
                             seguem as estimativas calculadas para cada opção de recebimento:
                         </Text>
 
-                        <CampoEstatico titulo={"Renda por prazo indeterminado com pensão por morte:"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.rendaPrazoIndeterminadoPensaoMorte} />
-                        <CampoEstatico titulo={"Renda por prazo indeterminado sem pensão por morte:"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.rendaPrazoIndeterminadoSemPensaoMorte} />
+                        {/* <CampoEstatico titulo={"Renda por prazo indeterminado com pensão por morte:"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.rendaPrazoIndeterminadoPensaoMorte} />
+                        <CampoEstatico titulo={"Renda por prazo indeterminado sem pensão por morte:"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.rendaPrazoIndeterminadoSemPensaoMorte} /> */}
+
+                        <View style={{ marginBottom: 15 }}>
+                            <Text style={[Styles.h4, { fontWeight: "bold" }]}>
+                                Renda por prazo indeterminado <Text style={{ textDecorationLine: "underline" }}>com pensão</Text> por morte:
+                            </Text>
+                            <TextMask style={[Styles.h2, { color: Variables.colors.primary }]} type={'money'} value={this.state.dadosSimulacao.rendaPrazoIndeterminadoPensaoMorte} />
+                        </View>
+
+                        <View style={{ marginBottom: 15 }}>
+                            <Text style={[Styles.h4, { fontWeight: "bold" }]}>
+                                Renda por prazo indeterminado <Text style={{ textDecorationLine: "underline" }}>sem pensão</Text> por morte:
+                            </Text>
+                            <TextMask style={[Styles.h2, { color: Variables.colors.primary }]} type={'money'} value={this.state.dadosSimulacao.rendaPrazoIndeterminadoSemPensaoMorte} />
+                        </View>
 
                         {this.state.dadosSimulacao.listaPrazos.map((item, index) => {
                             return <CampoEstatico key={index} titulo={`Renda por prazo certo - ${item.Key} anos`} tipo={"dinheiro"} valor={item.Value} />

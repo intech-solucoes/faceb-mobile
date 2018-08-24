@@ -52,7 +52,7 @@ export default class LoginScreen extends React.Component {
         // Cria o state do componente
         this.state = {
             //cpf: "vanusa",
-            cpf: "31640834168",
+            cpf: "50517902168",
             senha: "123",
             lembrar: false,
             loading: false
@@ -86,7 +86,7 @@ export default class LoginScreen extends React.Component {
         return (
             <ImageBackground source={require("../assets/LoginBackground.jpg")} style={[Styles.backgroundImage, loginStyles.container]}>
 
-                <Spinner visible={this.state.loading} />
+                <Spinner visible={this.state.loading} cancelable={true} />
 
                 <StatusBar translucent backgroundColor="rgba(0, 0, 0, 0.20)" animated />
 

@@ -36,30 +36,33 @@ export default class PlanosScreen extends React.Component {
 
         this.state = {
             loading: false,
-            usuario: {},
-            planos: []
+            dadosPessoais: {},
+            planos: [],
+            nome: null
         }
-
-        this.selecionarPlano = this.selecionarPlano.bind(this);
-        this.carregarDadosPessoais = this.carregarDadosPessoais.bind(this);
-        this.carregarPlanos = this.carregarPlanos.bind(this);
     }
 
-    componentDidMount() {
-        this.setState({ loading: true }, this.carregarDadosPessoais);
+    async componentDidMount() {
+        await this.setState({ loading: true }, this.carregarDadosPessoais);
+        await this.carregarDadosPessoais();
+        await this.carregarPlanos();
+        await this.setState({ loading: false });
     }
 
-    async carregarDadosPessoais() {
+    carregarDadosPessoais = async () =>{
         var result = await dadosPessoaisService.Buscar();
-        this.setState({ usuario: result.data }, this.carregarPlanos);
+        await this.setState({ 
+            dadosPessoais: result.data,
+            nome: result.data.NO_PESSOA.split(" ")[0]
+        });
     }
 
-    async carregarPlanos() {
+    carregarPlanos = async () => {
         var result = await planoVinculadoService.Buscar();
         await this.setState({ planos: result.data, loading: false });
     }
 
-    async selecionarPlano(plano) {
+    selecionarPlano = async (plano) => {
         await AsyncStorage.setItem('plano', plano.SQ_PLANO_PREVIDENCIAL.toString());
         await AsyncStorage.setItem('assistido', (plano.DS_SIT_PLANO === "ASSISTIDO").toString());
         this.props.navigation.navigate('Home');
@@ -69,10 +72,10 @@ export default class PlanosScreen extends React.Component {
         return (
             <View style={[Styles.content, { paddingTop: 50 }]}>
 
-                <Spinner visible={this.state.loading} />
+                <Spinner visible={this.state.loading} cancelable={true} />
 
                 <Text style={Styles.h3}>Olá,</Text>
-                <Text style={[ Styles.h1, styles.header ]}>{this.state.usuario.NO_PESSOA}</Text>
+                <Text style={[ Styles.h1, styles.header ]}>{this.state.nome}</Text>
                 <Text style={styles.subheader}>Selecione um de seus planos contratados com a Faceb</Text>
 
                 {

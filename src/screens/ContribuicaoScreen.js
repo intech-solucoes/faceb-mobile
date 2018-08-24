@@ -107,7 +107,7 @@ export default class ContribuicaoScreen extends Component {
     render() {
         return (
             <View>
-                <Spinner visible={this.state.loading} />
+                <Spinner visible={this.state.loading} cancelable={true} />
 
                 <ScrollView contentContainerStyle={Styles.scrollContainer}>
                     
@@ -126,7 +126,7 @@ export default class ContribuicaoScreen extends Component {
                                 Salário de Contribuição
                             </Text>
                             <Text style={[Styles.h2, styles.headerText]}>
-                                <TextMask type={'money'} value={this.state.salario.VL_BASE_PREVIDENCIA} />
+                                <TextMask type={'money'} value={this.state.salario.VL_BASE_FUNDACAO} />
                             </Text>
                         </View>
                     </ElevatedView>
