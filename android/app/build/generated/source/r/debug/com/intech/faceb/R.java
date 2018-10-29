@@ -1977,7 +1977,21 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f040028;
     }
     public static final class mipmap {
-        public static final int ic_launcher=0x7f030000;
+        public static final int faceb=0x7f030000;
+        public static final int faceb_negativa=0x7f030001;
+        public static final int ic_chat=0x7f030002;
+        public static final int ic_contracheque=0x7f030003;
+        public static final int ic_contribuicao=0x7f030004;
+        public static final int ic_dados=0x7f030005;
+        public static final int ic_emprestimo=0x7f030006;
+        public static final int ic_home=0x7f030007;
+        public static final int ic_launcher=0x7f030008;
+        public static final int ic_out=0x7f030009;
+        public static final int ic_plano=0x7f03000a;
+        public static final int ic_saldo=0x7f03000b;
+        public static final int ic_sim_beneficio=0x7f03000c;
+        public static final int icon=0x7f03000d;
+        public static final int login_background=0x7f03000e;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f070000;
@@ -2030,8 +2044,6 @@ containing a value of this type.
         public static final int Animation_AppCompat_Dialog=0x7f09007c;
         public static final int Animation_AppCompat_DropDownUp=0x7f09007d;
         public static final int Animation_Catalyst_RedBox=0x7f09007e;
-        /**  Customize your theme here. 
-         */
         public static final int AppTheme=0x7f09007f;
         public static final int Base_AlertDialog_AppCompat=0x7f090080;
         public static final int Base_AlertDialog_AppCompat_Light=0x7f090081;

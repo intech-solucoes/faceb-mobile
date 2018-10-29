@@ -75,7 +75,7 @@ export default class PlanosScreen extends React.Component {
                 <Spinner visible={this.state.loading} cancelable={true} />
 
                 <Text style={Styles.h3}>Olá,</Text>
-                <Text style={[ Styles.h1, styles.header ]}>{this.state.nome}</Text>
+                <Text style={[ Styles.h1, styles.header ]}>Participante</Text>
                 <Text style={styles.subheader}>Selecione um de seus planos contratados com a Faceb</Text>
 
                 {

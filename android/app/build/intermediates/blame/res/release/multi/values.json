@@ -13409,8 +13409,8 @@
                     "startLine": 258,
                     "startColumn": 4,
                     "startOffset": 31587,
-                    "endColumn": 42,
-                    "endOffset": 31625
+                    "endColumn": 54,
+                    "endOffset": 31637
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\values\\strings.xml",
@@ -13418,8 +13418,8 @@
                         "startLine": 1,
                         "startColumn": 4,
                         "startOffset": 17,
-                        "endColumn": 42,
-                        "endOffset": 55
+                        "endColumn": 54,
+                        "endOffset": 67
                     }
                 }
             },
@@ -13427,9 +13427,9 @@
                 "to": {
                     "startLine": 259,
                     "startColumn": 4,
-                    "startOffset": 31630,
+                    "startOffset": 31642,
                     "endColumn": 93,
-                    "endOffset": 31719
+                    "endOffset": 31731
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13446,9 +13446,9 @@
                 "to": {
                     "startLine": 260,
                     "startColumn": 4,
-                    "startOffset": 31724,
+                    "startOffset": 31736,
                     "endColumn": 102,
-                    "endOffset": 31822
+                    "endOffset": 31834
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13465,9 +13465,9 @@
                 "to": {
                     "startLine": 261,
                     "startColumn": 4,
-                    "startOffset": 31827,
+                    "startOffset": 31839,
                     "endColumn": 112,
-                    "endOffset": 31935
+                    "endOffset": 31947
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13484,9 +13484,9 @@
                 "to": {
                     "startLine": 262,
                     "startColumn": 4,
-                    "startOffset": 31940,
+                    "startOffset": 31952,
                     "endColumn": 161,
-                    "endOffset": 32097
+                    "endOffset": 32109
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13503,9 +13503,9 @@
                 "to": {
                     "startLine": 263,
                     "startColumn": 4,
-                    "startOffset": 32102,
+                    "startOffset": 32114,
                     "endColumn": 113,
-                    "endOffset": 32211
+                    "endOffset": 32223
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13522,9 +13522,9 @@
                 "to": {
                     "startLine": 264,
                     "startColumn": 4,
-                    "startOffset": 32216,
+                    "startOffset": 32228,
                     "endColumn": 106,
-                    "endOffset": 32318
+                    "endOffset": 32330
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13541,9 +13541,9 @@
                 "to": {
                     "startLine": 265,
                     "startColumn": 4,
-                    "startOffset": 32323,
+                    "startOffset": 32335,
                     "endColumn": 111,
-                    "endOffset": 32430
+                    "endOffset": 32442
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13560,9 +13560,9 @@
                 "to": {
                     "startLine": 266,
                     "startColumn": 4,
-                    "startOffset": 32435,
+                    "startOffset": 32447,
                     "endColumn": 102,
-                    "endOffset": 32533
+                    "endOffset": 32545
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13579,9 +13579,9 @@
                 "to": {
                     "startLine": 267,
                     "startColumn": 4,
-                    "startOffset": 32538,
+                    "startOffset": 32550,
                     "endColumn": 120,
-                    "endOffset": 32654
+                    "endOffset": 32666
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13598,9 +13598,9 @@
                 "to": {
                     "startLine": 268,
                     "startColumn": 4,
-                    "startOffset": 32659,
+                    "startOffset": 32671,
                     "endColumn": 125,
-                    "endOffset": 32780
+                    "endOffset": 32792
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13617,9 +13617,9 @@
                 "to": {
                     "startLine": 269,
                     "startColumn": 4,
-                    "startOffset": 32785,
+                    "startOffset": 32797,
                     "endColumn": 190,
-                    "endOffset": 32971
+                    "endOffset": 32983
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13636,9 +13636,9 @@
                 "to": {
                     "startLine": 270,
                     "startColumn": 4,
-                    "startOffset": 32976,
+                    "startOffset": 32988,
                     "endColumn": 107,
-                    "endOffset": 33079
+                    "endOffset": 33091
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13655,9 +13655,9 @@
                 "to": {
                     "startLine": 271,
                     "startColumn": 4,
-                    "startOffset": 33084,
+                    "startOffset": 33096,
                     "endColumn": 112,
-                    "endOffset": 33192
+                    "endOffset": 33204
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13674,9 +13674,9 @@
                 "to": {
                     "startLine": 272,
                     "startColumn": 4,
-                    "startOffset": 33197,
+                    "startOffset": 33209,
                     "endColumn": 112,
-                    "endOffset": 33305
+                    "endOffset": 33317
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13693,9 +13693,9 @@
                 "to": {
                     "startLine": 273,
                     "startColumn": 4,
-                    "startOffset": 33310,
+                    "startOffset": 33322,
                     "endColumn": 107,
-                    "endOffset": 33413
+                    "endOffset": 33425
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13712,9 +13712,9 @@
                 "to": {
                     "startLine": 274,
                     "startColumn": 4,
-                    "startOffset": 33418,
+                    "startOffset": 33430,
                     "endColumn": 111,
-                    "endOffset": 33525
+                    "endOffset": 33537
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13731,9 +13731,9 @@
                 "to": {
                     "startLine": 275,
                     "startColumn": 4,
-                    "startOffset": 33530,
+                    "startOffset": 33542,
                     "endColumn": 128,
-                    "endOffset": 33654
+                    "endOffset": 33666
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13750,9 +13750,9 @@
                 "to": {
                     "startLine": 276,
                     "startColumn": 4,
-                    "startOffset": 33659,
+                    "startOffset": 33671,
                     "endColumn": 110,
-                    "endOffset": 33765
+                    "endOffset": 33777
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13769,9 +13769,9 @@
                 "to": {
                     "startLine": 277,
                     "startColumn": 4,
-                    "startOffset": 33770,
+                    "startOffset": 33782,
                     "endColumn": 92,
-                    "endOffset": 33858
+                    "endOffset": 33870
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13788,9 +13788,9 @@
                 "to": {
                     "startLine": 278,
                     "startColumn": 4,
-                    "startOffset": 33863,
+                    "startOffset": 33875,
                     "endColumn": 131,
-                    "endOffset": 33990
+                    "endOffset": 34002
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13807,9 +13807,9 @@
                 "to": {
                     "startLine": 279,
                     "startColumn": 4,
-                    "startOffset": 33995,
+                    "startOffset": 34007,
                     "endColumn": 124,
-                    "endOffset": 34115
+                    "endOffset": 34127
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13826,9 +13826,9 @@
                 "to": {
                     "startLine": 280,
                     "startColumn": 4,
-                    "startOffset": 34120,
+                    "startOffset": 34132,
                     "endColumn": 97,
-                    "endOffset": 34213
+                    "endOffset": 34225
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13845,9 +13845,9 @@
                 "to": {
                     "startLine": 281,
                     "startColumn": 4,
-                    "startOffset": 34218,
+                    "startOffset": 34230,
                     "endColumn": 98,
-                    "endOffset": 34312
+                    "endOffset": 34324
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13864,9 +13864,9 @@
                 "to": {
                     "startLine": 282,
                     "startColumn": 4,
-                    "startOffset": 34317,
+                    "startOffset": 34329,
                     "endColumn": 113,
-                    "endOffset": 34426
+                    "endOffset": 34438
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13883,9 +13883,9 @@
                 "to": {
                     "startLine": 283,
                     "startColumn": 4,
-                    "startOffset": 34431,
+                    "startOffset": 34443,
                     "endColumn": 70,
-                    "endOffset": 34497
+                    "endOffset": 34509
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -13902,9 +13902,9 @@
                 "to": {
                     "startLine": 284,
                     "startColumn": 4,
-                    "startOffset": 34502,
+                    "startOffset": 34514,
                     "endColumn": 77,
-                    "endOffset": 34575
+                    "endOffset": 34587
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -13921,9 +13921,9 @@
                 "to": {
                     "startLine": 285,
                     "startColumn": 4,
-                    "startOffset": 34580,
+                    "startOffset": 34592,
                     "endColumn": 89,
-                    "endOffset": 34665
+                    "endOffset": 34677
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -13940,9 +13940,9 @@
                 "to": {
                     "startLine": 286,
                     "startColumn": 4,
-                    "startOffset": 34670,
+                    "startOffset": 34682,
                     "endColumn": 87,
-                    "endOffset": 34753
+                    "endOffset": 34765
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -13959,9 +13959,9 @@
                 "to": {
                     "startLine": 287,
                     "startColumn": 4,
-                    "startOffset": 34758,
+                    "startOffset": 34770,
                     "endColumn": 95,
-                    "endOffset": 34849
+                    "endOffset": 34861
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -13978,10 +13978,10 @@
                 "to": {
                     "startLine": 288,
                     "startColumn": 4,
-                    "startOffset": 34854,
+                    "startOffset": 34866,
                     "endLine": 291,
                     "endColumn": 10,
-                    "endOffset": 35097
+                    "endOffset": 35109
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -13999,10 +13999,10 @@
                 "to": {
                     "startLine": 292,
                     "startColumn": 4,
-                    "startOffset": 35102,
+                    "startOffset": 35114,
                     "endLine": 294,
                     "endColumn": 12,
-                    "endOffset": 35225
+                    "endOffset": 35237
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\values\\styles.xml",
@@ -14020,10 +14020,10 @@
                 "to": {
                     "startLine": 295,
                     "startColumn": 4,
-                    "startOffset": 35230,
+                    "startOffset": 35242,
                     "endLine": 301,
                     "endColumn": 12,
-                    "endOffset": 35726
+                    "endOffset": 35738
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14041,9 +14041,9 @@
                 "to": {
                     "startLine": 302,
                     "startColumn": 4,
-                    "startOffset": 35731,
+                    "startOffset": 35743,
                     "endColumn": 88,
-                    "endOffset": 35815
+                    "endOffset": 35827
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14060,10 +14060,10 @@
                 "to": {
                     "startLine": 303,
                     "startColumn": 4,
-                    "startOffset": 35820,
+                    "startOffset": 35832,
                     "endLine": 306,
                     "endColumn": 12,
-                    "endOffset": 36062
+                    "endOffset": 36074
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14081,10 +14081,10 @@
                 "to": {
                     "startLine": 307,
                     "startColumn": 4,
-                    "startOffset": 36067,
+                    "startOffset": 36079,
                     "endLine": 310,
                     "endColumn": 12,
-                    "endOffset": 36343
+                    "endOffset": 36355
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14102,10 +14102,10 @@
                 "to": {
                     "startLine": 311,
                     "startColumn": 4,
-                    "startOffset": 36348,
+                    "startOffset": 36360,
                     "endLine": 315,
                     "endColumn": 12,
-                    "endOffset": 36628
+                    "endOffset": 36640
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14123,10 +14123,10 @@
                 "to": {
                     "startLine": 316,
                     "startColumn": 4,
-                    "startOffset": 36633,
+                    "startOffset": 36645,
                     "endLine": 321,
                     "endColumn": 12,
-                    "endOffset": 37021
+                    "endOffset": 37033
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14144,10 +14144,10 @@
                 "to": {
                     "startLine": 322,
                     "startColumn": 4,
-                    "startOffset": 37026,
+                    "startOffset": 37038,
                     "endLine": 328,
                     "endColumn": 12,
-                    "endOffset": 37498
+                    "endOffset": 37510
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14165,10 +14165,10 @@
                 "to": {
                     "startLine": 329,
                     "startColumn": 4,
-                    "startOffset": 37503,
+                    "startOffset": 37515,
                     "endLine": 332,
                     "endColumn": 12,
-                    "endOffset": 37720
+                    "endOffset": 37732
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14186,10 +14186,10 @@
                 "to": {
                     "startLine": 333,
                     "startColumn": 4,
-                    "startOffset": 37725,
+                    "startOffset": 37737,
                     "endLine": 336,
                     "endColumn": 12,
-                    "endOffset": 37942
+                    "endOffset": 37954
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14207,10 +14207,10 @@
                 "to": {
                     "startLine": 337,
                     "startColumn": 4,
-                    "startOffset": 37947,
+                    "startOffset": 37959,
                     "endLine": 341,
                     "endColumn": 12,
-                    "endOffset": 38210
+                    "endOffset": 38222
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14228,10 +14228,10 @@
                 "to": {
                     "startLine": 342,
                     "startColumn": 4,
-                    "startOffset": 38215,
+                    "startOffset": 38227,
                     "endLine": 345,
                     "endColumn": 12,
-                    "endOffset": 38437
+                    "endOffset": 38449
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14249,10 +14249,10 @@
                 "to": {
                     "startLine": 346,
                     "startColumn": 4,
-                    "startOffset": 38442,
+                    "startOffset": 38454,
                     "endLine": 349,
                     "endColumn": 12,
-                    "endOffset": 38667
+                    "endOffset": 38679
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14270,10 +14270,10 @@
                 "to": {
                     "startLine": 350,
                     "startColumn": 4,
-                    "startOffset": 38672,
+                    "startOffset": 38684,
                     "endLine": 353,
                     "endColumn": 12,
-                    "endOffset": 38897
+                    "endOffset": 38909
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14291,10 +14291,10 @@
                 "to": {
                     "startLine": 354,
                     "startColumn": 4,
-                    "startOffset": 38902,
+                    "startOffset": 38914,
                     "endLine": 357,
                     "endColumn": 12,
-                    "endOffset": 39127
+                    "endOffset": 39139
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14312,10 +14312,10 @@
                 "to": {
                     "startLine": 358,
                     "startColumn": 4,
-                    "startOffset": 39132,
+                    "startOffset": 39144,
                     "endLine": 361,
                     "endColumn": 12,
-                    "endOffset": 39357
+                    "endOffset": 39369
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14333,10 +14333,10 @@
                 "to": {
                     "startLine": 362,
                     "startColumn": 4,
-                    "startOffset": 39362,
+                    "startOffset": 39374,
                     "endLine": 365,
                     "endColumn": 12,
-                    "endOffset": 39584
+                    "endOffset": 39596
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14354,10 +14354,10 @@
                 "to": {
                     "startLine": 366,
                     "startColumn": 4,
-                    "startOffset": 39589,
+                    "startOffset": 39601,
                     "endLine": 369,
                     "endColumn": 12,
-                    "endOffset": 39823
+                    "endOffset": 39835
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14375,10 +14375,10 @@
                 "to": {
                     "startLine": 370,
                     "startColumn": 4,
-                    "startOffset": 39828,
+                    "startOffset": 39840,
                     "endLine": 373,
                     "endColumn": 12,
-                    "endOffset": 40049
+                    "endOffset": 40061
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14396,10 +14396,10 @@
                 "to": {
                     "startLine": 374,
                     "startColumn": 4,
-                    "startOffset": 40054,
+                    "startOffset": 40066,
                     "endLine": 377,
                     "endColumn": 12,
-                    "endOffset": 40294
+                    "endOffset": 40306
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14417,10 +14417,10 @@
                 "to": {
                     "startLine": 378,
                     "startColumn": 4,
-                    "startOffset": 40299,
+                    "startOffset": 40311,
                     "endLine": 379,
                     "endColumn": 12,
-                    "endOffset": 40424
+                    "endOffset": 40436
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14438,10 +14438,10 @@
                 "to": {
                     "startLine": 380,
                     "startColumn": 4,
-                    "startOffset": 40429,
+                    "startOffset": 40441,
                     "endLine": 381,
                     "endColumn": 12,
-                    "endOffset": 40554
+                    "endOffset": 40566
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14459,10 +14459,10 @@
                 "to": {
                     "startLine": 382,
                     "startColumn": 4,
-                    "startOffset": 40559,
+                    "startOffset": 40571,
                     "endLine": 385,
                     "endColumn": 12,
-                    "endOffset": 40784
+                    "endOffset": 40796
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14480,10 +14480,10 @@
                 "to": {
                     "startLine": 386,
                     "startColumn": 4,
-                    "startOffset": 40789,
+                    "startOffset": 40801,
                     "endLine": 389,
                     "endColumn": 12,
-                    "endOffset": 41032
+                    "endOffset": 41044
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14501,10 +14501,10 @@
                 "to": {
                     "startLine": 390,
                     "startColumn": 4,
-                    "startOffset": 41037,
+                    "startOffset": 41049,
                     "endLine": 393,
                     "endColumn": 12,
-                    "endOffset": 41251
+                    "endOffset": 41263
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14522,10 +14522,10 @@
                 "to": {
                     "startLine": 394,
                     "startColumn": 4,
-                    "startOffset": 41256,
+                    "startOffset": 41268,
                     "endLine": 398,
                     "endColumn": 12,
-                    "endOffset": 41534
+                    "endOffset": 41546
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14543,10 +14543,10 @@
                 "to": {
                     "startLine": 399,
                     "startColumn": 4,
-                    "startOffset": 41539,
+                    "startOffset": 41551,
                     "endLine": 402,
                     "endColumn": 12,
-                    "endOffset": 41742
+                    "endOffset": 41754
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14564,10 +14564,10 @@
                 "to": {
                     "startLine": 403,
                     "startColumn": 4,
-                    "startOffset": 41747,
+                    "startOffset": 41759,
                     "endLine": 405,
                     "endColumn": 12,
-                    "endOffset": 41873
+                    "endOffset": 41885
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14585,10 +14585,10 @@
                 "to": {
                     "startLine": 406,
                     "startColumn": 4,
-                    "startOffset": 41878,
+                    "startOffset": 41890,
                     "endLine": 409,
                     "endColumn": 12,
-                    "endOffset": 42100
+                    "endOffset": 42112
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14606,10 +14606,10 @@
                 "to": {
                     "startLine": 410,
                     "startColumn": 4,
-                    "startOffset": 42105,
+                    "startOffset": 42117,
                     "endLine": 413,
                     "endColumn": 12,
-                    "endOffset": 42346
+                    "endOffset": 42358
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14627,10 +14627,10 @@
                 "to": {
                     "startLine": 414,
                     "startColumn": 4,
-                    "startOffset": 42351,
+                    "startOffset": 42363,
                     "endLine": 417,
                     "endColumn": 12,
-                    "endOffset": 42571
+                    "endOffset": 42583
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14648,10 +14648,10 @@
                 "to": {
                     "startLine": 418,
                     "startColumn": 4,
-                    "startOffset": 42576,
+                    "startOffset": 42588,
                     "endLine": 421,
                     "endColumn": 12,
-                    "endOffset": 42818
+                    "endOffset": 42830
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14669,10 +14669,10 @@
                 "to": {
                     "startLine": 422,
                     "startColumn": 4,
-                    "startOffset": 42823,
+                    "startOffset": 42835,
                     "endLine": 425,
                     "endColumn": 12,
-                    "endOffset": 43039
+                    "endOffset": 43051
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14690,10 +14690,10 @@
                 "to": {
                     "startLine": 426,
                     "startColumn": 4,
-                    "startOffset": 43044,
+                    "startOffset": 43056,
                     "endLine": 429,
                     "endColumn": 12,
-                    "endOffset": 43284
+                    "endOffset": 43296
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14711,10 +14711,10 @@
                 "to": {
                     "startLine": 430,
                     "startColumn": 4,
-                    "startOffset": 43289,
+                    "startOffset": 43301,
                     "endLine": 433,
                     "endColumn": 12,
-                    "endOffset": 43558
+                    "endOffset": 43570
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14732,10 +14732,10 @@
                 "to": {
                     "startLine": 434,
                     "startColumn": 4,
-                    "startOffset": 43563,
+                    "startOffset": 43575,
                     "endLine": 437,
                     "endColumn": 12,
-                    "endOffset": 43859
+                    "endOffset": 43871
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14753,10 +14753,10 @@
                 "to": {
                     "startLine": 438,
                     "startColumn": 4,
-                    "startOffset": 43864,
+                    "startOffset": 43876,
                     "endLine": 441,
                     "endColumn": 12,
-                    "endOffset": 44183
+                    "endOffset": 44195
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14774,10 +14774,10 @@
                 "to": {
                     "startLine": 442,
                     "startColumn": 4,
-                    "startOffset": 44188,
+                    "startOffset": 44200,
                     "endLine": 445,
                     "endColumn": 12,
-                    "endOffset": 44474
+                    "endOffset": 44486
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14795,10 +14795,10 @@
                 "to": {
                     "startLine": 446,
                     "startColumn": 4,
-                    "startOffset": 44479,
+                    "startOffset": 44491,
                     "endLine": 449,
                     "endColumn": 12,
-                    "endOffset": 44788
+                    "endOffset": 44800
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14816,9 +14816,9 @@
                 "to": {
                     "startLine": 450,
                     "startColumn": 4,
-                    "startOffset": 44793,
+                    "startOffset": 44805,
                     "endColumn": 136,
-                    "endOffset": 44925
+                    "endOffset": 44937
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14835,9 +14835,9 @@
                 "to": {
                     "startLine": 451,
                     "startColumn": 4,
-                    "startOffset": 44930,
+                    "startOffset": 44942,
                     "endColumn": 130,
-                    "endOffset": 45056
+                    "endOffset": 45068
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14854,9 +14854,9 @@
                 "to": {
                     "startLine": 452,
                     "startColumn": 4,
-                    "startOffset": 45061,
+                    "startOffset": 45073,
                     "endColumn": 104,
-                    "endOffset": 45161
+                    "endOffset": 45173
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14873,10 +14873,10 @@
                 "to": {
                     "startLine": 453,
                     "startColumn": 4,
-                    "startOffset": 45166,
+                    "startOffset": 45178,
                     "endLine": 455,
                     "endColumn": 12,
-                    "endOffset": 45365
+                    "endOffset": 45377
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14894,10 +14894,10 @@
                 "to": {
                     "startLine": 456,
                     "startColumn": 4,
-                    "startOffset": 45370,
+                    "startOffset": 45382,
                     "endLine": 458,
                     "endColumn": 12,
-                    "endOffset": 45573
+                    "endOffset": 45585
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14915,10 +14915,10 @@
                 "to": {
                     "startLine": 459,
                     "startColumn": 4,
-                    "startOffset": 45578,
+                    "startOffset": 45590,
                     "endLine": 460,
                     "endColumn": 12,
-                    "endOffset": 45697
+                    "endOffset": 45709
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14936,10 +14936,10 @@
                 "to": {
                     "startLine": 461,
                     "startColumn": 4,
-                    "startOffset": 45702,
+                    "startOffset": 45714,
                     "endLine": 462,
                     "endColumn": 12,
-                    "endOffset": 45821
+                    "endOffset": 45833
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14957,9 +14957,9 @@
                 "to": {
                     "startLine": 463,
                     "startColumn": 4,
-                    "startOffset": 45826,
+                    "startOffset": 45838,
                     "endColumn": 104,
-                    "endOffset": 45926
+                    "endOffset": 45938
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14976,9 +14976,9 @@
                 "to": {
                     "startLine": 464,
                     "startColumn": 4,
-                    "startOffset": 45931,
+                    "startOffset": 45943,
                     "endColumn": 116,
-                    "endOffset": 46043
+                    "endOffset": 46055
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -14995,10 +14995,10 @@
                 "to": {
                     "startLine": 465,
                     "startColumn": 4,
-                    "startOffset": 46048,
+                    "startOffset": 46060,
                     "endLine": 467,
                     "endColumn": 12,
-                    "endOffset": 46257
+                    "endOffset": 46269
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15016,10 +15016,10 @@
                 "to": {
                     "startLine": 468,
                     "startColumn": 4,
-                    "startOffset": 46262,
+                    "startOffset": 46274,
                     "endLine": 469,
                     "endColumn": 12,
-                    "endOffset": 46403
+                    "endOffset": 46415
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15037,10 +15037,10 @@
                 "to": {
                     "startLine": 470,
                     "startColumn": 4,
-                    "startOffset": 46408,
+                    "startOffset": 46420,
                     "endLine": 471,
                     "endColumn": 12,
-                    "endOffset": 46543
+                    "endOffset": 46555
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15058,10 +15058,10 @@
                 "to": {
                     "startLine": 472,
                     "startColumn": 4,
-                    "startOffset": 46548,
+                    "startOffset": 46560,
                     "endLine": 473,
                     "endColumn": 12,
-                    "endOffset": 46629
+                    "endOffset": 46641
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15079,10 +15079,10 @@
                 "to": {
                     "startLine": 474,
                     "startColumn": 4,
-                    "startOffset": 46634,
+                    "startOffset": 46646,
                     "endLine": 478,
                     "endColumn": 12,
-                    "endOffset": 46977
+                    "endOffset": 46989
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15100,9 +15100,9 @@
                 "to": {
                     "startLine": 479,
                     "startColumn": 4,
-                    "startOffset": 46982,
+                    "startOffset": 46994,
                     "endColumn": 87,
-                    "endOffset": 47065
+                    "endOffset": 47077
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15119,10 +15119,10 @@
                 "to": {
                     "startLine": 480,
                     "startColumn": 4,
-                    "startOffset": 47070,
+                    "startOffset": 47082,
                     "endLine": 483,
                     "endColumn": 12,
-                    "endOffset": 47295
+                    "endOffset": 47307
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15140,10 +15140,10 @@
                 "to": {
                     "startLine": 484,
                     "startColumn": 4,
-                    "startOffset": 47300,
+                    "startOffset": 47312,
                     "endLine": 489,
                     "endColumn": 12,
-                    "endOffset": 47697
+                    "endOffset": 47709
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15161,10 +15161,10 @@
                 "to": {
                     "startLine": 490,
                     "startColumn": 4,
-                    "startOffset": 47702,
+                    "startOffset": 47714,
                     "endLine": 493,
                     "endColumn": 12,
-                    "endOffset": 47930
+                    "endOffset": 47942
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15182,9 +15182,9 @@
                 "to": {
                     "startLine": 494,
                     "startColumn": 4,
-                    "startOffset": 47935,
+                    "startOffset": 47947,
                     "endColumn": 81,
-                    "endOffset": 48012
+                    "endOffset": 48024
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15201,10 +15201,10 @@
                 "to": {
                     "startLine": 495,
                     "startColumn": 4,
-                    "startOffset": 48017,
+                    "startOffset": 48029,
                     "endLine": 496,
                     "endColumn": 12,
-                    "endOffset": 48110
+                    "endOffset": 48122
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15222,10 +15222,10 @@
                 "to": {
                     "startLine": 497,
                     "startColumn": 4,
-                    "startOffset": 48115,
+                    "startOffset": 48127,
                     "endLine": 507,
                     "endColumn": 12,
-                    "endOffset": 48727
+                    "endOffset": 48739
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15243,9 +15243,9 @@
                 "to": {
                     "startLine": 508,
                     "startColumn": 4,
-                    "startOffset": 48732,
+                    "startOffset": 48744,
                     "endColumn": 99,
-                    "endOffset": 48827
+                    "endOffset": 48839
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15262,10 +15262,10 @@
                 "to": {
                     "startLine": 509,
                     "startColumn": 4,
-                    "startOffset": 48832,
+                    "startOffset": 48844,
                     "endLine": 512,
                     "endColumn": 12,
-                    "endOffset": 49063
+                    "endOffset": 49075
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15283,10 +15283,10 @@
                 "to": {
                     "startLine": 513,
                     "startColumn": 4,
-                    "startOffset": 49068,
+                    "startOffset": 49080,
                     "endLine": 518,
                     "endColumn": 12,
-                    "endOffset": 49471
+                    "endOffset": 49483
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15304,10 +15304,10 @@
                 "to": {
                     "startLine": 519,
                     "startColumn": 4,
-                    "startOffset": 49476,
+                    "startOffset": 49488,
                     "endLine": 522,
                     "endColumn": 12,
-                    "endOffset": 49710
+                    "endOffset": 49722
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15325,9 +15325,9 @@
                 "to": {
                     "startLine": 523,
                     "startColumn": 4,
-                    "startOffset": 49715,
+                    "startOffset": 49727,
                     "endColumn": 93,
-                    "endOffset": 49804
+                    "endOffset": 49816
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15344,9 +15344,9 @@
                 "to": {
                     "startLine": 524,
                     "startColumn": 4,
-                    "startOffset": 49809,
+                    "startOffset": 49821,
                     "endColumn": 88,
-                    "endOffset": 49893
+                    "endOffset": 49905
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15363,10 +15363,10 @@
                 "to": {
                     "startLine": 525,
                     "startColumn": 4,
-                    "startOffset": 49898,
+                    "startOffset": 49910,
                     "endLine": 528,
                     "endColumn": 12,
-                    "endOffset": 50130
+                    "endOffset": 50142
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15384,10 +15384,10 @@
                 "to": {
                     "startLine": 529,
                     "startColumn": 4,
-                    "startOffset": 50135,
+                    "startOffset": 50147,
                     "endLine": 554,
                     "endColumn": 12,
-                    "endOffset": 52081
+                    "endOffset": 52093
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15405,10 +15405,10 @@
                 "to": {
                     "startLine": 555,
                     "startColumn": 4,
-                    "startOffset": 52086,
+                    "startOffset": 52098,
                     "endLine": 558,
                     "endColumn": 12,
-                    "endOffset": 52323
+                    "endOffset": 52335
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15426,10 +15426,10 @@
                 "to": {
                     "startLine": 559,
                     "startColumn": 4,
-                    "startOffset": 52328,
+                    "startOffset": 52340,
                     "endLine": 585,
                     "endColumn": 12,
-                    "endOffset": 54405
+                    "endOffset": 54417
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15447,10 +15447,10 @@
                 "to": {
                     "startLine": 586,
                     "startColumn": 4,
-                    "startOffset": 54410,
+                    "startOffset": 54422,
                     "endLine": 733,
                     "endColumn": 12,
-                    "endOffset": 63832
+                    "endOffset": 63844
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15468,10 +15468,10 @@
                 "to": {
                     "startLine": 734,
                     "startColumn": 4,
-                    "startOffset": 63837,
+                    "startOffset": 63849,
                     "endLine": 755,
                     "endColumn": 12,
-                    "endOffset": 65099
+                    "endOffset": 65111
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15489,10 +15489,10 @@
                 "to": {
                     "startLine": 756,
                     "startColumn": 4,
-                    "startOffset": 65104,
+                    "startOffset": 65116,
                     "endLine": 903,
                     "endColumn": 12,
-                    "endOffset": 74636
+                    "endOffset": 74648
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15510,10 +15510,10 @@
                 "to": {
                     "startLine": 904,
                     "startColumn": 4,
-                    "startOffset": 74641,
+                    "startOffset": 74653,
                     "endLine": 925,
                     "endColumn": 12,
-                    "endOffset": 75917
+                    "endOffset": 75929
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15531,10 +15531,10 @@
                 "to": {
                     "startLine": 926,
                     "startColumn": 4,
-                    "startOffset": 75922,
+                    "startOffset": 75934,
                     "endLine": 932,
                     "endColumn": 12,
-                    "endOffset": 76453
+                    "endOffset": 76465
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15552,10 +15552,10 @@
                 "to": {
                     "startLine": 933,
                     "startColumn": 4,
-                    "startOffset": 76458,
+                    "startOffset": 76470,
                     "endLine": 937,
                     "endColumn": 12,
-                    "endOffset": 76783
+                    "endOffset": 76795
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15573,10 +15573,10 @@
                 "to": {
                     "startLine": 938,
                     "startColumn": 4,
-                    "startOffset": 76788,
+                    "startOffset": 76800,
                     "endLine": 958,
                     "endColumn": 12,
-                    "endOffset": 77906
+                    "endOffset": 77918
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15594,10 +15594,10 @@
                 "to": {
                     "startLine": 959,
                     "startColumn": 4,
-                    "startOffset": 77911,
+                    "startOffset": 77923,
                     "endLine": 963,
                     "endColumn": 12,
-                    "endOffset": 78162
+                    "endOffset": 78174
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15615,10 +15615,10 @@
                 "to": {
                     "startLine": 964,
                     "startColumn": 4,
-                    "startOffset": 78167,
+                    "startOffset": 78179,
                     "endLine": 968,
                     "endColumn": 12,
-                    "endOffset": 78398
+                    "endOffset": 78410
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15636,10 +15636,10 @@
                 "to": {
                     "startLine": 969,
                     "startColumn": 4,
-                    "startOffset": 78403,
+                    "startOffset": 78415,
                     "endLine": 978,
                     "endColumn": 12,
-                    "endOffset": 78945
+                    "endOffset": 78957
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15657,10 +15657,10 @@
                 "to": {
                     "startLine": 979,
                     "startColumn": 4,
-                    "startOffset": 78950,
+                    "startOffset": 78962,
                     "endLine": 987,
                     "endColumn": 12,
-                    "endOffset": 79439
+                    "endOffset": 79451
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15678,10 +15678,10 @@
                 "to": {
                     "startLine": 988,
                     "startColumn": 4,
-                    "startOffset": 79444,
+                    "startOffset": 79456,
                     "endLine": 998,
                     "endColumn": 12,
-                    "endOffset": 80112
+                    "endOffset": 80124
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15699,10 +15699,10 @@
                 "to": {
                     "startLine": 999,
                     "startColumn": 4,
-                    "startOffset": 80117,
+                    "startOffset": 80129,
                     "endLine": 1001,
                     "endColumn": 12,
-                    "endOffset": 80260
+                    "endOffset": 80272
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15720,10 +15720,10 @@
                 "to": {
                     "startLine": 1002,
                     "startColumn": 4,
-                    "startOffset": 80265,
+                    "startOffset": 80277,
                     "endLine": 1008,
                     "endColumn": 12,
-                    "endOffset": 80788
+                    "endOffset": 80800
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15741,10 +15741,10 @@
                 "to": {
                     "startLine": 1009,
                     "startColumn": 4,
-                    "startOffset": 80793,
+                    "startOffset": 80805,
                     "endLine": 1016,
                     "endColumn": 12,
-                    "endOffset": 81352
+                    "endOffset": 81364
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15762,10 +15762,10 @@
                 "to": {
                     "startLine": 1017,
                     "startColumn": 4,
-                    "startOffset": 81357,
+                    "startOffset": 81369,
                     "endLine": 1023,
                     "endColumn": 12,
-                    "endOffset": 81727
+                    "endOffset": 81739
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15783,9 +15783,9 @@
                 "to": {
                     "startLine": 1024,
                     "startColumn": 4,
-                    "startOffset": 81732,
+                    "startOffset": 81744,
                     "endColumn": 117,
-                    "endOffset": 81845
+                    "endOffset": 81857
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15802,10 +15802,10 @@
                 "to": {
                     "startLine": 1025,
                     "startColumn": 4,
-                    "startOffset": 81850,
+                    "startOffset": 81862,
                     "endLine": 1033,
                     "endColumn": 12,
-                    "endOffset": 82383
+                    "endOffset": 82395
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15823,10 +15823,10 @@
                 "to": {
                     "startLine": 1034,
                     "startColumn": 4,
-                    "startOffset": 82388,
+                    "startOffset": 82400,
                     "endLine": 1036,
                     "endColumn": 12,
-                    "endOffset": 82540
+                    "endOffset": 82552
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15844,10 +15844,10 @@
                 "to": {
                     "startLine": 1037,
                     "startColumn": 4,
-                    "startOffset": 82545,
+                    "startOffset": 82557,
                     "endLine": 1039,
                     "endColumn": 12,
-                    "endOffset": 82684
+                    "endOffset": 82696
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15865,10 +15865,10 @@
                 "to": {
                     "startLine": 1040,
                     "startColumn": 4,
-                    "startOffset": 82689,
+                    "startOffset": 82701,
                     "endLine": 1044,
                     "endColumn": 12,
-                    "endOffset": 83004
+                    "endOffset": 83016
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15886,10 +15886,10 @@
                 "to": {
                     "startLine": 1045,
                     "startColumn": 4,
-                    "startOffset": 83009,
+                    "startOffset": 83021,
                     "endLine": 1048,
                     "endColumn": 12,
-                    "endOffset": 83260
+                    "endOffset": 83272
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15907,10 +15907,10 @@
                 "to": {
                     "startLine": 1049,
                     "startColumn": 4,
-                    "startOffset": 83265,
+                    "startOffset": 83277,
                     "endLine": 1052,
                     "endColumn": 12,
-                    "endOffset": 83430
+                    "endOffset": 83442
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15928,10 +15928,10 @@
                 "to": {
                     "startLine": 1053,
                     "startColumn": 4,
-                    "startOffset": 83435,
+                    "startOffset": 83447,
                     "endLine": 1055,
                     "endColumn": 12,
-                    "endOffset": 83571
+                    "endOffset": 83583
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15949,9 +15949,9 @@
                 "to": {
                     "startLine": 1056,
                     "startColumn": 4,
-                    "startOffset": 83576,
+                    "startOffset": 83588,
                     "endColumn": 63,
-                    "endOffset": 83635
+                    "endOffset": 83647
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15968,10 +15968,10 @@
                 "to": {
                     "startLine": 1057,
                     "startColumn": 4,
-                    "startOffset": 83640,
+                    "startOffset": 83652,
                     "endLine": 1060,
                     "endColumn": 12,
-                    "endOffset": 83917
+                    "endOffset": 83929
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -15989,10 +15989,10 @@
                 "to": {
                     "startLine": 1061,
                     "startColumn": 4,
-                    "startOffset": 83922,
+                    "startOffset": 83934,
                     "endLine": 1064,
                     "endColumn": 12,
-                    "endOffset": 84203
+                    "endOffset": 84215
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16010,10 +16010,10 @@
                 "to": {
                     "startLine": 1065,
                     "startColumn": 4,
-                    "startOffset": 84208,
+                    "startOffset": 84220,
                     "endLine": 1072,
                     "endColumn": 12,
-                    "endOffset": 84745
+                    "endOffset": 84757
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16031,10 +16031,10 @@
                 "to": {
                     "startLine": 1073,
                     "startColumn": 4,
-                    "startOffset": 84750,
+                    "startOffset": 84762,
                     "endLine": 1077,
                     "endColumn": 12,
-                    "endOffset": 85009
+                    "endOffset": 85021
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16052,10 +16052,10 @@
                 "to": {
                     "startLine": 1078,
                     "startColumn": 4,
-                    "startOffset": 85014,
+                    "startOffset": 85026,
                     "endLine": 1084,
                     "endColumn": 12,
-                    "endOffset": 85347
+                    "endOffset": 85359
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16073,10 +16073,10 @@
                 "to": {
                     "startLine": 1085,
                     "startColumn": 4,
-                    "startOffset": 85352,
+                    "startOffset": 85364,
                     "endLine": 1090,
                     "endColumn": 12,
-                    "endOffset": 85700
+                    "endOffset": 85712
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16094,9 +16094,9 @@
                 "to": {
                     "startLine": 1091,
                     "startColumn": 4,
-                    "startOffset": 85705,
+                    "startOffset": 85717,
                     "endColumn": 93,
-                    "endOffset": 85794
+                    "endOffset": 85806
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16113,10 +16113,10 @@
                 "to": {
                     "startLine": 1092,
                     "startColumn": 4,
-                    "startOffset": 85799,
+                    "startOffset": 85811,
                     "endLine": 1095,
                     "endColumn": 12,
-                    "endOffset": 86100
+                    "endOffset": 86112
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16134,10 +16134,10 @@
                 "to": {
                     "startLine": 1096,
                     "startColumn": 4,
-                    "startOffset": 86105,
+                    "startOffset": 86117,
                     "endLine": 1100,
                     "endColumn": 12,
-                    "endOffset": 86362
+                    "endOffset": 86374
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16155,10 +16155,10 @@
                 "to": {
                     "startLine": 1101,
                     "startColumn": 4,
-                    "startOffset": 86367,
+                    "startOffset": 86379,
                     "endLine": 1102,
                     "endColumn": 12,
-                    "endOffset": 86487
+                    "endOffset": 86499
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16176,10 +16176,10 @@
                 "to": {
                     "startLine": 1103,
                     "startColumn": 4,
-                    "startOffset": 86492,
+                    "startOffset": 86504,
                     "endLine": 1104,
                     "endColumn": 12,
-                    "endOffset": 86614
+                    "endOffset": 86626
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16197,10 +16197,10 @@
                 "to": {
                     "startLine": 1105,
                     "startColumn": 4,
-                    "startOffset": 86619,
+                    "startOffset": 86631,
                     "endLine": 1107,
                     "endColumn": 12,
-                    "endOffset": 86853
+                    "endOffset": 86865
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16218,10 +16218,10 @@
                 "to": {
                     "startLine": 1108,
                     "startColumn": 4,
-                    "startOffset": 86858,
+                    "startOffset": 86870,
                     "endLine": 1110,
                     "endColumn": 12,
-                    "endOffset": 87064
+                    "endOffset": 87076
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16239,10 +16239,10 @@
                 "to": {
                     "startLine": 1111,
                     "startColumn": 4,
-                    "startOffset": 87069,
+                    "startOffset": 87081,
                     "endLine": 1112,
                     "endColumn": 12,
-                    "endOffset": 87183
+                    "endOffset": 87195
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16260,10 +16260,10 @@
                 "to": {
                     "startLine": 1113,
                     "startColumn": 4,
-                    "startOffset": 87188,
+                    "startOffset": 87200,
                     "endLine": 1116,
                     "endColumn": 12,
-                    "endOffset": 87376
+                    "endOffset": 87388
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16281,10 +16281,10 @@
                 "to": {
                     "startLine": 1117,
                     "startColumn": 4,
-                    "startOffset": 87381,
+                    "startOffset": 87393,
                     "endLine": 1123,
                     "endColumn": 12,
-                    "endOffset": 87831
+                    "endOffset": 87843
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16302,10 +16302,10 @@
                 "to": {
                     "startLine": 1124,
                     "startColumn": 4,
-                    "startOffset": 87836,
+                    "startOffset": 87848,
                     "endLine": 1126,
                     "endColumn": 12,
-                    "endOffset": 88012
+                    "endOffset": 88024
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16323,10 +16323,10 @@
                 "to": {
                     "startLine": 1127,
                     "startColumn": 4,
-                    "startOffset": 88017,
+                    "startOffset": 88029,
                     "endLine": 1129,
                     "endColumn": 12,
-                    "endOffset": 88134
+                    "endOffset": 88146
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16344,10 +16344,10 @@
                 "to": {
                     "startLine": 1130,
                     "startColumn": 4,
-                    "startOffset": 88139,
+                    "startOffset": 88151,
                     "endLine": 1133,
                     "endColumn": 12,
-                    "endOffset": 88393
+                    "endOffset": 88405
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16365,10 +16365,10 @@
                 "to": {
                     "startLine": 1134,
                     "startColumn": 4,
-                    "startOffset": 88398,
+                    "startOffset": 88410,
                     "endLine": 1135,
                     "endColumn": 12,
-                    "endOffset": 88506
+                    "endOffset": 88518
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16386,10 +16386,10 @@
                 "to": {
                     "startLine": 1136,
                     "startColumn": 4,
-                    "startOffset": 88511,
+                    "startOffset": 88523,
                     "endLine": 1139,
                     "endColumn": 12,
-                    "endOffset": 88693
+                    "endOffset": 88705
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16407,10 +16407,10 @@
                 "to": {
                     "startLine": 1140,
                     "startColumn": 4,
-                    "startOffset": 88698,
+                    "startOffset": 88710,
                     "endLine": 1141,
                     "endColumn": 12,
-                    "endOffset": 88795
+                    "endOffset": 88807
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16428,10 +16428,10 @@
                 "to": {
                     "startLine": 1142,
                     "startColumn": 4,
-                    "startOffset": 88800,
+                    "startOffset": 88812,
                     "endLine": 1147,
                     "endColumn": 12,
-                    "endOffset": 89239
+                    "endOffset": 89251
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16449,10 +16449,10 @@
                 "to": {
                     "startLine": 1148,
                     "startColumn": 4,
-                    "startOffset": 89244,
+                    "startOffset": 89256,
                     "endLine": 1149,
                     "endColumn": 12,
-                    "endOffset": 89363
+                    "endOffset": 89375
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16470,10 +16470,10 @@
                 "to": {
                     "startLine": 1150,
                     "startColumn": 4,
-                    "startOffset": 89368,
+                    "startOffset": 89380,
                     "endLine": 1153,
                     "endColumn": 12,
-                    "endOffset": 89648
+                    "endOffset": 89660
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16491,10 +16491,10 @@
                 "to": {
                     "startLine": 1154,
                     "startColumn": 4,
-                    "startOffset": 89653,
+                    "startOffset": 89665,
                     "endLine": 1165,
                     "endColumn": 12,
-                    "endOffset": 90535
+                    "endOffset": 90547
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16512,10 +16512,10 @@
                 "to": {
                     "startLine": 1166,
                     "startColumn": 4,
-                    "startOffset": 90540,
+                    "startOffset": 90552,
                     "endLine": 1171,
                     "endColumn": 12,
-                    "endOffset": 90829
+                    "endOffset": 90841
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16533,10 +16533,10 @@
                 "to": {
                     "startLine": 1172,
                     "startColumn": 4,
-                    "startOffset": 90834,
+                    "startOffset": 90846,
                     "endLine": 1182,
                     "endColumn": 12,
-                    "endOffset": 91561
+                    "endOffset": 91573
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16554,10 +16554,10 @@
                 "to": {
                     "startLine": 1183,
                     "startColumn": 4,
-                    "startOffset": 91566,
+                    "startOffset": 91578,
                     "endLine": 1185,
                     "endColumn": 12,
-                    "endOffset": 91733
+                    "endOffset": 91745
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16575,10 +16575,10 @@
                 "to": {
                     "startLine": 1186,
                     "startColumn": 4,
-                    "startOffset": 91738,
+                    "startOffset": 91750,
                     "endLine": 1190,
                     "endColumn": 12,
-                    "endOffset": 92069
+                    "endOffset": 92081
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16596,10 +16596,10 @@
                 "to": {
                     "startLine": 1191,
                     "startColumn": 4,
-                    "startOffset": 92074,
+                    "startOffset": 92086,
                     "endLine": 1202,
                     "endColumn": 12,
-                    "endOffset": 92936
+                    "endOffset": 92948
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16617,10 +16617,10 @@
                 "to": {
                     "startLine": 1203,
                     "startColumn": 4,
-                    "startOffset": 92941,
+                    "startOffset": 92953,
                     "endLine": 1207,
                     "endColumn": 12,
-                    "endOffset": 93214
+                    "endOffset": 93226
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16638,10 +16638,10 @@
                 "to": {
                     "startLine": 1208,
                     "startColumn": 4,
-                    "startOffset": 93219,
+                    "startOffset": 93231,
                     "endLine": 1210,
                     "endColumn": 12,
-                    "endOffset": 93417
+                    "endOffset": 93429
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -16659,10 +16659,10 @@
                 "to": {
                     "startLine": 1211,
                     "startColumn": 4,
-                    "startOffset": 93422,
+                    "startOffset": 93434,
                     "endLine": 1213,
                     "endColumn": 12,
-                    "endOffset": 93608
+                    "endOffset": 93620
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -16680,10 +16680,10 @@
                 "to": {
                     "startLine": 1214,
                     "startColumn": 4,
-                    "startOffset": 93613,
+                    "startOffset": 93625,
                     "endLine": 1216,
                     "endColumn": 12,
-                    "endOffset": 93803
+                    "endOffset": 93815
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -16701,10 +16701,10 @@
                 "to": {
                     "startLine": 1217,
                     "startColumn": 4,
-                    "startOffset": 93808,
+                    "startOffset": 93820,
                     "endLine": 1219,
                     "endColumn": 12,
-                    "endOffset": 93986
+                    "endOffset": 93998
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -16722,10 +16722,10 @@
                 "to": {
                     "startLine": 1220,
                     "startColumn": 4,
-                    "startOffset": 93991,
+                    "startOffset": 94003,
                     "endLine": 1223,
                     "endColumn": 10,
-                    "endOffset": 94188
+                    "endOffset": 94200
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -16743,10 +16743,10 @@
                 "to": {
                     "startLine": 1224,
                     "startColumn": 4,
-                    "startOffset": 94193,
+                    "startOffset": 94205,
                     "endLine": 1227,
                     "endColumn": 10,
-                    "endOffset": 94394
+                    "endOffset": 94406
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -16764,10 +16764,10 @@
                 "to": {
                     "startLine": 1228,
                     "startColumn": 4,
-                    "startOffset": 94399,
+                    "startOffset": 94411,
                     "endLine": 1265,
                     "endColumn": 12,
-                    "endOffset": 97256
+                    "endOffset": 97268
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16785,10 +16785,10 @@
                 "to": {
                     "startLine": 1266,
                     "startColumn": 4,
-                    "startOffset": 97261,
+                    "startOffset": 97273,
                     "endLine": 1304,
                     "endColumn": 12,
-                    "endOffset": 100258
+                    "endOffset": 100270
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16806,9 +16806,9 @@
                 "to": {
                     "startLine": 1305,
                     "startColumn": 4,
-                    "startOffset": 100263,
+                    "startOffset": 100275,
                     "endColumn": 61,
-                    "endOffset": 100320
+                    "endOffset": 100332
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16825,10 +16825,10 @@
                 "to": {
                     "startLine": 1306,
                     "startColumn": 4,
-                    "startOffset": 100325,
+                    "startOffset": 100337,
                     "endLine": 1315,
                     "endColumn": 12,
-                    "endOffset": 100950
+                    "endOffset": 100962
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16846,10 +16846,10 @@
                 "to": {
                     "startLine": 1316,
                     "startColumn": 4,
-                    "startOffset": 100955,
+                    "startOffset": 100967,
                     "endLine": 1324,
                     "endColumn": 12,
-                    "endOffset": 101564
+                    "endOffset": 101576
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16867,9 +16867,9 @@
                 "to": {
                     "startLine": 1325,
                     "startColumn": 4,
-                    "startOffset": 101569,
+                    "startOffset": 101581,
                     "endColumn": 85,
-                    "endOffset": 101650
+                    "endOffset": 101662
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16886,10 +16886,10 @@
                 "to": {
                     "startLine": 1326,
                     "startColumn": 4,
-                    "startOffset": 101655,
+                    "startOffset": 101667,
                     "endLine": 1327,
                     "endColumn": 12,
-                    "endOffset": 101763
+                    "endOffset": 101775
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16907,10 +16907,10 @@
                 "to": {
                     "startLine": 1328,
                     "startColumn": 4,
-                    "startOffset": 101768,
+                    "startOffset": 101780,
                     "endLine": 1331,
                     "endColumn": 12,
-                    "endOffset": 101992
+                    "endOffset": 102004
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16928,10 +16928,10 @@
                 "to": {
                     "startLine": 1332,
                     "startColumn": 4,
-                    "startOffset": 101997,
+                    "startOffset": 102009,
                     "endLine": 1335,
                     "endColumn": 12,
-                    "endOffset": 102330
+                    "endOffset": 102342
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16949,10 +16949,10 @@
                 "to": {
                     "startLine": 1336,
                     "startColumn": 4,
-                    "startOffset": 102335,
+                    "startOffset": 102347,
                     "endLine": 1338,
                     "endColumn": 12,
-                    "endOffset": 102490
+                    "endOffset": 102502
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16970,10 +16970,10 @@
                 "to": {
                     "startLine": 1339,
                     "startColumn": 4,
-                    "startOffset": 102495,
+                    "startOffset": 102507,
                     "endLine": 1341,
                     "endColumn": 12,
-                    "endOffset": 102642
+                    "endOffset": 102654
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -16991,10 +16991,10 @@
                 "to": {
                     "startLine": 1342,
                     "startColumn": 4,
-                    "startOffset": 102647,
+                    "startOffset": 102659,
                     "endLine": 1344,
                     "endColumn": 12,
-                    "endOffset": 102813
+                    "endOffset": 102825
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17012,10 +17012,10 @@
                 "to": {
                     "startLine": 1345,
                     "startColumn": 4,
-                    "startOffset": 102818,
+                    "startOffset": 102830,
                     "endLine": 1347,
                     "endColumn": 12,
-                    "endOffset": 102980
+                    "endOffset": 102992
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17033,10 +17033,10 @@
                 "to": {
                     "startLine": 1348,
                     "startColumn": 4,
-                    "startOffset": 102985,
+                    "startOffset": 102997,
                     "endLine": 1351,
                     "endColumn": 12,
-                    "endOffset": 103223
+                    "endOffset": 103235
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17054,10 +17054,10 @@
                 "to": {
                     "startLine": 1352,
                     "startColumn": 4,
-                    "startOffset": 103228,
+                    "startOffset": 103240,
                     "endLine": 1354,
                     "endColumn": 12,
-                    "endOffset": 103393
+                    "endOffset": 103405
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17075,10 +17075,10 @@
                 "to": {
                     "startLine": 1355,
                     "startColumn": 4,
-                    "startOffset": 103398,
+                    "startOffset": 103410,
                     "endLine": 1357,
                     "endColumn": 12,
-                    "endOffset": 103566
+                    "endOffset": 103578
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17096,10 +17096,10 @@
                 "to": {
                     "startLine": 1358,
                     "startColumn": 4,
-                    "startOffset": 103571,
+                    "startOffset": 103583,
                     "endLine": 1360,
                     "endColumn": 12,
-                    "endOffset": 103737
+                    "endOffset": 103749
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17117,10 +17117,10 @@
                 "to": {
                     "startLine": 1361,
                     "startColumn": 4,
-                    "startOffset": 103742,
+                    "startOffset": 103754,
                     "endLine": 1364,
                     "endColumn": 12,
-                    "endOffset": 104011
+                    "endOffset": 104023
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17138,10 +17138,10 @@
                 "to": {
                     "startLine": 1365,
                     "startColumn": 4,
-                    "startOffset": 104016,
+                    "startOffset": 104028,
                     "endLine": 1367,
                     "endColumn": 12,
-                    "endOffset": 104210
+                    "endOffset": 104222
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17159,10 +17159,10 @@
                 "to": {
                     "startLine": 1368,
                     "startColumn": 4,
-                    "startOffset": 104215,
+                    "startOffset": 104227,
                     "endLine": 1370,
                     "endColumn": 12,
-                    "endOffset": 104411
+                    "endOffset": 104423
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -17180,10 +17180,10 @@
                 "to": {
                     "startLine": 1371,
                     "startColumn": 4,
-                    "startOffset": 104416,
+                    "startOffset": 104428,
                     "endLine": 1373,
                     "endColumn": 12,
-                    "endOffset": 104600
+                    "endOffset": 104612
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -17201,10 +17201,10 @@
                 "to": {
                     "startLine": 1374,
                     "startColumn": 4,
-                    "startOffset": 104605,
+                    "startOffset": 104617,
                     "endLine": 1376,
                     "endColumn": 12,
-                    "endOffset": 104799
+                    "endOffset": 104811
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -17222,10 +17222,10 @@
                 "to": {
                     "startLine": 1377,
                     "startColumn": 4,
-                    "startOffset": 104804,
+                    "startOffset": 104816,
                     "endLine": 1379,
                     "endColumn": 12,
-                    "endOffset": 104986
+                    "endOffset": 104998
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -17243,9 +17243,9 @@
                 "to": {
                     "startLine": 1380,
                     "startColumn": 4,
-                    "startOffset": 104991,
+                    "startOffset": 105003,
                     "endColumn": 83,
-                    "endOffset": 105070
+                    "endOffset": 105082
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17262,9 +17262,9 @@
                 "to": {
                     "startLine": 1381,
                     "startColumn": 4,
-                    "startOffset": 105075,
+                    "startOffset": 105087,
                     "endColumn": 95,
-                    "endOffset": 105166
+                    "endOffset": 105178
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17281,9 +17281,9 @@
                 "to": {
                     "startLine": 1382,
                     "startColumn": 4,
-                    "startOffset": 105171,
+                    "startOffset": 105183,
                     "endColumn": 95,
-                    "endOffset": 105262
+                    "endOffset": 105274
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17300,9 +17300,9 @@
                 "to": {
                     "startLine": 1383,
                     "startColumn": 4,
-                    "startOffset": 105267,
+                    "startOffset": 105279,
                     "endColumn": 97,
-                    "endOffset": 105360
+                    "endOffset": 105372
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17319,9 +17319,9 @@
                 "to": {
                     "startLine": 1384,
                     "startColumn": 4,
-                    "startOffset": 105365,
+                    "startOffset": 105377,
                     "endColumn": 99,
-                    "endOffset": 105460
+                    "endOffset": 105472
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17338,9 +17338,9 @@
                 "to": {
                     "startLine": 1385,
                     "startColumn": 4,
-                    "startOffset": 105465,
+                    "startOffset": 105477,
                     "endColumn": 101,
-                    "endOffset": 105562
+                    "endOffset": 105574
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17357,9 +17357,9 @@
                 "to": {
                     "startLine": 1386,
                     "startColumn": 4,
-                    "startOffset": 105567,
+                    "startOffset": 105579,
                     "endColumn": 101,
-                    "endOffset": 105664
+                    "endOffset": 105676
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17376,9 +17376,9 @@
                 "to": {
                     "startLine": 1387,
                     "startColumn": 4,
-                    "startOffset": 105669,
+                    "startOffset": 105681,
                     "endColumn": 101,
-                    "endOffset": 105766
+                    "endOffset": 105778
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17395,9 +17395,9 @@
                 "to": {
                     "startLine": 1388,
                     "startColumn": 4,
-                    "startOffset": 105771,
+                    "startOffset": 105783,
                     "endColumn": 101,
-                    "endOffset": 105868
+                    "endOffset": 105880
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17414,9 +17414,9 @@
                 "to": {
                     "startLine": 1389,
                     "startColumn": 4,
-                    "startOffset": 105873,
+                    "startOffset": 105885,
                     "endColumn": 101,
-                    "endOffset": 105970
+                    "endOffset": 105982
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17433,9 +17433,9 @@
                 "to": {
                     "startLine": 1390,
                     "startColumn": 4,
-                    "startOffset": 105975,
+                    "startOffset": 105987,
                     "endColumn": 99,
-                    "endOffset": 106070
+                    "endOffset": 106082
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17452,9 +17452,9 @@
                 "to": {
                     "startLine": 1391,
                     "startColumn": 4,
-                    "startOffset": 106075,
+                    "startOffset": 106087,
                     "endColumn": 95,
-                    "endOffset": 106166
+                    "endOffset": 106178
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17471,9 +17471,9 @@
                 "to": {
                     "startLine": 1392,
                     "startColumn": 4,
-                    "startOffset": 106171,
+                    "startOffset": 106183,
                     "endColumn": 111,
-                    "endOffset": 106278
+                    "endOffset": 106290
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17490,9 +17490,9 @@
                 "to": {
                     "startLine": 1393,
                     "startColumn": 4,
-                    "startOffset": 106283,
+                    "startOffset": 106295,
                     "endColumn": 128,
-                    "endOffset": 106407
+                    "endOffset": 106419
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17509,9 +17509,9 @@
                 "to": {
                     "startLine": 1394,
                     "startColumn": 4,
-                    "startOffset": 106412,
+                    "startOffset": 106424,
                     "endColumn": 122,
-                    "endOffset": 106530
+                    "endOffset": 106542
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17528,10 +17528,10 @@
                 "to": {
                     "startLine": 1395,
                     "startColumn": 4,
-                    "startOffset": 106535,
+                    "startOffset": 106547,
                     "endLine": 1396,
                     "endColumn": 12,
-                    "endOffset": 106684
+                    "endOffset": 106696
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17549,10 +17549,10 @@
                 "to": {
                     "startLine": 1397,
                     "startColumn": 4,
-                    "startOffset": 106689,
+                    "startOffset": 106701,
                     "endLine": 1398,
                     "endColumn": 12,
-                    "endOffset": 106838
+                    "endOffset": 106850
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17570,9 +17570,9 @@
                 "to": {
                     "startLine": 1399,
                     "startColumn": 4,
-                    "startOffset": 106843,
+                    "startOffset": 106855,
                     "endColumn": 97,
-                    "endOffset": 106936
+                    "endOffset": 106948
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17589,9 +17589,9 @@
                 "to": {
                     "startLine": 1400,
                     "startColumn": 4,
-                    "startOffset": 106941,
+                    "startOffset": 106953,
                     "endColumn": 113,
-                    "endOffset": 107050
+                    "endOffset": 107062
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17608,9 +17608,9 @@
                 "to": {
                     "startLine": 1401,
                     "startColumn": 4,
-                    "startOffset": 107055,
+                    "startOffset": 107067,
                     "endColumn": 93,
-                    "endOffset": 107144
+                    "endOffset": 107156
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17627,10 +17627,10 @@
                 "to": {
                     "startLine": 1402,
                     "startColumn": 4,
-                    "startOffset": 107149,
+                    "startOffset": 107161,
                     "endLine": 1403,
                     "endColumn": 12,
-                    "endOffset": 107284
+                    "endOffset": 107296
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17648,10 +17648,10 @@
                 "to": {
                     "startLine": 1404,
                     "startColumn": 4,
-                    "startOffset": 107289,
+                    "startOffset": 107301,
                     "endLine": 1405,
                     "endColumn": 12,
-                    "endOffset": 107418
+                    "endOffset": 107430
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17669,9 +17669,9 @@
                 "to": {
                     "startLine": 1406,
                     "startColumn": 4,
-                    "startOffset": 107423,
+                    "startOffset": 107435,
                     "endColumn": 95,
-                    "endOffset": 107514
+                    "endOffset": 107526
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17688,9 +17688,9 @@
                 "to": {
                     "startLine": 1407,
                     "startColumn": 4,
-                    "startOffset": 107519,
+                    "startOffset": 107531,
                     "endColumn": 111,
-                    "endOffset": 107626
+                    "endOffset": 107638
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17707,9 +17707,9 @@
                 "to": {
                     "startLine": 1408,
                     "startColumn": 4,
-                    "startOffset": 107631,
+                    "startOffset": 107643,
                     "endColumn": 99,
-                    "endOffset": 107726
+                    "endOffset": 107738
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17726,9 +17726,9 @@
                 "to": {
                     "startLine": 1409,
                     "startColumn": 4,
-                    "startOffset": 107731,
+                    "startOffset": 107743,
                     "endColumn": 115,
-                    "endOffset": 107842
+                    "endOffset": 107854
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17745,9 +17745,9 @@
                 "to": {
                     "startLine": 1410,
                     "startColumn": 4,
-                    "startOffset": 107847,
+                    "startOffset": 107859,
                     "endColumn": 95,
-                    "endOffset": 107938
+                    "endOffset": 107950
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17764,9 +17764,9 @@
                 "to": {
                     "startLine": 1411,
                     "startColumn": 4,
-                    "startOffset": 107943,
+                    "startOffset": 107955,
                     "endColumn": 111,
-                    "endOffset": 108050
+                    "endOffset": 108062
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17783,10 +17783,10 @@
                 "to": {
                     "startLine": 1412,
                     "startColumn": 4,
-                    "startOffset": 108055,
+                    "startOffset": 108067,
                     "endLine": 1413,
                     "endColumn": 12,
-                    "endOffset": 108190
+                    "endOffset": 108202
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17804,9 +17804,9 @@
                 "to": {
                     "startLine": 1414,
                     "startColumn": 4,
-                    "startOffset": 108195,
+                    "startOffset": 108207,
                     "endColumn": 135,
-                    "endOffset": 108326
+                    "endOffset": 108338
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17823,10 +17823,10 @@
                 "to": {
                     "startLine": 1415,
                     "startColumn": 4,
-                    "startOffset": 108331,
+                    "startOffset": 108343,
                     "endLine": 1416,
                     "endColumn": 12,
-                    "endOffset": 108490
+                    "endOffset": 108502
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17844,9 +17844,9 @@
                 "to": {
                     "startLine": 1417,
                     "startColumn": 4,
-                    "startOffset": 108495,
+                    "startOffset": 108507,
                     "endColumn": 129,
-                    "endOffset": 108620
+                    "endOffset": 108632
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17863,10 +17863,10 @@
                 "to": {
                     "startLine": 1418,
                     "startColumn": 4,
-                    "startOffset": 108625,
+                    "startOffset": 108637,
                     "endLine": 1419,
                     "endColumn": 12,
-                    "endOffset": 108778
+                    "endOffset": 108790
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17884,10 +17884,10 @@
                 "to": {
                     "startLine": 1420,
                     "startColumn": 4,
-                    "startOffset": 108783,
+                    "startOffset": 108795,
                     "endLine": 1421,
                     "endColumn": 12,
-                    "endOffset": 108928
+                    "endOffset": 108940
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17905,9 +17905,9 @@
                 "to": {
                     "startLine": 1422,
                     "startColumn": 4,
-                    "startOffset": 108933,
+                    "startOffset": 108945,
                     "endColumn": 140,
-                    "endOffset": 109069
+                    "endOffset": 109081
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17924,10 +17924,10 @@
                 "to": {
                     "startLine": 1423,
                     "startColumn": 4,
-                    "startOffset": 109074,
+                    "startOffset": 109086,
                     "endLine": 1424,
                     "endColumn": 12,
-                    "endOffset": 109213
+                    "endOffset": 109225
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17945,9 +17945,9 @@
                 "to": {
                     "startLine": 1425,
                     "startColumn": 4,
-                    "startOffset": 109218,
+                    "startOffset": 109230,
                     "endColumn": 134,
-                    "endOffset": 109348
+                    "endOffset": 109360
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17964,9 +17964,9 @@
                 "to": {
                     "startLine": 1426,
                     "startColumn": 4,
-                    "startOffset": 109353,
+                    "startOffset": 109365,
                     "endColumn": 111,
-                    "endOffset": 109460
+                    "endOffset": 109472
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -17983,9 +17983,9 @@
                 "to": {
                     "startLine": 1427,
                     "startColumn": 4,
-                    "startOffset": 109465,
+                    "startOffset": 109477,
                     "endColumn": 127,
-                    "endOffset": 109588
+                    "endOffset": 109600
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18002,10 +18002,10 @@
                 "to": {
                     "startLine": 1428,
                     "startColumn": 4,
-                    "startOffset": 109593,
+                    "startOffset": 109605,
                     "endLine": 1429,
                     "endColumn": 12,
-                    "endOffset": 109724
+                    "endOffset": 109736
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18023,10 +18023,10 @@
                 "to": {
                     "startLine": 1430,
                     "startColumn": 4,
-                    "startOffset": 109729,
+                    "startOffset": 109741,
                     "endLine": 1431,
                     "endColumn": 12,
-                    "endOffset": 109866
+                    "endOffset": 109878
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18044,10 +18044,10 @@
                 "to": {
                     "startLine": 1432,
                     "startColumn": 4,
-                    "startOffset": 109871,
+                    "startOffset": 109883,
                     "endLine": 1433,
                     "endColumn": 12,
-                    "endOffset": 110008
+                    "endOffset": 110020
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18065,9 +18065,9 @@
                 "to": {
                     "startLine": 1434,
                     "startColumn": 4,
-                    "startOffset": 110013,
+                    "startOffset": 110025,
                     "endColumn": 111,
-                    "endOffset": 110120
+                    "endOffset": 110132
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18084,9 +18084,9 @@
                 "to": {
                     "startLine": 1435,
                     "startColumn": 4,
-                    "startOffset": 110125,
+                    "startOffset": 110137,
                     "endColumn": 139,
-                    "endOffset": 110260
+                    "endOffset": 110272
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18103,9 +18103,9 @@
                 "to": {
                     "startLine": 1436,
                     "startColumn": 4,
-                    "startOffset": 110265,
+                    "startOffset": 110277,
                     "endColumn": 67,
-                    "endOffset": 110328
+                    "endOffset": 110340
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18122,9 +18122,9 @@
                 "to": {
                     "startLine": 1437,
                     "startColumn": 4,
-                    "startOffset": 110333,
+                    "startOffset": 110345,
                     "endColumn": 72,
-                    "endOffset": 110401
+                    "endOffset": 110413
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18141,9 +18141,9 @@
                 "to": {
                     "startLine": 1438,
                     "startColumn": 4,
-                    "startOffset": 110406,
+                    "startOffset": 110418,
                     "endColumn": 73,
-                    "endOffset": 110475
+                    "endOffset": 110487
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18160,9 +18160,9 @@
                 "to": {
                     "startLine": 1439,
                     "startColumn": 4,
-                    "startOffset": 110480,
+                    "startOffset": 110492,
                     "endColumn": 72,
-                    "endOffset": 110548
+                    "endOffset": 110560
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18179,9 +18179,9 @@
                 "to": {
                     "startLine": 1440,
                     "startColumn": 4,
-                    "startOffset": 110553,
+                    "startOffset": 110565,
                     "endColumn": 73,
-                    "endOffset": 110622
+                    "endOffset": 110634
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18198,10 +18198,10 @@
                 "to": {
                     "startLine": 1441,
                     "startColumn": 4,
-                    "startOffset": 110627,
+                    "startOffset": 110639,
                     "endLine": 1442,
                     "endColumn": 12,
-                    "endOffset": 110768
+                    "endOffset": 110780
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18219,10 +18219,10 @@
                 "to": {
                     "startLine": 1443,
                     "startColumn": 4,
-                    "startOffset": 110773,
+                    "startOffset": 110785,
                     "endLine": 1444,
                     "endColumn": 12,
-                    "endOffset": 110912
+                    "endOffset": 110924
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18240,10 +18240,10 @@
                 "to": {
                     "startLine": 1445,
                     "startColumn": 4,
-                    "startOffset": 110917,
+                    "startOffset": 110929,
                     "endLine": 1446,
                     "endColumn": 12,
-                    "endOffset": 111050
+                    "endOffset": 111062
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18261,9 +18261,9 @@
                 "to": {
                     "startLine": 1447,
                     "startColumn": 4,
-                    "startOffset": 111055,
+                    "startOffset": 111067,
                     "endColumn": 25,
-                    "endOffset": 111076
+                    "endOffset": 111088
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -18280,9 +18280,9 @@
                 "to": {
                     "startLine": 1448,
                     "startColumn": 4,
-                    "startOffset": 111081,
+                    "startOffset": 111093,
                     "endColumn": 65,
-                    "endOffset": 111142
+                    "endOffset": 111154
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18299,9 +18299,9 @@
                 "to": {
                     "startLine": 1449,
                     "startColumn": 4,
-                    "startOffset": 111147,
+                    "startOffset": 111159,
                     "endColumn": 89,
-                    "endOffset": 111232
+                    "endOffset": 111244
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18318,9 +18318,9 @@
                 "to": {
                     "startLine": 1450,
                     "startColumn": 4,
-                    "startOffset": 111237,
+                    "startOffset": 111249,
                     "endColumn": 79,
-                    "endOffset": 111312
+                    "endOffset": 111324
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18337,9 +18337,9 @@
                 "to": {
                     "startLine": 1451,
                     "startColumn": 4,
-                    "startOffset": 111317,
+                    "startOffset": 111329,
                     "endColumn": 91,
-                    "endOffset": 111404
+                    "endOffset": 111416
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18356,9 +18356,9 @@
                 "to": {
                     "startLine": 1452,
                     "startColumn": 4,
-                    "startOffset": 111409,
+                    "startOffset": 111421,
                     "endColumn": 97,
-                    "endOffset": 111502
+                    "endOffset": 111514
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18375,10 +18375,10 @@
                 "to": {
                     "startLine": 1453,
                     "startColumn": 4,
-                    "startOffset": 111507,
+                    "startOffset": 111519,
                     "endLine": 1454,
                     "endColumn": 12,
-                    "endOffset": 111612
+                    "endOffset": 111624
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18396,9 +18396,9 @@
                 "to": {
                     "startLine": 1455,
                     "startColumn": 4,
-                    "startOffset": 111617,
+                    "startOffset": 111629,
                     "endColumn": 77,
-                    "endOffset": 111690
+                    "endOffset": 111702
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18415,9 +18415,9 @@
                 "to": {
                     "startLine": 1456,
                     "startColumn": 4,
-                    "startOffset": 111695,
+                    "startOffset": 111707,
                     "endColumn": 105,
-                    "endOffset": 111796
+                    "endOffset": 111808
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18434,9 +18434,9 @@
                 "to": {
                     "startLine": 1457,
                     "startColumn": 4,
-                    "startOffset": 111801,
+                    "startOffset": 111813,
                     "endColumn": 91,
-                    "endOffset": 111888
+                    "endOffset": 111900
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18453,9 +18453,9 @@
                 "to": {
                     "startLine": 1458,
                     "startColumn": 4,
-                    "startOffset": 111893,
+                    "startOffset": 111905,
                     "endColumn": 103,
-                    "endOffset": 111992
+                    "endOffset": 112004
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18472,9 +18472,9 @@
                 "to": {
                     "startLine": 1459,
                     "startColumn": 4,
-                    "startOffset": 111997,
+                    "startOffset": 112009,
                     "endColumn": 109,
-                    "endOffset": 112102
+                    "endOffset": 112114
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18491,10 +18491,10 @@
                 "to": {
                     "startLine": 1460,
                     "startColumn": 4,
-                    "startOffset": 112107,
+                    "startOffset": 112119,
                     "endLine": 1461,
                     "endColumn": 12,
-                    "endOffset": 112224
+                    "endOffset": 112236
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18512,10 +18512,10 @@
                 "to": {
                     "startLine": 1462,
                     "startColumn": 4,
-                    "startOffset": 112229,
+                    "startOffset": 112241,
                     "endLine": 1465,
                     "endColumn": 12,
-                    "endOffset": 112387
+                    "endOffset": 112399
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18533,10 +18533,10 @@
                 "to": {
                     "startLine": 1466,
                     "startColumn": 4,
-                    "startOffset": 112392,
+                    "startOffset": 112404,
                     "endLine": 1469,
                     "endColumn": 12,
-                    "endOffset": 112544
+                    "endOffset": 112556
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18554,9 +18554,9 @@
                 "to": {
                     "startLine": 1470,
                     "startColumn": 4,
-                    "startOffset": 112549,
+                    "startOffset": 112561,
                     "endColumn": 34,
-                    "endOffset": 112579
+                    "endOffset": 112591
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -18573,10 +18573,10 @@
                 "to": {
                     "startLine": 1471,
                     "startColumn": 4,
-                    "startOffset": 112584,
+                    "startOffset": 112596,
                     "endLine": 1477,
                     "endColumn": 10,
-                    "endOffset": 112997
+                    "endOffset": 113009
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -18594,10 +18594,10 @@
                 "to": {
                     "startLine": 1478,
                     "startColumn": 4,
-                    "startOffset": 113002,
+                    "startOffset": 113014,
                     "endLine": 1484,
                     "endColumn": 10,
-                    "endOffset": 113375
+                    "endOffset": 113387
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -18615,10 +18615,10 @@
                 "to": {
                     "startLine": 1485,
                     "startColumn": 4,
-                    "startOffset": 113380,
+                    "startOffset": 113392,
                     "endLine": 1487,
                     "endColumn": 10,
-                    "endOffset": 113552
+                    "endOffset": 113564
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -18636,10 +18636,10 @@
                 "to": {
                     "startLine": 1488,
                     "startColumn": 4,
-                    "startOffset": 113557,
+                    "startOffset": 113569,
                     "endLine": 1490,
                     "endColumn": 10,
-                    "endOffset": 113731
+                    "endOffset": 113743
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -18657,10 +18657,10 @@
                 "to": {
                     "startLine": 1491,
                     "startColumn": 4,
-                    "startOffset": 113736,
+                    "startOffset": 113748,
                     "endLine": 1493,
                     "endColumn": 12,
-                    "endOffset": 113914
+                    "endOffset": 113926
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -18678,10 +18678,10 @@
                 "to": {
                     "startLine": 1494,
                     "startColumn": 4,
-                    "startOffset": 113919,
+                    "startOffset": 113931,
                     "endLine": 1499,
                     "endColumn": 12,
-                    "endOffset": 114279
+                    "endOffset": 114291
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",
@@ -18699,9 +18699,9 @@
                 "to": {
                     "startLine": 1500,
                     "startColumn": 4,
-                    "startOffset": 114284,
+                    "startOffset": 114296,
                     "endColumn": 79,
-                    "endOffset": 114359
+                    "endOffset": 114371
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18718,9 +18718,9 @@
                 "to": {
                     "startLine": 1501,
                     "startColumn": 4,
-                    "startOffset": 114364,
+                    "startOffset": 114376,
                     "endColumn": 99,
-                    "endOffset": 114459
+                    "endOffset": 114471
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18737,9 +18737,9 @@
                 "to": {
                     "startLine": 1502,
                     "startColumn": 4,
-                    "startOffset": 114464,
+                    "startOffset": 114476,
                     "endColumn": 89,
-                    "endOffset": 114549
+                    "endOffset": 114561
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18756,9 +18756,9 @@
                 "to": {
                     "startLine": 1503,
                     "startColumn": 4,
-                    "startOffset": 114554,
+                    "startOffset": 114566,
                     "endColumn": 109,
-                    "endOffset": 114659
+                    "endOffset": 114671
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18775,9 +18775,9 @@
                 "to": {
                     "startLine": 1504,
                     "startColumn": 4,
-                    "startOffset": 114664,
+                    "startOffset": 114676,
                     "endColumn": 91,
-                    "endOffset": 114751
+                    "endOffset": 114763
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18794,10 +18794,10 @@
                 "to": {
                     "startLine": 1505,
                     "startColumn": 4,
-                    "startOffset": 114756,
+                    "startOffset": 114768,
                     "endLine": 1506,
                     "endColumn": 12,
-                    "endOffset": 114851
+                    "endOffset": 114863
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18815,10 +18815,10 @@
                 "to": {
                     "startLine": 1507,
                     "startColumn": 4,
-                    "startOffset": 114856,
+                    "startOffset": 114868,
                     "endLine": 1508,
                     "endColumn": 12,
-                    "endOffset": 114963
+                    "endOffset": 114975
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18836,10 +18836,10 @@
                 "to": {
                     "startLine": 1509,
                     "startColumn": 4,
-                    "startOffset": 114968,
+                    "startOffset": 114980,
                     "endLine": 1510,
                     "endColumn": 12,
-                    "endOffset": 115077
+                    "endOffset": 115089
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18857,10 +18857,10 @@
                 "to": {
                     "startLine": 1511,
                     "startColumn": 4,
-                    "startOffset": 115082,
+                    "startOffset": 115094,
                     "endLine": 1512,
                     "endColumn": 12,
-                    "endOffset": 115193
+                    "endOffset": 115205
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18878,10 +18878,10 @@
                 "to": {
                     "startLine": 1513,
                     "startColumn": 4,
-                    "startOffset": 115198,
+                    "startOffset": 115210,
                     "endLine": 1514,
                     "endColumn": 12,
-                    "endOffset": 115309
+                    "endOffset": 115321
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18899,9 +18899,9 @@
                 "to": {
                     "startLine": 1515,
                     "startColumn": 4,
-                    "startOffset": 115314,
+                    "startOffset": 115326,
                     "endColumn": 93,
-                    "endOffset": 115403
+                    "endOffset": 115415
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18918,9 +18918,9 @@
                 "to": {
                     "startLine": 1516,
                     "startColumn": 4,
-                    "startOffset": 115408,
+                    "startOffset": 115420,
                     "endColumn": 113,
-                    "endOffset": 115517
+                    "endOffset": 115529
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18937,9 +18937,9 @@
                 "to": {
                     "startLine": 1517,
                     "startColumn": 4,
-                    "startOffset": 115522,
+                    "startOffset": 115534,
                     "endColumn": 117,
-                    "endOffset": 115635
+                    "endOffset": 115647
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18956,10 +18956,10 @@
                 "to": {
                     "startLine": 1518,
                     "startColumn": 4,
-                    "startOffset": 115640,
+                    "startOffset": 115652,
                     "endLine": 1519,
                     "endColumn": 12,
-                    "endOffset": 115737
+                    "endOffset": 115749
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18977,10 +18977,10 @@
                 "to": {
                     "startLine": 1520,
                     "startColumn": 4,
-                    "startOffset": 115742,
+                    "startOffset": 115754,
                     "endLine": 1521,
                     "endColumn": 12,
-                    "endOffset": 115857
+                    "endOffset": 115869
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -18998,10 +18998,10 @@
                 "to": {
                     "startLine": 1522,
                     "startColumn": 4,
-                    "startOffset": 115862,
+                    "startOffset": 115874,
                     "endLine": 1523,
                     "endColumn": 12,
-                    "endOffset": 115979
+                    "endOffset": 115991
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19019,9 +19019,9 @@
                 "to": {
                     "startLine": 1524,
                     "startColumn": 4,
-                    "startOffset": 115984,
+                    "startOffset": 115996,
                     "endColumn": 81,
-                    "endOffset": 116061
+                    "endOffset": 116073
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19038,9 +19038,9 @@
                 "to": {
                     "startLine": 1525,
                     "startColumn": 4,
-                    "startOffset": 116066,
+                    "startOffset": 116078,
                     "endColumn": 103,
-                    "endOffset": 116165
+                    "endOffset": 116177
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19057,9 +19057,9 @@
                 "to": {
                     "startLine": 1526,
                     "startColumn": 4,
-                    "startOffset": 116170,
+                    "startOffset": 116182,
                     "endColumn": 119,
-                    "endOffset": 116285
+                    "endOffset": 116297
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19076,9 +19076,9 @@
                 "to": {
                     "startLine": 1527,
                     "startColumn": 4,
-                    "startOffset": 116290,
+                    "startOffset": 116302,
                     "endColumn": 125,
-                    "endOffset": 116411
+                    "endOffset": 116423
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19095,9 +19095,9 @@
                 "to": {
                     "startLine": 1528,
                     "startColumn": 4,
-                    "startOffset": 116416,
+                    "startOffset": 116428,
                     "endColumn": 97,
-                    "endOffset": 116509
+                    "endOffset": 116521
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19114,9 +19114,9 @@
                 "to": {
                     "startLine": 1529,
                     "startColumn": 4,
-                    "startOffset": 116514,
+                    "startOffset": 116526,
                     "endColumn": 93,
-                    "endOffset": 116603
+                    "endOffset": 116615
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19133,9 +19133,9 @@
                 "to": {
                     "startLine": 1530,
                     "startColumn": 4,
-                    "startOffset": 116608,
+                    "startOffset": 116620,
                     "endColumn": 87,
-                    "endOffset": 116691
+                    "endOffset": 116703
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19152,9 +19152,9 @@
                 "to": {
                     "startLine": 1531,
                     "startColumn": 4,
-                    "startOffset": 116696,
+                    "startOffset": 116708,
                     "endColumn": 111,
-                    "endOffset": 116803
+                    "endOffset": 116815
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19171,9 +19171,9 @@
                 "to": {
                     "startLine": 1532,
                     "startColumn": 4,
-                    "startOffset": 116808,
+                    "startOffset": 116820,
                     "endColumn": 115,
-                    "endOffset": 116919
+                    "endOffset": 116931
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19190,9 +19190,9 @@
                 "to": {
                     "startLine": 1533,
                     "startColumn": 4,
-                    "startOffset": 116924,
+                    "startOffset": 116936,
                     "endColumn": 121,
-                    "endOffset": 117041
+                    "endOffset": 117053
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19209,9 +19209,9 @@
                 "to": {
                     "startLine": 1534,
                     "startColumn": 4,
-                    "startOffset": 117046,
+                    "startOffset": 117058,
                     "endColumn": 111,
-                    "endOffset": 117153
+                    "endOffset": 117165
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19228,10 +19228,10 @@
                 "to": {
                     "startLine": 1535,
                     "startColumn": 4,
-                    "startOffset": 117158,
+                    "startOffset": 117170,
                     "endLine": 1537,
                     "endColumn": 12,
-                    "endOffset": 117328
+                    "endOffset": 117340
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19249,9 +19249,9 @@
                 "to": {
                     "startLine": 1538,
                     "startColumn": 4,
-                    "startOffset": 117333,
+                    "startOffset": 117345,
                     "endColumn": 115,
-                    "endOffset": 117444
+                    "endOffset": 117456
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19268,9 +19268,9 @@
                 "to": {
                     "startLine": 1539,
                     "startColumn": 4,
-                    "startOffset": 117449,
+                    "startOffset": 117461,
                     "endColumn": 85,
-                    "endOffset": 117530
+                    "endOffset": 117542
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19287,10 +19287,10 @@
                 "to": {
                     "startLine": 1540,
                     "startColumn": 4,
-                    "startOffset": 117535,
+                    "startOffset": 117547,
                     "endLine": 1541,
                     "endColumn": 12,
-                    "endOffset": 117642
+                    "endOffset": 117654
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19308,10 +19308,10 @@
                 "to": {
                     "startLine": 1542,
                     "startColumn": 4,
-                    "startOffset": 117647,
+                    "startOffset": 117659,
                     "endLine": 1543,
                     "endColumn": 12,
-                    "endOffset": 117766
+                    "endOffset": 117778
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19329,9 +19329,9 @@
                 "to": {
                     "startLine": 1544,
                     "startColumn": 4,
-                    "startOffset": 117771,
+                    "startOffset": 117783,
                     "endColumn": 66,
-                    "endOffset": 117833
+                    "endOffset": 117845
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19348,10 +19348,10 @@
                 "to": {
                     "startLine": 1545,
                     "startColumn": 4,
-                    "startOffset": 117838,
+                    "startOffset": 117850,
                     "endLine": 1546,
                     "endColumn": 12,
-                    "endOffset": 117959
+                    "endOffset": 117971
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19369,9 +19369,9 @@
                 "to": {
                     "startLine": 1547,
                     "startColumn": 4,
-                    "startOffset": 117964,
+                    "startOffset": 117976,
                     "endColumn": 67,
-                    "endOffset": 118027
+                    "endOffset": 118039
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19388,10 +19388,10 @@
                 "to": {
                     "startLine": 1548,
                     "startColumn": 4,
-                    "startOffset": 118032,
+                    "startOffset": 118044,
                     "endLine": 1549,
                     "endColumn": 12,
-                    "endOffset": 118155
+                    "endOffset": 118167
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19409,10 +19409,10 @@
                 "to": {
                     "startLine": 1550,
                     "startColumn": 4,
-                    "startOffset": 118160,
+                    "startOffset": 118172,
                     "endLine": 1551,
                     "endColumn": 12,
-                    "endOffset": 118299
+                    "endOffset": 118311
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19430,10 +19430,10 @@
                 "to": {
                     "startLine": 1552,
                     "startColumn": 4,
-                    "startOffset": 118304,
+                    "startOffset": 118316,
                     "endLine": 1553,
                     "endColumn": 12,
-                    "endOffset": 118427
+                    "endOffset": 118439
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19451,9 +19451,9 @@
                 "to": {
                     "startLine": 1554,
                     "startColumn": 4,
-                    "startOffset": 118432,
+                    "startOffset": 118444,
                     "endColumn": 68,
-                    "endOffset": 118496
+                    "endOffset": 118508
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19470,9 +19470,9 @@
                 "to": {
                     "startLine": 1555,
                     "startColumn": 4,
-                    "startOffset": 118501,
+                    "startOffset": 118513,
                     "endColumn": 94,
-                    "endOffset": 118591
+                    "endOffset": 118603
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19489,9 +19489,9 @@
                 "to": {
                     "startLine": 1556,
                     "startColumn": 4,
-                    "startOffset": 118596,
+                    "startOffset": 118608,
                     "endColumn": 114,
-                    "endOffset": 118706
+                    "endOffset": 118718
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19508,9 +19508,9 @@
                 "to": {
                     "startLine": 1557,
                     "startColumn": 4,
-                    "startOffset": 118711,
+                    "startOffset": 118723,
                     "endColumn": 112,
-                    "endOffset": 118819
+                    "endOffset": 118831
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19527,9 +19527,9 @@
                 "to": {
                     "startLine": 1558,
                     "startColumn": 4,
-                    "startOffset": 118824,
+                    "startOffset": 118836,
                     "endColumn": 98,
-                    "endOffset": 118918
+                    "endOffset": 118930
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19546,9 +19546,9 @@
                 "to": {
                     "startLine": 1559,
                     "startColumn": 4,
-                    "startOffset": 118923,
+                    "startOffset": 118935,
                     "endColumn": 108,
-                    "endOffset": 119027
+                    "endOffset": 119039
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19565,9 +19565,9 @@
                 "to": {
                     "startLine": 1560,
                     "startColumn": 4,
-                    "startOffset": 119032,
+                    "startOffset": 119044,
                     "endColumn": 110,
-                    "endOffset": 119138
+                    "endOffset": 119150
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19584,9 +19584,9 @@
                 "to": {
                     "startLine": 1561,
                     "startColumn": 4,
-                    "startOffset": 119143,
+                    "startOffset": 119155,
                     "endColumn": 110,
-                    "endOffset": 119249
+                    "endOffset": 119261
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19603,9 +19603,9 @@
                 "to": {
                     "startLine": 1562,
                     "startColumn": 4,
-                    "startOffset": 119254,
+                    "startOffset": 119266,
                     "endColumn": 100,
-                    "endOffset": 119350
+                    "endOffset": 119362
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19622,9 +19622,9 @@
                 "to": {
                     "startLine": 1563,
                     "startColumn": 4,
-                    "startOffset": 119355,
+                    "startOffset": 119367,
                     "endColumn": 104,
-                    "endOffset": 119455
+                    "endOffset": 119467
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19641,10 +19641,10 @@
                 "to": {
                     "startLine": 1564,
                     "startColumn": 4,
-                    "startOffset": 119460,
+                    "startOffset": 119472,
                     "endLine": 1565,
                     "endColumn": 12,
-                    "endOffset": 119567
+                    "endOffset": 119579
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19662,10 +19662,10 @@
                 "to": {
                     "startLine": 1566,
                     "startColumn": 4,
-                    "startOffset": 119572,
+                    "startOffset": 119584,
                     "endLine": 1567,
                     "endColumn": 12,
-                    "endOffset": 119697
+                    "endOffset": 119709
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19683,9 +19683,9 @@
                 "to": {
                     "startLine": 1568,
                     "startColumn": 4,
-                    "startOffset": 119702,
+                    "startOffset": 119714,
                     "endColumn": 90,
-                    "endOffset": 119788
+                    "endOffset": 119800
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19702,9 +19702,9 @@
                 "to": {
                     "startLine": 1569,
                     "startColumn": 4,
-                    "startOffset": 119793,
+                    "startOffset": 119805,
                     "endColumn": 122,
-                    "endOffset": 119911
+                    "endOffset": 119923
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19721,10 +19721,10 @@
                 "to": {
                     "startLine": 1570,
                     "startColumn": 4,
-                    "startOffset": 119916,
+                    "startOffset": 119928,
                     "endLine": 1571,
                     "endColumn": 12,
-                    "endOffset": 120023
+                    "endOffset": 120035
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19742,9 +19742,9 @@
                 "to": {
                     "startLine": 1572,
                     "startColumn": 4,
-                    "startOffset": 120028,
+                    "startOffset": 120040,
                     "endColumn": 85,
-                    "endOffset": 120109
+                    "endOffset": 120121
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19761,9 +19761,9 @@
                 "to": {
                     "startLine": 1573,
                     "startColumn": 4,
-                    "startOffset": 120114,
+                    "startOffset": 120126,
                     "endColumn": 103,
-                    "endOffset": 120213
+                    "endOffset": 120225
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19780,10 +19780,10 @@
                 "to": {
                     "startLine": 1574,
                     "startColumn": 4,
-                    "startOffset": 120218,
+                    "startOffset": 120230,
                     "endLine": 1575,
                     "endColumn": 12,
-                    "endOffset": 120321
+                    "endOffset": 120333
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19801,10 +19801,10 @@
                 "to": {
                     "startLine": 1576,
                     "startColumn": 4,
-                    "startOffset": 120326,
+                    "startOffset": 120338,
                     "endLine": 1577,
                     "endColumn": 12,
-                    "endOffset": 120421
+                    "endOffset": 120433
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19822,10 +19822,10 @@
                 "to": {
                     "startLine": 1578,
                     "startColumn": 4,
-                    "startOffset": 120426,
+                    "startOffset": 120438,
                     "endLine": 1579,
                     "endColumn": 12,
-                    "endOffset": 120539
+                    "endOffset": 120551
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19843,10 +19843,10 @@
                 "to": {
                     "startLine": 1580,
                     "startColumn": 4,
-                    "startOffset": 120544,
+                    "startOffset": 120556,
                     "endLine": 1581,
                     "endColumn": 12,
-                    "endOffset": 120643
+                    "endOffset": 120655
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19864,10 +19864,10 @@
                 "to": {
                     "startLine": 1582,
                     "startColumn": 4,
-                    "startOffset": 120648,
+                    "startOffset": 120660,
                     "endLine": 1583,
                     "endColumn": 12,
-                    "endOffset": 120747
+                    "endOffset": 120759
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19885,10 +19885,10 @@
                 "to": {
                     "startLine": 1584,
                     "startColumn": 4,
-                    "startOffset": 120752,
+                    "startOffset": 120764,
                     "endLine": 1585,
                     "endColumn": 12,
-                    "endOffset": 120873
+                    "endOffset": 120885
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19906,9 +19906,9 @@
                 "to": {
                     "startLine": 1586,
                     "startColumn": 4,
-                    "startOffset": 120878,
+                    "startOffset": 120890,
                     "endColumn": 87,
-                    "endOffset": 120961
+                    "endOffset": 120973
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19925,9 +19925,9 @@
                 "to": {
                     "startLine": 1587,
                     "startColumn": 4,
-                    "startOffset": 120966,
+                    "startOffset": 120978,
                     "endColumn": 89,
-                    "endOffset": 121051
+                    "endOffset": 121063
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19944,9 +19944,9 @@
                 "to": {
                     "startLine": 1588,
                     "startColumn": 4,
-                    "startOffset": 121056,
+                    "startOffset": 121068,
                     "endColumn": 109,
-                    "endOffset": 121161
+                    "endOffset": 121173
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19963,9 +19963,9 @@
                 "to": {
                     "startLine": 1589,
                     "startColumn": 4,
-                    "startOffset": 121166,
+                    "startOffset": 121178,
                     "endColumn": 83,
-                    "endOffset": 121245
+                    "endOffset": 121257
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -19982,9 +19982,9 @@
                 "to": {
                     "startLine": 1590,
                     "startColumn": 4,
-                    "startOffset": 121250,
+                    "startOffset": 121262,
                     "endColumn": 53,
-                    "endOffset": 121299
+                    "endOffset": 121311
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -20001,9 +20001,9 @@
                 "to": {
                     "startLine": 1591,
                     "startColumn": 4,
-                    "startOffset": 121304,
+                    "startOffset": 121316,
                     "endColumn": 63,
-                    "endOffset": 121363
+                    "endOffset": 121375
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -20020,9 +20020,9 @@
                 "to": {
                     "startLine": 1592,
                     "startColumn": 4,
-                    "startOffset": 121368,
+                    "startOffset": 121380,
                     "endColumn": 105,
-                    "endOffset": 121469
+                    "endOffset": 121481
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -20039,9 +20039,9 @@
                 "to": {
                     "startLine": 1593,
                     "startColumn": 4,
-                    "startOffset": 121474,
+                    "startOffset": 121486,
                     "endColumn": 109,
-                    "endOffset": 121579
+                    "endOffset": 121591
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -20058,9 +20058,9 @@
                 "to": {
                     "startLine": 1594,
                     "startColumn": 4,
-                    "startOffset": 121584,
+                    "startOffset": 121596,
                     "endColumn": 83,
-                    "endOffset": 121663
+                    "endOffset": 121675
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -20077,9 +20077,9 @@
                 "to": {
                     "startLine": 1595,
                     "startColumn": 4,
-                    "startOffset": 121668,
+                    "startOffset": 121680,
                     "endColumn": 119,
-                    "endOffset": 121783
+                    "endOffset": 121795
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values\\values.xml",
@@ -20096,10 +20096,10 @@
                 "to": {
                     "startLine": 1596,
                     "startColumn": 4,
-                    "startOffset": 121788,
+                    "startOffset": 121800,
                     "endLine": 1605,
                     "endColumn": 10,
-                    "endOffset": 122224
+                    "endOffset": 122236
                 },
                 "from": {
                     "file": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\exploded-aar\\com.facebook.react\\react-native\\0.55.4\\res\\values\\values.xml",

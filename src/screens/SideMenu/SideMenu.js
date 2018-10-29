@@ -60,7 +60,7 @@ class SideMenu extends Component {
             <View style={styles.container}>
                 <ScrollView>
                     <View style={styles.header}>
-                        <Image source={require("../../assets/facebNegativa.png")} style={styles.headerImage} />
+                        <Image source={require("../../assets/faceb_negativa.png")} style={styles.headerImage} />
                     </View>
 
                     <View style={styles.navSectionStyle}>

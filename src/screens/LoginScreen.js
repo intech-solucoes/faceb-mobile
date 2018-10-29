@@ -25,8 +25,9 @@ const loginStyles = {
         width: 200
     },
     footer: {
-        height: 210,
-        padding: 10
+        height: 240,
+        padding: 10,
+        paddingBottom: 0
     },
     loginButton: {
         marginTop: 20
@@ -51,56 +52,75 @@ export default class LoginScreen extends React.Component {
 
         // Cria o state do componente
         this.state = {
-            //cpf: "vanusa",
-            cpf: "50517902168",
-            senha: "123",
+            // cpf: "82069174115",
+            // senha: "123",
+            cpf: "",
+            senha: "",
             lembrar: false,
             loading: false
         };
-
-        // Realiza o bind das funções do componente
-        this.focusNextField = this.focusNextField.bind(this);
-        this.login = this.login.bind(this);
     }
 
-    focusNextField(id) {
+    componentDidMount = async () => {
+        var cpf = await AsyncStorage.getItem('cpfSalvo');
+
+        if(cpf) {
+            await this.setState({
+                cpf: cpf,
+                lembrar: true
+            });
+        }
+    }
+
+    focusNextField = (id) => {
         this.inputs[id].focus();
     }
 
-    async login() {
+    login = async () => {
         try {
             await this.setState({ loading: true });
+
+            if(this.state.lembrar) {
+                await AsyncStorage.setItem('cpfSalvo', this.state.cpf);
+            }
 
             var result = await usuarioService.Login(this.state.cpf, this.state.senha);
             await AsyncStorage.setItem('token', result.data.AccessToken);
             await this.setState({ loading: false });
 
             this.props.navigation.navigate('Planos');
-        } catch (ex) {
-            alert(ex);
+        } catch (err) {
+            if(err.response) {
+                console.warn(err.response.data);
+                alert(err.response.data);
+            }
+            else {
+                console.warn(err);
+                alert(err);
+            }
             this.setState({ loading: false });
         }
     }
 
     render() {
         return (
-            <ImageBackground source={require("../assets/LoginBackground.jpg")} style={[Styles.backgroundImage, loginStyles.container]}>
+            <ImageBackground source={require("../assets/login_background.jpg")} style={[Styles.backgroundImage, loginStyles.container]}>
 
                 <Spinner visible={this.state.loading} cancelable={true} />
 
                 <StatusBar translucent backgroundColor="rgba(0, 0, 0, 0.20)" animated />
 
                 <View style={[Styles.content, loginStyles.content]}>
-                    <Image source={require("../assets/facebNegativa.png")} style={loginStyles.logo} />
+                    <Image source={require("../assets/faceb_negativa.png")} style={loginStyles.logo} />
                 </View>
 
                 <View style={loginStyles.footer}>
                     <TextInput name={"cpf"} style={Styles.textInput} placeholder="CPF" returnKeyType="next" blurOnSubmit={false} underlineColorAndroid="transparent"
                         onSubmitEditing={() => { this.focusNextField('senha'); }} onChangeText={value => this.setState({ cpf: value })}
-                        ref={input => { this.inputs['cpf'] = input; }} />
+                        ref={input => { this.inputs['cpf'] = input; }} value={this.state.cpf} />
 
                     <TextInput name={"senha"} style={Styles.textInput} placeholder="Senha" returnKeyType="done" secureTextEntry={true}
-                        ref={input => { this.inputs['senha'] = input; }} onChangeText={value => this.setState({ senha: value })} />
+                        ref={input => { this.inputs['senha'] = input; }} onChangeText={value => this.setState({ senha: value })} value={this.state.senha} />
 
                     <View style={loginStyles.remember}>
                         <Text style={loginStyles.labelRemeber}>Lembrar-me</Text>
