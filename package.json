@@ -35,6 +35,6 @@
 		"react-native-vector-icons": "^4.6.0",
 		"react-native-version-number": "^0.3.4",
 		"react-navigation": "^2.6.2",
-		"react-number-format": "^3.4.4"
+    	"react-number-format": "^3.4.4"
 	}
 }

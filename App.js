@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TouchableOpacity, Button } from "react-native";
+import { View, Text, TouchableOpacity, Button, Platform } from "react-native";
 //import { KeyboardAvoidingView } from "./components/KeyboardAvoidingView";
 import { createStackNavigator, createDrawerNavigator } from 'react-navigation'
 import { 
@@ -38,11 +38,10 @@ const MainStack = createStackNavigator({
     SimuladorCDPasso2: SimuladorCDPasso2Screen,
     SimuladorCDResultado: SimuladorCDResultadoScreen,
     Relacionamento: RelacionamentoScreen
-}, {
-    navigationOptions: {
-        header: (navigationOptions) => <ScreenHeader {...navigationOptions} />
-    }
 });
+
+if(Platform.OS === 'android')
+    MainStack.navigationOptions.header = <ScreenHeader {...navigationOptions} />;
 
 const MainDrawer = createDrawerNavigator({
     DrawerStack: MainStack

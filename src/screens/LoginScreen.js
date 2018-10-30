@@ -90,15 +90,14 @@ export default class LoginScreen extends React.Component {
 
             this.props.navigation.navigate('Planos');
         } catch (err) {
+            await this.setState({ loading: false });
+
             if(err.response) {
-                console.warn(err.response.data);
                 alert(err.response.data);
             }
             else {
-                console.warn(err);
                 alert(err);
             }
-            this.setState({ loading: false });
         }
     }
 
