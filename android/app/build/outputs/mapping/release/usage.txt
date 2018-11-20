@@ -3850,7 +3850,6 @@ com.apsl.versionnumber.R$styleable
 com.apsl.versionnumber.R$xml
 com.apsl.versionnumber.RNVersionNumberPackage:
     22:22:public java.util.List createJSModules()
-com.faceb.MainActivity
 com.facebook.binaryresource.BinaryResource:
     public abstract byte[] read()
 com.facebook.binaryresource.ByteArrayBinaryResource

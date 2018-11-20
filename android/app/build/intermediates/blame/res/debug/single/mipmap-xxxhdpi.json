@@ -1,7 +1,59 @@
 [
     {
+        "merged": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_chat.png",
+        "source": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_chat.png"
+    },
+    {
+        "merged": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_contracheque.png",
+        "source": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_contracheque.png"
+    },
+    {
         "merged": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
         "source": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_contribuicao.png",
+        "source": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_contribuicao.png"
+    },
+    {
+        "merged": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_emprestimo.png",
+        "source": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_emprestimo.png"
+    },
+    {
+        "merged": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\faceb_negativa.png",
+        "source": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\faceb_negativa.png"
+    },
+    {
+        "merged": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_saldo.png",
+        "source": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_saldo.png"
+    },
+    {
+        "merged": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\faceb.png",
+        "source": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\faceb.png"
+    },
+    {
+        "merged": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_out.png",
+        "source": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_out.png"
+    },
+    {
+        "merged": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_plano.png",
+        "source": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_plano.png"
+    },
+    {
+        "merged": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_sim_beneficio.png",
+        "source": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_sim_beneficio.png"
+    },
+    {
+        "merged": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_dados.png",
+        "source": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_dados.png"
+    },
+    {
+        "merged": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon.png",
+        "source": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\git\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_home.png",
+        "source": "C:\\git\\faceb-mobile\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_home.png"
     },
     {
         "merged": "C:\\Users\\ronymoura\\Documents\\Intech\\faceb-mobile\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",

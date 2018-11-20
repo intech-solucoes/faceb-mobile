@@ -38,10 +38,11 @@ const MainStack = createStackNavigator({
     SimuladorCDPasso2: SimuladorCDPasso2Screen,
     SimuladorCDResultado: SimuladorCDResultadoScreen,
     Relacionamento: RelacionamentoScreen
+}, {
+    navigationOptions: {
+        header: (navigationOptions) => Platform.OS === 'android' ? <ScreenHeader {...navigationOptions}/> : navigationOptions.header
+    }
 });
-
-if(Platform.OS === 'android')
-    MainStack.navigationOptions.header = <ScreenHeader {...navigationOptions} />;
 
 const MainDrawer = createDrawerNavigator({
     DrawerStack: MainStack
