@@ -46,7 +46,13 @@ export default class RelacionamentoScreen extends Component {
 
     enviar = async () => {
         try {
+            await this.setState({ loading: true });
+
             await relacionamentoService.Enviar(this.state.email, this.state.assunto, this.state.mensagem);
+            alert("Sua mensagem foi enviada com sucesso!");
+            this.props.navigation.navigate('Home');
+
+            await this.setState({ loading: false });
         } catch(err) {
             if(ex.response) {
                 alert(ex.response.data);
