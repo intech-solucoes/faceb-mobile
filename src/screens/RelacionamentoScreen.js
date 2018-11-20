@@ -48,8 +48,12 @@ export default class RelacionamentoScreen extends Component {
         try {
             await relacionamentoService.Enviar(this.state.email, this.state.assunto, this.state.mensagem);
         } catch(err) {
-            alert(err);
-            console.warn(err);
+            if(ex.response) {
+                alert(ex.response.data);
+                this.setState({ loading: false });
+            } else {
+                alert("Ocorreu um erro ao processar requisição!");
+            }
         }
     }
 
@@ -84,7 +88,7 @@ export default class RelacionamentoScreen extends Component {
                                 style={[Styles.textInput, { padding: 0, marginBottom: 0, marginTop: 10, height: Math.max(35, this.state.height) }]} />
                     </ElevatedView>
 
-                    <Button title={"Enviar"} style={{ flex: 1 }} onClick={() => this.enviar} />
+                    <Button title={"Enviar"} style={{ flex: 1 }} onClick={() => this.enviar()} />
                 </ScrollView>
             </View>
         );
