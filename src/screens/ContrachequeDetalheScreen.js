@@ -76,7 +76,7 @@ export default class ContrachequeDetalheScreen extends Component {
                         </Text>
 
                         {this.state.rendimentos.map((rubrica, index) => {
-                            return <CampoEstatico key={index} titulo={rubrica.DS_RUBRICA} tipo={"dinheiro"} valor={rubrica.VL_CALCULO} style={{ marginBottom: 0, color: Variables.colors.gray }} />;
+                            return <CampoEstatico key={index} titulo={rubrica.DS_RUBRICA} tipo={"dinheiro"} valor={rubrica.VL_CALCULO} style={{ marginBottom: 0 }} />;
                         })}
                     </ElevatedView>
 
@@ -86,7 +86,7 @@ export default class ContrachequeDetalheScreen extends Component {
                         </Text>
 
                         {this.state.descontos.map((rubrica, index) => {
-                            return <CampoEstatico key={index} titulo={rubrica.DS_RUBRICA} tipo={"dinheiro"} valor={rubrica.VL_CALCULO} style={{ marginBottom: 0, color: Variables.colors.gray }} />;
+                            return <CampoEstatico key={index} titulo={rubrica.DS_RUBRICA} tipo={"dinheiro"} valor={rubrica.VL_CALCULO} style={{ marginBottom: 0 }} />;
                         })}
                     </ElevatedView>
 

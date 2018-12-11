@@ -24,7 +24,7 @@ import { ScreenHeader } from "./src/components"
 
 import SideMenu from "./src/screens/SideMenu/SideMenu";
 
-const MainStack = createStackNavigator({
+var MainStack = createStackNavigator({
     Home: HomeScreen,
     Dados: DadosScreen,
     Contribuicao: ContribuicaoScreen,
