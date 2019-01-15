@@ -52,8 +52,8 @@ export default class LoginScreen extends React.Component {
 
         // Cria o state do componente
         this.state = {
-            // cpf: "82069174115",
-            // senha: "123",
+            //cpf: "42827205149",
+            //senha: "123",
             cpf: "",
             senha: "",
             lembrar: false,
@@ -86,6 +86,7 @@ export default class LoginScreen extends React.Component {
 
             var result = await usuarioService.Login(this.state.cpf, this.state.senha);
             await AsyncStorage.setItem('token', result.data.AccessToken);
+            await AsyncStorage.setItem('pensionista', result.data.pensionista.toString());
             await this.setState({ loading: false });
 
             this.props.navigation.navigate('Planos');
@@ -123,7 +124,7 @@ export default class LoginScreen extends React.Component {
 
                     <View style={loginStyles.remember}>
                         <Text style={loginStyles.labelRemeber}>Lembrar-me</Text>
-                        <Switch value={this.state.lembrar} thumbTintColor={Variables.colors.primary}
+                        <Switch value={this.state.lembrar} thumbColor={Variables.colors.primary}
                             onValueChange={value => this.setState({ lembrar: value })} />
                     </View>
 

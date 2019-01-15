@@ -42,9 +42,14 @@ export default class DadosScreen extends Component {
     }
 
     async carregarPlano() {
-        var plano = await AsyncStorage.getItem("plano");
-        var result = await planoVinculadoService.BuscarPorPlano(plano);
-        await this.setState({ plano: result.data });
+        var cdPlano = await AsyncStorage.getItem("plano");
+        var pensionista = (await AsyncStorage.getItem("pensionista")) === "true";
+        var { data: plano } = await planoVinculadoService.BuscarPorPlano(cdPlano);
+
+        await this.setState({ 
+            plano,
+            pensionista
+         });
     }
 
     render() {
@@ -58,8 +63,12 @@ export default class DadosScreen extends Component {
                     </ElevatedView>
 
                     <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
-                        <CampoEstatico titulo={"Empresa"} valor={this.state.dados.SIGLA_EMPRESA} />
-                        <CampoEstatico titulo={"Matrícula"} valor={this.state.dados.NR_REGISTRO} />
+                        {!this.state.pensionista &&
+                            <View>
+                                <CampoEstatico titulo={"Empresa"} valor={this.state.dados.SIGLA_EMPRESA} />
+                                <CampoEstatico titulo={"Matrícula"} valor={this.state.dados.NR_REGISTRO} />
+                            </View>
+                        }
                         <CampoEstatico titulo={"CPF"} valor={this.state.dados.NR_CPF} />
                         <CampoEstatico titulo={"Data de Nascimento"} valor={this.state.dados.DT_NASCIMENTO} />
                         <CampoEstatico titulo={"Sexo"} valor={this.state.dados.DS_SEXO} />
@@ -76,17 +85,21 @@ export default class DadosScreen extends Component {
                         <CampoEstatico titulo={"E-mail"} valor={this.state.dados.NO_EMAIL} />
                     </ElevatedView>
 
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
-                        <CampoEstatico titulo={"Data de admissão"} valor={this.state.dados.DT_ADMISSAO} />
-                        {this.state.dados.DT_DEMISSAO &&
-                            <CampoEstatico titulo={"Data de demissão"} valor={this.state.dados.DT_DEMISSAO} />}
-                    </ElevatedView>
+                    {!this.state.pensionista &&
+                        <View>
+                            <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
+                                <CampoEstatico titulo={"Data de admissão"} valor={this.state.dados.DT_ADMISSAO} />
+                                {this.state.dados.DT_DEMISSAO &&
+                                    <CampoEstatico titulo={"Data de demissão"} valor={this.state.dados.DT_DEMISSAO} />}
+                            </ElevatedView>
 
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
-                        <CampoEstatico titulo={"Plano"} valor={this.state.plano.DS_PLANO_PREVIDENCIAL} />
-                        <CampoEstatico titulo={"Data de Filiação"} valor={this.state.plano.DT_INSC_PLANO} />
-                        <CampoEstatico titulo={"Situação do Plano"} valor={this.state.plano.DS_SIT_PLANO} />
-                    </ElevatedView>
+                            <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
+                                <CampoEstatico titulo={"Plano"} valor={this.state.plano.DS_PLANO_PREVIDENCIAL} />
+                                <CampoEstatico titulo={"Data de Filiação"} valor={this.state.plano.DT_INSC_PLANO} />
+                                <CampoEstatico titulo={"Situação do Plano"} valor={this.state.plano.DS_SIT_PLANO} />
+                            </ElevatedView>
+                        </View>
+                    }
                 </ScrollView>
             </View>
         )

@@ -51,9 +51,12 @@ export default class PlanosScreen extends React.Component {
 
     carregarDadosPessoais = async () =>{
         var result = await dadosPessoaisService.Buscar();
+        var pensionista = (await AsyncStorage.getItem("pensionista")) === "true";
+
         await this.setState({ 
             dadosPessoais: result.data,
-            nome: result.data.NO_PESSOA.split(" ")[0]
+            nome: result.data.NO_PESSOA.split(" ")[0],
+            pensionista
         });
     }
 
@@ -75,12 +78,12 @@ export default class PlanosScreen extends React.Component {
                 <Spinner visible={this.state.loading} cancelable={true} />
 
                 <Text style={Styles.h3}>Olá,</Text>
-                <Text style={[ Styles.h1, styles.header ]}>Participante</Text>
+                <Text style={[ Styles.h1, styles.header ]}>{this.state.nome}</Text>
                 <Text style={styles.subheader}>Selecione um de seus planos contratados com a Faceb</Text>
 
                 {
                     this.state.planos.map((plano, index) => (
-                        <Button key={index} title={plano.DS_PLANO_PREVIDENCIAL} subtitle={plano.DS_SIT_PLANO} 
+                        <Button key={index} title={plano.DS_PLANO_PREVIDENCIAL} subtitle={this.state.pensionista ? "PENSIONISTA" : plano.DS_SIT_PLANO} 
                                 style={[Styles.button, styles.button]} titleStyle={[Styles.h2, styles.buttonText]}
                                 onClick={() => this.selecionarPlano(plano)} />
                     ))

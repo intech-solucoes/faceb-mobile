@@ -1,94 +1,159 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:1:1-27:12
+ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-version-number] C:\git\faceb-mobile\node_modules\react-native-version-number\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] C:\git\faceb-mobile\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\release\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.57.5] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.57.5.aar\3e79bc81e274873c1c67d59919b91089\AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\fb3e73250f6c4a53d52c86a8386721d6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\030801afb92f87d3ab3141e2a0c0b178\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\4d377d37e39ba649fe0d8957931f8694\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\eec32c609e172e9f5d807f1cca459063\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\8627dabd7caf5f8bbb15ae2c1cfd7fcc\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\170a41ba4db61be2755b373b10eed8e8\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\3dfa8ebfee2a1be9cd0dc9154ac9b4b0\AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\e7239de38697cde431149e272da11164\AndroidManifest.xml:1:1-3:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\cb989cd8681a96f0dd7b8f828cf01fbc\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\84d3201d4311e9a5b30006d31a3972b2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\1683fc5a87b3ea36de106a13091a882c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\03840c9e8bd15a04a3bb83264ed46b20\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\cb5d0f16f773ab2cddfcf61d429896e7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\5970e960ed25451ab05a634278c3c6e5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\67599897a982451ff96a13b3128b5890\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\381aa01e74ed26707c6811784980ab5b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\cb70ee1ac56435cae76d5a76b3f4ce2d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\483006cc5536f2dd588f7f20c99edad0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4c4759d87addacb699c4d4a97f2f95c1\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:1:1-26:12
 	package
 		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:2:5-31
 		INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:1:1-26:12
 		INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:1:11-69
-	android:versionCode
-		INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:4:5-67
 	android:name
 		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:5:5-77
-MERGED from [com.facebook.react:react-native:0.55.4] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.55.4\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.57.5] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.57.5.aar\3e79bc81e274873c1c67d59919b91089\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.57.5] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.57.5.aar\3e79bc81e274873c1c67d59919b91089\AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:5:22-75
-uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:6:5-74
-	android:name
-		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:6:22-72
 application
-ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:8:5-25:19
-MERGED from [com.facebook.react:react-native:0.55.4] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.55.4\AndroidManifest.xml:13:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
-MERGED from [com.facebook.soloader:soloader:0.1.0] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\AndroidManifest.xml:3:3-17
-MERGED from [org.webkit:android-jsc:r174650] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\org.webkit\android-jsc\r174650\AndroidManifest.xml:2:3-17
+ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:7:5-24:19
+MERGED from [com.facebook.react:react-native:0.57.5] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.57.5.aar\3e79bc81e274873c1c67d59919b91089\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.57.5] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.57.5.aar\3e79bc81e274873c1c67d59919b91089\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\3dfa8ebfee2a1be9cd0dc9154ac9b4b0\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\3dfa8ebfee2a1be9cd0dc9154ac9b4b0\AndroidManifest.xml:11:5-20
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\e7239de38697cde431149e272da11164\AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\e7239de38697cde431149e272da11164\AndroidManifest.xml:2:3-17
 	android:label
-		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:10:7-39
-	android:allowBackup
-		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:12:7-34
+		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:9:7-39
 	android:icon
-		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:11:7-41
+		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:10:7-41
+	android:allowBackup
+		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:11:7-34
 	android:theme
-		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:13:7-38
+		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:12:7-38
 	android:name
-		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:9:7-38
+		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:8:7-38
 activity#com.intech.faceb.MainActivity
-ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:14:7-23:18
+ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:13:7-22:18
 	android:label
-		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:16:9-41
+		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:15:9-41
 	android:windowSoftInputMode
-		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:18:9-51
+		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:17:9-51
 	android:configChanges
-		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:17:9-79
+		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:16:9-79
 	android:name
-		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:15:9-37
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:19:9-22:25
+		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:14:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:18:9-21:25
 action#android.intent.action.MAIN
-ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:20:13-65
+ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:19:13-65
 	android:name
-		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:20:21-62
+		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:19:21-62
 category#android.intent.category.LAUNCHER
-ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:21:13-73
+ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:20:13-73
 	android:name
-		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:21:23-70
+		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:20:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:24:7-84
+ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:23:7-84
 	android:name
-		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:24:17-81
+		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:23:17-81
 uses-sdk
 INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [faceb:react-native-version-number:unspecified] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\faceb\react-native-version-number\unspecified\AndroidManifest.xml:7:5-9:41
-MERGED from [faceb:react-native-vector-icons:unspecified] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\faceb\react-native-vector-icons\unspecified\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.55.4] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.55.4\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.0.1] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.0.1] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:20:5-43
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.3.0] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.3.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.3.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.3.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.3.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.3.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.1.0] C:\git\faceb-mobile\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\AndroidManifest.xml:2:3-70
+INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-version-number] C:\git\faceb-mobile\node_modules\react-native-version-number\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-version-number] C:\git\faceb-mobile\node_modules\react-native-version-number\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\git\faceb-mobile\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\git\faceb-mobile\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\release\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.5] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.57.5.aar\3e79bc81e274873c1c67d59919b91089\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.5] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.57.5.aar\3e79bc81e274873c1c67d59919b91089\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\fb3e73250f6c4a53d52c86a8386721d6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\fb3e73250f6c4a53d52c86a8386721d6\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\030801afb92f87d3ab3141e2a0c0b178\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\030801afb92f87d3ab3141e2a0c0b178\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\4d377d37e39ba649fe0d8957931f8694\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\4d377d37e39ba649fe0d8957931f8694\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\eec32c609e172e9f5d807f1cca459063\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\eec32c609e172e9f5d807f1cca459063\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\8627dabd7caf5f8bbb15ae2c1cfd7fcc\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\8627dabd7caf5f8bbb15ae2c1cfd7fcc\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\170a41ba4db61be2755b373b10eed8e8\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\170a41ba4db61be2755b373b10eed8e8\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\3dfa8ebfee2a1be9cd0dc9154ac9b4b0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\3dfa8ebfee2a1be9cd0dc9154ac9b4b0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\cb989cd8681a96f0dd7b8f828cf01fbc\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\cb989cd8681a96f0dd7b8f828cf01fbc\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\84d3201d4311e9a5b30006d31a3972b2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\84d3201d4311e9a5b30006d31a3972b2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\1683fc5a87b3ea36de106a13091a882c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\1683fc5a87b3ea36de106a13091a882c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\03840c9e8bd15a04a3bb83264ed46b20\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\03840c9e8bd15a04a3bb83264ed46b20\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\cb5d0f16f773ab2cddfcf61d429896e7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\cb5d0f16f773ab2cddfcf61d429896e7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\5970e960ed25451ab05a634278c3c6e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\5970e960ed25451ab05a634278c3c6e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\67599897a982451ff96a13b3128b5890\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\67599897a982451ff96a13b3128b5890\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\381aa01e74ed26707c6811784980ab5b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\381aa01e74ed26707c6811784980ab5b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\cb70ee1ac56435cae76d5a76b3f4ce2d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\cb70ee1ac56435cae76d5a76b3f4ce2d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\483006cc5536f2dd588f7f20c99edad0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\483006cc5536f2dd588f7f20c99edad0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4c4759d87addacb699c4d4a97f2f95c1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4c4759d87addacb699c4d4a97f2f95c1\AndroidManifest.xml:20:5-44
+INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
 		INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml
-android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:1:1-27:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
-android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:1:1-27:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from C:\git\faceb-mobile\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE

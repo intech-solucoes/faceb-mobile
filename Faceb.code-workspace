@@ -4,10 +4,13 @@
 			"path": "."
 		},
 		{
-			"path": "/Users/intech/git/lib/react-lib"
+			"path": "../lib/react-lib"
 		},
 		{
-			"path": "/Users/intech/git/advanced-service"
+			"path": "../advanced-service"
+		},
+		{
+			"path": "../lib/service"
 		}
 	],
 	"settings": {}
