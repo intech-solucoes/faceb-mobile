@@ -583,9 +583,9 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@intechprev/advanced-service@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@intechprev/advanced-service/-/advanced-service-0.0.7.tgz#95d1540919a5309599cef987b1c19989a3c53dfb"
+"@intechprev/advanced-service@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@intechprev/advanced-service/-/advanced-service-0.0.8.tgz#5b9768fda68439ce1a6bb579a63cdcec47e0b720"
   dependencies:
     "@intechprev/service" "^1.0.2"
 

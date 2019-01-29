@@ -84,7 +84,7 @@ export default class LoginScreen extends React.Component {
                 await AsyncStorage.setItem('cpfSalvo', this.state.cpf);
             }
 
-            var result = await usuarioService.Login(this.state.cpf, this.state.senha);
+            var result = await usuarioService.LoginV2(this.state.cpf, this.state.senha);
             await AsyncStorage.setItem('token', result.data.AccessToken);
             await AsyncStorage.setItem('pensionista', result.data.pensionista.toString());
             await this.setState({ loading: false });
