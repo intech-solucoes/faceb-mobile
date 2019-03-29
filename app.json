@@ -4,6 +4,7 @@
         "slug": "faceb",
         "privacy": "public",
         "sdkVersion": "32.0.0",
+        "version": "2.0.0",
         "platforms": [
             "ios",
             "android"
@@ -23,7 +24,11 @@
             "**/*"
         ],
         "ios": {
-            "supportsTablet": true
+            "supportsTablet": true,
+            "bundleIdentifier": "com.intech.faceb"
+        },
+        "android": {
+            "package": "com.intech.faceb"
         }
     }
 }
