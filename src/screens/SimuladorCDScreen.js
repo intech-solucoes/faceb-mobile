@@ -16,7 +16,8 @@ const contribuicaoService  = new ContribuicaoService(config);
 export default class SimuladorCDScreen extends Component {
 
     static navigationOptions = {
-        title: "Sua Aposentadoria"
+        title: "Sua Aposentadoria",
+        rightMenu: true
     }
     
     constructor(props) {
@@ -84,12 +85,11 @@ export default class SimuladorCDScreen extends Component {
 
     render() {
         return (
-            <View>
+            <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
                 <Spinner visible={this.state.loading} cancelable={true} />
 
-                <ScrollView contentContainerStyle={Styles.scrollContainer}>
-
-                    <View style={{ padding: 10 }}>
+                <View>
+                    <View style={{ marginBottom: 10 }}>
                         <Text style={[Styles.h2, { color: Variables.colors.primary, marginBottom: 10, textAlign: 'center' }]}>
                             Bem-Vindo ao simulador de aposentadoria do plano CEBPREV!
                         </Text>
@@ -101,11 +101,12 @@ export default class SimuladorCDScreen extends Component {
                         </Text>
                     </View>
 
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
+                    <View style={{ marginVertical: 30 }}>
                         
-                        <CampoEstatico titulo={"Salário de Participação"} subtitulo={this.state.dadosSimulacao.dataReferencia} tipo={"dinheiro"} valor={this.state.dadosSimulacao.salarioParticipacao} />
+                        <CampoEstatico titulo={"Salário de Participação"} subtitulo={this.state.dadosSimulacao.dataReferencia} 
+                                       tipo={"dinheiro"} valor={this.state.dadosSimulacao.salarioParticipacao} />
                         
-                        <Text style={[Styles.h3, { marginBottom: 10 }]}>Contribuição Básica</Text>
+                        <Text style={[Styles.h3, { marginVertical: 10 }]}>Contribuição Básica</Text>
                         <View style={{ alignItems: "center" }}>
                             <Text style={Styles.h4}>Arraste para alterar o percentual</Text>
                         </View>
@@ -116,20 +117,20 @@ export default class SimuladorCDScreen extends Component {
                             </Text>
                         </View>
 
-                    </ElevatedView>
+                    </View>
 
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
+                    <View style={{ marginBottom: 10 }}>
                         <Text>Contribuição Facultativa (R$)</Text>
                         <TextInputMask name={"contribuicaoFacultativa"} type={"money"} style={Styles.textInput} placeholder="R$0,00"keyboardType={"phone-pad"} step={1} underlineColorAndroid="transparent"
                                        value={this.state.contribuicaoFacultativa} onChangeText={value => this.setState({ contribuicaoFacultativa: value.replace("R$", "").replace(',', '.') })} />
-                    </ElevatedView>
+                    </View>
 
                     <Button title={"Próximo"} 
                             onClick={() => this.props.navigation.navigate("SimuladorCDPasso2", { 
                             contribBasica: this.state.contribuicaoBasica, 
                             contribFacultativa: this.state.contribuicaoFacultativa })} />
-                </ScrollView>
-            </View>
+                </View>
+            </ScrollView>
         );
     }
 };

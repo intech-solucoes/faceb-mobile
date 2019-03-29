@@ -15,7 +15,8 @@ const simuladorService  = new SimuladorService(config);
 export default class SimuladorCDPasso2Screen extends Component {
 
     static navigationOptions = {
-        title: "Sua Aposentadoria"
+        title: "Sua Aposentadoria",
+        rightMenu: true
     }
     
     constructor(props) {
@@ -70,12 +71,12 @@ export default class SimuladorCDPasso2Screen extends Component {
 
     render() {
         return (
-            <View>
+            <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
                 <Spinner visible={this.state.loading} cancelable={true} />
 
                 {!this.state.loading && 
-                    <ScrollView contentContainerStyle={Styles.scrollContainer}>
-                        <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
+                    <View>
+                        <View style={{ padding: 10, marginBottom: 10 }}>
 
                             <Text style={[Styles.h3, { marginBottom: 10 }]}>Com quantos anos você pretende se aposentar?</Text>
                             <View style={{ alignItems: "center" }}>
@@ -90,7 +91,7 @@ export default class SimuladorCDPasso2Screen extends Component {
                                 </Text>
                             </View>
 
-                        </ElevatedView>
+                        </View>
                             
                         <View style={{ padding: 10, paddingBottom: 0 }}>
                             <CampoEstatico titulo={"Esse é o seu saldo de conta atualizado"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.saldo} />
@@ -118,10 +119,9 @@ export default class SimuladorCDPasso2Screen extends Component {
                                 contribFacultativa: this.state.contribFacultativa,
                                 idadeAposentadoria: this.state.idadeAposentadoria,
                                 saque: this.state.saque })} />
-                    </ScrollView>
+                    </View>
                 }
-                
-            </View>
+            </ScrollView>
         );
     }
 };

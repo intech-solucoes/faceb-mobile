@@ -25,7 +25,8 @@ const MenuItem = (props) => {
 export default class HomeScreen extends Component {
 
     static navigationOptions = {
-        title: "Faceb"
+        title: "Faceb",
+        rightMenu: true
     }
 
     constructor(props) {
@@ -65,10 +66,10 @@ export default class HomeScreen extends Component {
 
     render() {
         return (
-            <View>
+            <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
                 <Spinner visible={this.state.loading} cancelable={true} />
 
-                <ScrollView contentContainerStyle={Styles.scrollContainer}>
+                <View>
                     <MenuItem title={"Dados Pessoais"} subtitle={"Confira seus dados cadastrais"} icon={require("../assets/ic_dados.png")} onPress={this.navigateToScreen("Dados")} />
 
                     {!this.state.assistido && 
@@ -92,8 +93,8 @@ export default class HomeScreen extends Component {
                     <MenuItem title={"Relacionamento"} subtitle={"Envie aqui suas dúvidas"} icon={require("../assets/ic_chat.png")} onPress={this.navigateToScreen("Relacionamento")} />
                     <MenuItem title={"Selecionar Plano"} subtitle={"Escolha outro plano"} icon={require("../assets/ic_plano.png")} onPress={this.navigateToScreen("Planos")} />
                     <MenuItem title={"Sair"} subtitle={"Sair do aplicativo"} icon={require("../assets/ic_out.png")} onPress={this.navigateToScreen("Login")} />
-                </ScrollView>
-            </View>
+                </View>
+            </ScrollView>
         )
     }
 };

@@ -13,7 +13,8 @@ const simuladorService  = new SimuladorService(config);
 export default class SimuladorBDScreen extends Component {
 
     static navigationOptions = {
-        title: "Sua Aposentadoria"
+        title: "Sua Aposentadoria",
+        rightMenu: true
     }
     
     constructor(props) {
@@ -40,12 +41,11 @@ export default class SimuladorBDScreen extends Component {
 
     render() {
         return (
-            <View>
-                <Spinner visible={this.state.loading} cancelable={true} />
+            <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
+                <View>
+                    <Spinner visible={this.state.loading} cancelable={true} />
 
-                <ScrollView contentContainerStyle={Styles.scrollContainer}>
-
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
+                    <View style={{ padding: 10, marginBottom: 10 }}>
                         
                         <CampoEstatico titulo={"Idade Mínima para Aposentadoria"} valor={this.state.dadosSimulacao.idadeMinima + " anos"} />
                         <CampoEstatico titulo={"SRC - Salário Real de Contribuição"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.SRC} />
@@ -53,11 +53,11 @@ export default class SimuladorBDScreen extends Component {
                         <CampoEstatico titulo={"INSS Hipotético"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.inssHipotetico} />
                         <CampoEstatico titulo={"Carência FACEB"} valor={this.state.dadosSimulacao.carencia + "/15"} />
 
-                    </ElevatedView>
+                    </View>
 
                     <Button title={"Simular"} onClick={() => this.props.navigation.navigate("SimuladorBDResultado")} />
-                </ScrollView>
-            </View>
+                </View>
+            </ScrollView>
         );
     }
 };

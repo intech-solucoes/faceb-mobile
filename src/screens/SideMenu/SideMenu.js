@@ -7,6 +7,9 @@ import VersionNumber from 'react-native-version-number';
 import styles from './SideMenu.style';
 import { Variables } from '../../styles';
 
+if(!VersionNumber.appVersion)
+    VersionNumber.appVersion = "2.0.0";
+
 const MenuItem = (props) => {
     return (
         <TouchableHighlight onPress={props.onPress} underlayColor={Variables.colors.gray}>

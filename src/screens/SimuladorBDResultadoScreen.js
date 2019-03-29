@@ -13,7 +13,8 @@ const simuladorService  = new SimuladorService(config);
 export default class SimuladorBDResultadoScreen extends Component {
 
     static navigationOptions = {
-        title: "Sua Aposentadoria"
+        title: "Sua Aposentadoria",
+        rightMenu: true
     }
     
     constructor(props) {
@@ -40,18 +41,18 @@ export default class SimuladorBDResultadoScreen extends Component {
 
     render() {
         return (
-            <View>
+            <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
                 <Spinner visible={this.state.loading} cancelable={true} />
 
-                <ScrollView contentContainerStyle={Styles.scrollContainer}>
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
+                <View>
+                    <View style={{ padding: 10, marginBottom: 10 }}>
                         
                         <CampoEstatico titulo={"Tipo de Aposentadoria"} valor={"APOSENTADORIA NORMAL"} />
                         <CampoEstatico titulo={"Suplementação bruta estimada"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.valorSuplementacao} />
                         <CampoEstatico titulo={"Data da aposentadoria"} valor={this.state.dadosSimulacao.dataAposentadoria} />
                         <CampoEstatico titulo={"Referência do Cálculo"} valor={this.state.dadosSimulacao.dataReferencia} />
 
-                    </ElevatedView>
+                    </View>
 
                     <Text>
                         Esta é uma simulação de benefício considerando as informações cadastrais do futuro do participante posicionada na data da realização do cálculo. 
@@ -60,8 +61,8 @@ export default class SimuladorBDResultadoScreen extends Component {
                         definitiva do benefício. Esta simulação observou as regras do Regulamento do Plano de Benefícios ao qual 
                         o participante se vinculou, vigentes na data da realização do cálculo do benefício.
                     </Text>
-                </ScrollView>
-            </View>
+                </View>
+            </ScrollView>
         );
     }
 };

@@ -6,6 +6,7 @@ import Styles, { Variables } from "../styles";
 import { ScreenHeader, ElevatedView, CampoEstatico } from "../components";
 
 import { DadosPessoaisService, PlanoVinculadoService } from "@intechprev/advanced-service";
+import Separador from '../components/Separador';
 
 const config = require("../config.json");
 const dadosPessoaisService  = new DadosPessoaisService(config);
@@ -14,7 +15,8 @@ const planoVinculadoService = new PlanoVinculadoService(config);
 export default class DadosScreen extends Component {
 
     static navigationOptions = {
-        title: "Seus Dados"
+        title: "Seus Dados",
+        rightMenu: true
     }
     
     constructor(props) {
@@ -54,54 +56,61 @@ export default class DadosScreen extends Component {
 
     render() {
         return (
-            <View>
+            <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
                 <Spinner visible={this.state.loading} cancelable={true} />
 
-                <ScrollView contentContainerStyle={Styles.scrollContainer}>
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
-                        <CampoEstatico titulo={"Nome"} valor={this.state.dados.NO_PESSOA} />
-                    </ElevatedView>
+                <View>
+                    <CampoEstatico titulo={"Nome"} valor={this.state.dados.NO_PESSOA} semMargem />
+                </View>
 
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
-                        {!this.state.pensionista &&
-                            <View>
-                                <CampoEstatico titulo={"Empresa"} valor={this.state.dados.SIGLA_EMPRESA} />
-                                <CampoEstatico titulo={"Matrícula"} valor={this.state.dados.NR_REGISTRO} />
-                            </View>
-                        }
-                        <CampoEstatico titulo={"CPF"} valor={this.state.dados.NR_CPF} />
-                        <CampoEstatico titulo={"Data de Nascimento"} valor={this.state.dados.DT_NASCIMENTO} />
-                        <CampoEstatico titulo={"Sexo"} valor={this.state.dados.DS_SEXO} />
-                    </ElevatedView>
+                <Separador />
 
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
-                        <CampoEstatico titulo={"CEP"} valor={this.state.dados.NR_CEP} />
-                        <CampoEstatico titulo={"Endereço"} valor={this.state.dados.DS_ENDERECO} />
-                        <CampoEstatico titulo={"Número"} valor={this.state.dados.NR_ENDERECO} />
-                        <CampoEstatico titulo={"Complemento"} valor={this.state.dados.DS_COMPLEMENTO} />
-                        <CampoEstatico titulo={"Bairro"} valor={this.state.dados.NO_BAIRRO} />
-                        <CampoEstatico titulo={"Telefone"} valor={this.state.dados.NR_FONE} />
-                        <CampoEstatico titulo={"Celular"} valor={this.state.dados.NR_CELULAR} />
-                        <CampoEstatico titulo={"E-mail"} valor={this.state.dados.NO_EMAIL} />
-                    </ElevatedView>
-
+                <View>
                     {!this.state.pensionista &&
                         <View>
-                            <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
-                                <CampoEstatico titulo={"Data de admissão"} valor={this.state.dados.DT_ADMISSAO} />
-                                {this.state.dados.DT_DEMISSAO &&
-                                    <CampoEstatico titulo={"Data de demissão"} valor={this.state.dados.DT_DEMISSAO} />}
-                            </ElevatedView>
-
-                            <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
-                                <CampoEstatico titulo={"Plano"} valor={this.state.plano.DS_PLANO_PREVIDENCIAL} />
-                                <CampoEstatico titulo={"Data de Filiação"} valor={this.state.plano.DT_INSC_PLANO} />
-                                <CampoEstatico titulo={"Situação do Plano"} valor={this.state.plano.DS_SIT_PLANO} />
-                            </ElevatedView>
+                            <CampoEstatico titulo={"Empresa"} valor={this.state.dados.SIGLA_EMPRESA} />
+                            <CampoEstatico titulo={"Matrícula"} valor={this.state.dados.NR_REGISTRO} />
                         </View>
                     }
-                </ScrollView>
-            </View>
+                    <CampoEstatico titulo={"CPF"} valor={this.state.dados.NR_CPF} />
+                    <CampoEstatico titulo={"Data de Nascimento"} valor={this.state.dados.DT_NASCIMENTO} />
+                    <CampoEstatico titulo={"Sexo"} valor={this.state.dados.DS_SEXO} semMargem />
+                </View>
+
+                <Separador />
+
+                <View>
+                    <CampoEstatico titulo={"CEP"} valor={this.state.dados.NR_CEP} />
+                    <CampoEstatico titulo={"Endereço"} valor={this.state.dados.DS_ENDERECO} />
+                    <CampoEstatico titulo={"Número"} valor={this.state.dados.NR_ENDERECO} />
+                    <CampoEstatico titulo={"Complemento"} valor={this.state.dados.DS_COMPLEMENTO} />
+                    <CampoEstatico titulo={"Bairro"} valor={this.state.dados.NO_BAIRRO} />
+                    <CampoEstatico titulo={"Telefone"} valor={this.state.dados.NR_FONE} />
+                    <CampoEstatico titulo={"Celular"} valor={this.state.dados.NR_CELULAR} />
+                    <CampoEstatico titulo={"E-mail"} valor={this.state.dados.NO_EMAIL} />
+                </View>
+
+                <Separador />
+
+                {!this.state.pensionista &&
+                    <View>
+
+                        <View>
+                            <CampoEstatico titulo={"Data de admissão"} valor={this.state.dados.DT_ADMISSAO} />
+                            {this.state.dados.DT_DEMISSAO &&
+                                <CampoEstatico titulo={"Data de demissão"} valor={this.state.dados.DT_DEMISSAO} />}
+                        </View>
+
+                        <Separador />
+
+                        <View>
+                            <CampoEstatico titulo={"Plano"} valor={this.state.plano.DS_PLANO_PREVIDENCIAL} />
+                            <CampoEstatico titulo={"Data de Filiação"} valor={this.state.plano.DT_INSC_PLANO} />
+                            <CampoEstatico titulo={"Situação do Plano"} valor={this.state.plano.DS_SIT_PLANO} />
+                        </View>
+                    </View>
+                }
+            </ScrollView>
         )
     }
 };

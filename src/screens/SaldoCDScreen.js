@@ -14,7 +14,8 @@ const saldoService  = new SaldoService(config);
 export default class SaldoCDScreen extends Component {
 
     static navigationOptions = {
-        title: "Seu Saldo"
+        title: "Seu Saldo",
+        rightMenu: true
     }
     
     constructor(props) {
@@ -50,24 +51,20 @@ export default class SaldoCDScreen extends Component {
 
     render() {
         return (
-            <View>
+            <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
                 <Spinner visible={this.state.loading} cancelable={true} />
 
-                <ScrollView contentContainerStyle={Styles.scrollContainer}>
+                <View>
                     <ElevatedView elevation={3} style={{ padding: 10, paddingBottom: 0, marginBottom: 10 }}>
                         <CampoEstatico titulo={`PARABÉNS ${this.state.nome}! VOCÊ ACUMULOU ATÉ AGORA:`} tipo={"dinheiro"} valor={this.state.saldo.Total}
                                        tituloStyle={{ fontSize: 16 }} />
                     </ElevatedView>
-
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
                         
-                        <CampoEstatico titulo={"Sua contribuição individual foi de:"} tipo={"dinheiro"} valor={this.state.saldo.SaldoIndividual} />
-                        <CampoEstatico titulo={"A contribuição patronal foi de:"} tipo={"dinheiro"} valor={this.state.saldo.SaldoPatronal} />
-                        <CampoEstatico titulo={"Rentabilidade do plano:"} tipo={"dinheiro"} valor={this.state.saldo.Rentabilidade} />
-
-                    </ElevatedView>
-                </ScrollView>
-            </View>
+                    <CampoEstatico titulo={"Sua contribuição individual foi de:"} tipo={"dinheiro"} valor={this.state.saldo.SaldoIndividual} />
+                    <CampoEstatico titulo={"A contribuição patronal foi de:"} tipo={"dinheiro"} valor={this.state.saldo.SaldoPatronal} />
+                    <CampoEstatico titulo={"Rentabilidade do plano:"} tipo={"dinheiro"} valor={this.state.saldo.Rentabilidade} />
+                </View>
+            </ScrollView>
         )
     }
 };

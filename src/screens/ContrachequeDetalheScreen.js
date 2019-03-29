@@ -6,6 +6,7 @@ import _ from 'lodash'
 
 import Styles, { Variables } from "../styles";
 import { ScreenHeader, ElevatedView, Button, CampoEstatico } from "../components";
+import Separador from '../components/Separador';
 
 import { ContrachequeService } from "@intechprev/advanced-service";
 
@@ -15,7 +16,8 @@ const contrachequeService  = new ContrachequeService(config);
 export default class ContrachequeDetalheScreen extends Component {
 
     static navigationOptions = {
-        title: "Contracheque"
+        title: "Contracheque",
+        rightMenu: true
     }
 
     constructor(props) {
@@ -28,6 +30,7 @@ export default class ContrachequeDetalheScreen extends Component {
                 resumo: {},
                 rubricas: []
             },
+            resumo: {},
             rendimentos: [],
             descontos: []
         }
@@ -56,21 +59,48 @@ export default class ContrachequeDetalheScreen extends Component {
         var rendimentos = _.filter(contracheque, { IR_LANCAMENTO: "P" });
         var descontos = _.filter(contracheque, { IR_LANCAMENTO: "D" });
 
-        await this.setState({ contracheque, rendimentos, descontos, referencia });
+        await this.setState({ 
+            contracheque, 
+            rendimentos, 
+            descontos, 
+            referencia, 
+            resumo: result.data.resumo
+        });
     }
 
     render() {
         return (
-            <View>
+
+            <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
                 <Spinner visible={this.state.loading} cancelable={true} />
 
-                <ScrollView contentContainerStyle={Styles.scrollContainer}>
+                <View>
+                    <View style={{justifyContent: 'center', alignItems: 'center', padding: 20 }}>
+                        <View style={{ alignItems: 'center',  flexDirection: "row" }}>
+                            <View style={{ flex: 1, alignItems: 'center' }}>
+                                <Text>BRUTO</Text>
+                                <TextMask type={'money'} value={this.state.resumo.bruto} style={{ color: Variables.colors.primary }} />
+                            </View>
 
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
+                            <View style={{ flex: 1, alignItems: 'center' }}>
+                                <Text>DESCONTOS</Text>
+                                <TextMask type={'money'} value={this.state.resumo.descontos} style={{ color: Variables.colors.red }} />
+                            </View>
+
+                            <View style={{ flex: 1, alignItems: 'center' }}>
+                                <Text>LÍQUIDO</Text>
+                                <TextMask type={'money'} value={this.state.resumo.liquido} style={{ color: Variables.colors.blue }} />
+                            </View>
+                        </View>
+                    </View>
+
+                    <View>
                         <CampoEstatico titulo={"Referência"} valor={this.state.referencia} />
-                    </ElevatedView>
+                    </View>
 
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
+                    <Separador />
+
+                    <View>
                         <Text style={[Styles.h2, { color: Variables.colors.primary, marginBottom: 10 }]}>
                             RENDIMENTOS
                         </Text>
@@ -78,9 +108,11 @@ export default class ContrachequeDetalheScreen extends Component {
                         {this.state.rendimentos.map((rubrica, index) => {
                             return <CampoEstatico key={index} titulo={rubrica.DS_RUBRICA} tipo={"dinheiro"} valor={rubrica.VL_CALCULO} style={{ marginBottom: 0 }} />;
                         })}
-                    </ElevatedView>
+                    </View>
 
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
+                    <Separador />
+
+                    <View style={{ marginBottom: 10 }}>
                         <Text style={[Styles.h2, { color: Variables.colors.red, marginBottom: 10 }]}>
                             DESCONTOS
                         </Text>
@@ -88,10 +120,10 @@ export default class ContrachequeDetalheScreen extends Component {
                         {this.state.descontos.map((rubrica, index) => {
                             return <CampoEstatico key={index} titulo={rubrica.DS_RUBRICA} tipo={"dinheiro"} valor={rubrica.VL_CALCULO} style={{ marginBottom: 0 }} />;
                         })}
-                    </ElevatedView>
+                    </View>
 
-                </ScrollView>
-            </View>
+                </View>
+            </ScrollView>
         );
     }
 };

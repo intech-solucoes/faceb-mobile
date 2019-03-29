@@ -9,12 +9,6 @@ export default Styles = StyleSheet.create({
     container: {
         flex: 1
     },
-    backgroundImage: {
-        justifyContent: 'center',
-        flex: 1, 
-        width: null,
-        height: null,
-    },
     button: {
         alignItems: 'center',
         backgroundColor: Variables.colors.primary,
@@ -28,11 +22,12 @@ export default Styles = StyleSheet.create({
         fontSize: 16
     },
     textInput: {
-        backgroundColor: "white",
         marginBottom: 5,
         height: 40, 
-        padding: 10,
-        borderColor: "#FFFFFF"
+        paddingHorizontal: 10,
+        backgroundColor: "#F6F7F9",
+        borderColor: "#e8e9ea",
+        borderWidth: 1
     },
     h1: {
         fontSize: 24
@@ -50,7 +45,10 @@ export default Styles = StyleSheet.create({
         fontSize: 10
     },
     scrollContainer: {
-        padding: 20
+        backgroundColor: "#FFF"
+    },
+    scrollContainerContent: {
+        padding: 20,
     }
 });
 

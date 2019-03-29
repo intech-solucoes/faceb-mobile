@@ -31,6 +31,11 @@ const styles = {
 
 export default class PlanosScreen extends React.Component {
 
+    static navigationOptions = {
+        title: "Planos",
+        rightMenu: false
+    }
+
     constructor(props) {
         super(props);
 
@@ -73,7 +78,7 @@ export default class PlanosScreen extends React.Component {
 
     render() {
         return (
-            <View style={[Styles.content, { paddingTop: 50 }]}>
+            <View style={[Styles.content, { paddingTop: 20 }]}>
 
                 <Spinner visible={this.state.loading} cancelable={true} />
 

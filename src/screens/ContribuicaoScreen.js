@@ -14,7 +14,7 @@ const contribuicaoService  = new ContribuicaoService(config);
 const salarioContribService = new SalarioContribuicaoService(config);
 
 const ViewRubricas = (props) => (
-    <ElevatedView elevation={3} style={{ marginBottom: 10 }}>
+    <View style={{ marginBottom: 10, padding: 5 }}>
         <Text style={Styles.h2}>
             {props.titulo}
         </Text>
@@ -22,13 +22,14 @@ const ViewRubricas = (props) => (
         {props.lista.map((contrib, index) => {
             return <CampoEstatico key={index} titulo={contrib.DS_TIPO_COBRANCA} tipo={"dinheiro"} valor={contrib.VL_CONTRIBUICAO} />;
         })}
-    </ElevatedView>
+    </View>
 )
 
 export default class ContribuicaoScreen extends Component {
 
     static navigationOptions = {
-        title: "Sua Contribuicao"
+        title: "Sua Contribuicao",
+        rightMenu: true
     }
 
     constructor(props) {
@@ -106,12 +107,11 @@ export default class ContribuicaoScreen extends Component {
 
     render() {
         return (
-            <View>
+            <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
                 <Spinner visible={this.state.loading} cancelable={true} />
-
-                <ScrollView contentContainerStyle={Styles.scrollContainer}>
                     
-                    <ElevatedView elevation={3} style={styles.header}>
+                <View>
+                    <View style={styles.header}>
                         <View style={{marginBottom: 15}}>
                             <Text style={[Styles.h4, styles.headerText]}>
                                 Referência
@@ -129,7 +129,7 @@ export default class ContribuicaoScreen extends Component {
                                 <TextMask type={'money'} value={this.state.salario.VL_BASE_FUNDACAO} />
                             </Text>
                         </View>
-                    </ElevatedView>
+                    </View>
 
                     <ViewRubricas titulo={"INDIVIDUAL"} lista={this.state.listaIndividual} />
                     <ViewRubricas titulo={"PATROCINADORA"} lista={this.state.listaPatronal} />
@@ -139,8 +139,8 @@ export default class ContribuicaoScreen extends Component {
                             <ViewRubricas titulo={"ADMINISTRATIVO"} lista={this.state.listaAdm} />
                             <ViewRubricas titulo={"RISCO"} lista={this.state.listaRisco} />
                         </View>}
-                </ScrollView>
-            </View>
+                </View>
+            </ScrollView>
         )
     }
 };

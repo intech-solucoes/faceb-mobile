@@ -1,3 +1,9 @@
+import { LandingPageScreen } from "./LandingPage";
+import { QuemSomosScreen } from "./QuemSomos";
+import { PlanosFacebScreen, PlanoBDScreen, PlanoCDScreen } from "./PlanosFaceb";
+import { CalendarioScreen } from "./Calendario";
+import { NoticiasScreen, NoticiaScreen } from "./Noticias";
+import { ContatoScreen } from "./Contato";
 import LoginScreen from "./LoginScreen";
 import PlanosScreen from "./PlanosScreen";
 import HomeScreen from "./HomeScreen";
@@ -15,6 +21,12 @@ import SimuladorCDResultadoScreen from "./SimuladorCDResultadoScreen";
 import RelacionamentoScreen from "./RelacionamentoScreen";
 
 export {
+    LandingPageScreen,
+    QuemSomosScreen,
+    PlanosFacebScreen, PlanoBDScreen, PlanoCDScreen,
+    CalendarioScreen,
+    NoticiasScreen, NoticiaScreen,
+    ContatoScreen,
     LoginScreen,
     PlanosScreen,
     HomeScreen,
@@ -29,5 +41,5 @@ export {
     SimuladorCDScreen,
     SimuladorCDPasso2Screen,
     SimuladorCDResultadoScreen,
-    RelacionamentoScreen
+    RelacionamentoScreen,
 }

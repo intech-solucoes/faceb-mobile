@@ -15,25 +15,27 @@ export default class CampoEstatico extends Component {
         tituloStyle: PropTypes.any,
         subtituloStyle: PropTypes.any,
         tipo: PropTypes.oneOf(['dinheiro', 'texto']),
+        semMargem: PropTypes.bool
     }
 
     static defaultProps = {
-        tipo: 'texto'
+        tipo: 'texto',
+        semMargem: false
     }
 
     render() {
         return (
-            <View style={{marginBottom: 15}}>
+            <View style={{marginBottom: this.props.semMargem ? 0 : 15}}>
                 <Text style={[Styles.h4, styles.label, this.props.tituloStyle]}>{this.props.titulo}</Text>
 
                 {this.props.subtitulo &&
                     <Text style={[Styles.h5, this.props.subtituloStyle]}>{this.props.subtitulo}</Text>}
 
                 {this.props.tipo === "dinheiro" && 
-                    <TextMask style={[Styles.h2, styles.valor, this.props.style]} type={'money'} value={this.props.valor} />}
+                    <TextMask style={[Styles.h3, styles.valor, this.props.style]} type={'money'} value={this.props.valor} />}
 
                 {this.props.tipo === "texto" &&
-                    <Text style={[Styles.h2, styles.valor, this.props.style]}>{this.props.valor}</Text>}
+                    <Text style={[Styles.h3, styles.valor, this.props.style]}>{this.props.valor}</Text>}
             </View>
         );
     }
@@ -41,9 +43,8 @@ export default class CampoEstatico extends Component {
 
 const styles = StyleSheet.create({
     valor: {
-        color: Variables.colors.primary
     },
     label: {
-        fontWeight: 'bold'
+        color: "#535771"
     }
 });

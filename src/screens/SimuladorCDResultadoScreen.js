@@ -15,7 +15,8 @@ const simuladorService = new SimuladorService(config);
 export default class SimuladorCDResultadoScreen extends Component {
 
     static navigationOptions = {
-        title: "Sua Aposentadoria"
+        title: "Sua Aposentadoria",
+        rightMenu: true
     }
 
     constructor(props) {
@@ -51,24 +52,23 @@ export default class SimuladorCDResultadoScreen extends Component {
 
     render() {
         return (
-            <View>
+            <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
                 <Spinner visible={this.state.loading} cancelable={true} />
 
-                <ScrollView contentContainerStyle={Styles.scrollContainer}>
-
+                <View>
                     <Text style={[Styles.h1, { color: Variables.colors.primary, marginBottom: 30, textAlign: 'center' }]}>
                         RESULTADO DA SIMULAÇÃO
                     </Text>
                     
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
+                    <View style={{ padding: 10, marginBottom: 10 }}>
 
                         <CampoEstatico titulo={"O seu saldo de contas PROJETADO para a data de aposentadoria é de:"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.valorFuturo} />
                         <CampoEstatico titulo={"Saque do Saldo de Contas à Vista:"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.valorSaque} />
                         <CampoEstatico titulo={"Data da Aposentadoria:"} valor={this.state.dadosSimulacao.dataAposentadoria} />
 
-                    </ElevatedView>
+                    </View>
 
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
+                    <View style={{ padding: 10, marginBottom: 10 }}>
 
                         <Text style={{ marginBottom: 15 }}>
                             O regulamento do CEBPREV permite variadas opções de recebimento da sua aposentadoria. 
@@ -101,7 +101,7 @@ export default class SimuladorCDResultadoScreen extends Component {
                             return <CampoEstatico key={index} titulo={`Renda por ${item.Key} % do Saldo de Contas`} tipo={"dinheiro"} valor={item.Value} />
                         })}
 
-                    </ElevatedView>
+                    </View>
 
                     <Text style={[Styles.h2, { color: Variables.colors.primary, marginVertical: 10, textAlign: 'center' }]}>
                         OBSERVAÇÕES
@@ -122,8 +122,8 @@ export default class SimuladorCDResultadoScreen extends Component {
                         cujo benefício será mantido em quantitativo de cotas e valorizado pela cota do mês anterior ao pagamento.
                     </Text>
 
-                </ScrollView>
-            </View>
+                </View>
+            </ScrollView>
         );
     }
 };

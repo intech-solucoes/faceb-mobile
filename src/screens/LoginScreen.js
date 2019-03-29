@@ -1,7 +1,6 @@
 import React from "react";
-import { Text, View, ImageBackground, Image, TextInput, Switch, AsyncStorage, StatusBar } from "react-native";
+import { Text, View, ScrollView, TextInput, Switch, AsyncStorage, Alert } from "react-native";
 import Spinner from 'react-native-loading-spinner-overlay';
-import VersionNumber from 'react-native-version-number';
 
 import Styles, { Variables } from "../styles";
 import { Button } from "../components";
@@ -11,39 +10,42 @@ import { UsuarioService } from "@intechprev/advanced-service";
 const config = require("../config.json");
 const usuarioService = new UsuarioService(config);
 
-const loginStyles = {
+const styles = {
     container: {
-        flex: 1
+        flex: 1,
+        padding: 10
     },
     content: {
         flex: 1,
         padding: 50,
         alignItems: "center"
     },
-    logo: {
-        height: 80,
-        width: 200
-    },
-    footer: {
-        height: 240,
-        padding: 10,
-        paddingBottom: 0
-    },
-    loginButton: {
-        marginTop: 20
+    loginField: { 
+        backgroundColor: "#F6F7F9",
+        borderColor: "#e8e9ea",
+        borderWidth: 1
+        // borderBottomColor: "#CCC", 
+        // borderBottomWidth: 1
     },
     remember: {
         flex: 1,
         flexDirection: "row",
-        alignSelf: "flex-end"
+        margin: 10,
+        marginBottom: 30
     },
     labelRemeber: {
-        color: "#FFFFFF",
-        marginTop: 3
+        marginTop: 6,
+        marginLeft: 5
     }
 }
 
 export default class LoginScreen extends React.Component {
+
+    static navigationOptions = {
+        title: "Login",
+        rightMenu: false
+    }
+
     constructor(props) {
         super(props);
 
@@ -52,7 +54,7 @@ export default class LoginScreen extends React.Component {
 
         // Cria o state do componente
         this.state = {
-            //cpf: "42827205149",
+            //cpf: "28175719168",
             //senha: "123",
             cpf: "",
             senha: "",
@@ -62,14 +64,13 @@ export default class LoginScreen extends React.Component {
     }
 
     componentDidMount = async () => {
+
+        await this.setState({ loading: false });
+        
         var cpf = await AsyncStorage.getItem('cpfSalvo');
 
-        if(cpf) {
-            await this.setState({
-                cpf: cpf,
-                lembrar: true
-            });
-        }
+        if(cpf)
+            await this.setState({ cpf, lembrar: true });
     }
 
     focusNextField = (id) => {
@@ -85,56 +86,47 @@ export default class LoginScreen extends React.Component {
             }
 
             var result = await usuarioService.LoginV2(this.state.cpf, this.state.senha);
+            await this.setState({ loading: false });
+
             await AsyncStorage.setItem('token', result.data.AccessToken);
             await AsyncStorage.setItem('pensionista', result.data.pensionista.toString());
-            await this.setState({ loading: false });
 
             this.props.navigation.navigate('Planos');
         } catch (err) {
             await this.setState({ loading: false });
 
-            if(err.response) {
-                alert(err.response.data);
-            }
-            else {
-                alert(err);
-            }
+            setTimeout(() => {
+                if(err.response)
+                    alert(err.response.data);
+                else
+                    alert(err);
+            }, 100);
         }
     }
 
     render() {
         return (
-            <ImageBackground source={require("../assets/login_background.jpg")} style={[Styles.backgroundImage, loginStyles.container]}>
+            <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
 
                 <Spinner visible={this.state.loading} cancelable={true} />
 
-                <StatusBar translucent backgroundColor="rgba(0, 0, 0, 0.20)" animated />
-
-                <View style={[Styles.content, loginStyles.content]}>
-                    <Image source={require("../assets/faceb_negativa.png")} style={loginStyles.logo} />
-                </View>
-
-                <View style={loginStyles.footer}>
-                    <TextInput name={"cpf"} style={Styles.textInput} placeholder="CPF" returnKeyType="next" blurOnSubmit={false} underlineColorAndroid="transparent"
+                <View>
+                    <TextInput name={"cpf"} style={[Styles.textInput, styles.loginField]} placeholder="CPF" returnKeyType="next" blurOnSubmit={false} underlineColorAndroid="transparent"
                         onSubmitEditing={() => { this.focusNextField('senha'); }} onChangeText={value => this.setState({ cpf: value })}
                         ref={input => { this.inputs['cpf'] = input; }} value={this.state.cpf} />
 
-                    <TextInput name={"senha"} style={Styles.textInput} placeholder="Senha" returnKeyType="done" secureTextEntry={true}
+                    <TextInput name={"senha"} style={[Styles.textInput, styles.loginField]} placeholder="Senha" returnKeyType="done" secureTextEntry={true}
                         ref={input => { this.inputs['senha'] = input; }} onChangeText={value => this.setState({ senha: value })} value={this.state.senha} />
 
-                    <View style={loginStyles.remember}>
-                        <Text style={loginStyles.labelRemeber}>Lembrar-me</Text>
-                        <Switch value={this.state.lembrar} thumbColor={Variables.colors.primary}
-                            onValueChange={value => this.setState({ lembrar: value })} />
+                    <View style={styles.remember}>
+                        <Switch value={this.state.lembrar} thumbColor={Variables.colors.primary} ios_backgroundColor={"#CCC"}
+                                onValueChange={value => this.setState({ lembrar: value })} />
+                        <Text style={styles.labelRemeber}>Lembrar-me</Text>
                     </View>
 
-                    <Button title="Entrar" onClick={this.login} style={loginStyles.loginButton} />
-
-                    <Text style={{ backgroundColor: "rgba(0,0,0,0.5)", marginVertical: 10, padding: 5, textAlign:"center", color: "#FFF" }}>
-                        Versão {VersionNumber.appVersion}
-                    </Text>
+                    <Button title="Entrar" onClick={this.login} />
                 </View>
-            </ImageBackground>
+            </ScrollView>
         );
     }
 }

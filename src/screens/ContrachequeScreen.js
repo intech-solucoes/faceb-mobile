@@ -14,7 +14,8 @@ const contrachequeService  = new ContrachequeService(config);
 export default class ContrachequeScreen extends Component {
 
     static navigationOptions = {
-        title: "Contracheque"
+        title: "Contracheque",
+        rightMenu: true
     }
 
     constructor(props) {

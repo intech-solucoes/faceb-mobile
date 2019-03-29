@@ -16,7 +16,8 @@ const relacionamentoService = new RelacionamentoService(config);
 export default class RelacionamentoScreen extends Component {
 
     static navigationOptions = {
-        title: "Relacionamento"
+        title: "Relacionamento",
+        rightMenu: true
     }
 
     constructor(props) {
@@ -41,7 +42,10 @@ export default class RelacionamentoScreen extends Component {
 
     async carregarDadosPessoais() {
         var result = await dadosPessoaisService.Buscar();
-        await this.setState({ dados: result.data });
+        await this.setState({ 
+            dados: result.data,
+            email: result.data.NO_EMAIL
+        });
     }
 
     enviar = async () => {
@@ -65,23 +69,25 @@ export default class RelacionamentoScreen extends Component {
 
     render() {
         return (
-            <View>
+            <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
                 <Spinner visible={this.state.loading} cancelable={true} />
 
-                <ScrollView contentContainerStyle={[ Styles.scrollContainer ]}>
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10, flex: 1 }}>
+                <View>
+                    <View style={{ marginBottom: 15 }}>
                         <Text>Seu E-mail:</Text>
-                        <TextInput name={"email"} style={[Styles.textInput, { padding: 0, marginBottom: 0 }]} placeholder={"Digite aqui seu e-mail"} keyboardType={"email-address"} underlineColorAndroid="transparent"
+                        <TextInput name={"email"} style={[Styles.textInput, { padding: 0, marginBottom: 0, marginTop: 10 }]} 
+                                   placeholder={"Digite aqui seu e-mail"} keyboardType={"email-address"} underlineColorAndroid="transparent"
                                    value={this.state.email} onChangeText={value => this.setState({ email: value })} />
-                    </ElevatedView>
+                    </View>
 
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10, flex: 1 }}>
+                    <View style={{ marginBottom: 15 }}>
                         <Text>Assunto:</Text>
-                        <TextInput name={"assunto"} style={[Styles.textInput, { padding: 0, marginBottom: 0 }]} placeholder={"Digite aqui o assunto"} underlineColorAndroid="transparent"
-                                value={this.state.assunto} onChangeText={value => this.setState({ assunto: value })} />
-                    </ElevatedView>
+                        <TextInput name={"assunto"} style={[Styles.textInput, { padding: 0, marginBottom: 0, marginTop: 10 }]} 
+                                   placeholder={"Digite aqui o assunto"} underlineColorAndroid="transparent"
+                                   value={this.state.assunto} onChangeText={value => this.setState({ assunto: value })} />
+                    </View>
 
-                    <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10, flex: 2 }}>
+                    <View style={{ marginBottom: 15 }}>
                         <Text>Mensagem:</Text>
                         <TextInput name={"mensagem"} underlineColorAndroid="transparent" multiline
                                 value={this.state.mensagem}
@@ -91,12 +97,12 @@ export default class RelacionamentoScreen extends Component {
                                 onContentSizeChange={(event) => {
                                     this.setState({ height: event.nativeEvent.contentSize.height })
                                 }}
-                                style={[Styles.textInput, { padding: 0, marginBottom: 0, marginTop: 10, height: Math.max(35, this.state.height) }]} />
-                    </ElevatedView>
+                                style={[Styles.textInput, { marginBottom: 0, marginTop: 10, height: Math.max(35, this.state.height) }]} />
+                    </View>
 
-                    <Button title={"Enviar"} style={{ flex: 1 }} onClick={this.enviar} />
-                </ScrollView>
-            </View>
+                    <Button title={"Enviar"} style={{ marginTop: 20 }} onClick={this.enviar} />
+                </View>
+            </ScrollView>
         );
     }
 }
