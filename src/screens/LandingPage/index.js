@@ -91,6 +91,7 @@ export class LandingPageScreen extends React.Component {
                     <MenuItem title={"Quem Somos"} subtitle={"Conheça aqui é a Faceb"} icon={"star"} onPress={this.navigateToScreen("QuemSomos")} />
                     <MenuItem title={"Planos"} subtitle={"Conheça aqui nossos planos"} icon={"ios-journal"} onPress={this.navigateToScreen("PlanosFaceb")} />
                     <MenuItem title={"Notícias"} subtitle={"Leia as últimas notícias publicadas pela Faceb"} icon={"md-paper"} onPress={this.navigateToScreen("Noticias")} />
+                    <MenuItem title={"Simulador de Benefícios"} subtitle={"Simule aqui o benefício para não-participantes no plano CEBPREV"} icon={"md-rose"} onPress={this.navigateToScreen("SimuladorNaoParticipantes")} />
                     <MenuItem title={"Calendário de Pagamentos"} subtitle={"Confira a data de pagamento das aposentadorias e pensões em 2019"} icon={"md-calendar"} onPress={this.navigateToScreen("Calendario")} />
                     <MenuItem title={"Contato"} subtitle={"Entre em contato com a Faceb"} icon={"ios-chatboxes"} onPress={this.navigateToScreen("Contato")} />
 
