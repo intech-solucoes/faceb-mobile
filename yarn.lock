@@ -813,10 +813,10 @@
     pouchdb-collections "^1.0.1"
     tiny-queue "^0.2.1"
 
-"@intechprev/advanced-service@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@intechprev/advanced-service/-/advanced-service-0.0.11.tgz#e804f0e6ed205efd25e9e4050dbbc417bba9dae3"
-  integrity sha512-xkIwn2Py4GojF5+jw5A3MgohIoI3+RqszxwCSG2UjFPxmO/ZqzWFIRVIG+KCRthedmlISAn1t7XUUvsn5yDzUw==
+"@intechprev/advanced-service@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@intechprev/advanced-service/-/advanced-service-0.0.14.tgz#e2a614caef9c944497e03fa4c2d02641fc8df6eb"
+  integrity sha512-+/H499GqKpSNPoBdieGJF2RHKn13FERV9x0VjEMf+NFLCm8mHAQvOeLSL6AkGg2NiGOC3wk+aE9mN5pOyE93Cw==
   dependencies:
     "@intechprev/service" "^1.0.2"
 

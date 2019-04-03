@@ -1,7 +1,7 @@
 import { LandingPageScreen } from "./LandingPage";
 import { QuemSomosScreen } from "./QuemSomos";
 import { PlanosFacebScreen, PlanoBDScreen, PlanoCDScreen } from "./PlanosFaceb";
-import { SimuladorNaoParticipantesScreen } from "./SimuladorNaoParticipantes";
+import { SimuladorNaoParticipantesScreen, SimuladorNaoParticipantesResultadoScreen } from "./SimuladorNaoParticipantes";
 import { CalendarioScreen } from "./Calendario";
 import { NoticiasScreen, NoticiaScreen } from "./Noticias";
 import { ContatoScreen } from "./Contato";
@@ -25,7 +25,7 @@ export {
     LandingPageScreen,
     QuemSomosScreen,
     PlanosFacebScreen, PlanoBDScreen, PlanoCDScreen,
-    SimuladorNaoParticipantesScreen,
+    SimuladorNaoParticipantesScreen, SimuladorNaoParticipantesResultadoScreen,
     CalendarioScreen,
     NoticiasScreen, NoticiaScreen,
     ContatoScreen,

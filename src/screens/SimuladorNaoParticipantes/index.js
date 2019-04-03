@@ -6,82 +6,19 @@ import Spinner from 'react-native-loading-spinner-overlay';
 import _ from "lodash";
 
 import Styles, { Variables } from "../../styles";
-import { ScreenHeader, ElevatedView, CampoEstatico, Button } from "../../components";
+import { ScreenHeader, ElevatedView, CampoEstatico, Button, DropDown } from "../../components";
 import Separador from '../../components/Separador';
 
-import { ContribuicaoService, SimuladorService } from "@intechprev/advanced-service";
+import { SimuladorService } from "@intechprev/advanced-service";
+
+import { SimuladorNaoParticipantesResultadoScreen } from "./resultado";
+export { SimuladorNaoParticipantesResultadoScreen };
 
 const config = require("../../config.json");
 const simuladorService  = new SimuladorService(config);
 
 const idadesAposentadoria = _.range(48, 71, 1);
 const percentuaisSaque = _.range(1, 26, 1);
-
-const DropDown = (props) => {
-    var prefixo = props.prefixo ? props.prefixo : " ";
-    var sufixo = props.sufixo ? props.sufixo : " ";
-
-    if(props.textoVazio) {
-        return (
-            <Picker
-                renderHeader={backAction =>
-                    <Header style={{ backgroundColor: Variables.colors.primary }}>
-                        <Left>
-                            <TouchableOpacity onPress={backAction}>
-                                <Icon name="arrow-back" style={{ color: "#fff" }} />
-                            </TouchableOpacity>
-                        </Left>
-                        <Body style={{ flex: 3 }}>
-                            <Title style={{ color: "#fff" }}>{props.titulo}</Title>
-                        </Body>
-                        <Right />
-                    </Header>}
-                mode="dialog"
-                style={Styles.textInput}
-                selectedValue={props.valor} 
-                onValueChange={props.onValueChange}
-            >
-                <Picker.Item label={props.textoVazio} value={" "} />
-    
-                {props.itens.map((item, index) => {
-                    if(typeof(item) === "string" || typeof(item) === "number")
-                        return <Picker.Item key={index} label={prefixo + item.toString() + sufixo} value={item} />
-                    else
-                        return <Picker.Item key={index} label={prefixo + item.titulo + sufixo} value={item.valor} />
-                })}
-            </Picker>
-        );
-    } else {
-        return (
-            <Picker
-                renderHeader={backAction =>
-                    <Header style={{ backgroundColor: Variables.colors.primary }}>
-                        <Left>
-                            <TouchableOpacity onPress={backAction}>
-                                <Icon name="arrow-back" style={{ color: "#fff" }} />
-                            </TouchableOpacity>
-                        </Left>
-                        <Body style={{ flex: 3 }}>
-                            <Title style={{ color: "#fff" }}>{props.titulo}</Title>
-                        </Body>
-                        <Right />
-                    </Header>}
-                mode="dialog"
-                style={Styles.textInput}
-                selectedValue={props.valor} 
-                onValueChange={props.onValueChange}
-            >
-                {props.itens.map((item, index) => {
-                    if(typeof(item) === "string" || typeof(item) === "number")
-                        return <Picker.Item key={index} label={prefixo + item.toString() + sufixo} value={item} />
-                    else
-                        return <Picker.Item key={index} label={prefixo + item.titulo + sufixo} value={item.valor} />
-                })}
-            </Picker>
-        );
-    }
-    
-}
 
 export class SimuladorNaoParticipantesScreen extends Component {
 
@@ -99,7 +36,48 @@ export class SimuladorNaoParticipantesScreen extends Component {
             sexoFilhoMaisNovo: "M",
             possuiFilhoInvalido: "N",
             sexoFilhoInvalido: "M",
-            percentualSaque: " "
+            percentualSaque: " ",
+            percentualContribuicao: 10,
+            idadeAposentadoria: 48,
+            taxaJuros: 4.23
+        }
+    }
+
+    simular = async () => {
+        try {
+            await this.setState({ loading: true });
+
+            if(!this.state.nome || this.state.nome === "")
+                throw new Error("Preencha o campo \"Nome\"");
+
+            if(!this.state.email || this.state.email === "")
+                throw new Error("Preencha o campo \"E-mail\"");
+
+            if(!this.state.dataNascimento || this.state.dataNascimento === "")
+                throw new Error("Preencha o campo \"Data de nascimento\"");
+
+            if(!this.state.remuneracaoInicial || this.state.remuneracaoInicial === "")
+                throw new Error("Preencha o campo \"Salário Bruto\"");
+
+            var remuneracao = _.toNumber(this.state.remuneracaoInicial.replace('.', '').replace(',', '.'));
+            var contribBasica = remuneracao * (this.state.percentualContribuicao / 100);
+
+            var { data: resultadoSimulacao } = await simuladorService.SimularNaoParticipante(this.state.nome, this.state.email, contribBasica, this.state.contribuicaoFacultativa, this.state.aporte,
+                this.state.idadeAposentadoria, this.state.percentualSaque, this.state.dataNascimento, this.state.sexo, this.state.nascimentoConjuge, 
+                this.state.nascimentoFilhoInvalido, this.state.sexoFilhoInvalido, this.state.nascimentoFilhoMaisNovo, this.state.sexoFilhoMaisNovo, this.state.taxaJuros);
+
+            await this.setState({ loading: false });
+
+            await this.props.navigation.navigate("SimuladorNaoParticipantesResultado", { resultado: JSON.stringify(resultadoSimulacao) });
+        } catch(ex) {
+            await this.setState({ loading: false });
+
+            setTimeout(async () => {
+                if(ex.response)
+                    await alert(ex.response.data);
+                else
+                    await alert(ex);
+            }, 300);
         }
     }
 
@@ -125,7 +103,15 @@ export class SimuladorNaoParticipantesScreen extends Component {
                             <Text style={{ marginBottom: 10 }}>Digite seu nome</Text>
                             <TextInput name={"nome"} style={Styles.textInput} underlineColorAndroid="transparent"
                                     value={this.state.nome} style={Styles.textInput}
-                                    onChangeText={value => this.setState({ nome: value })} />
+                                    onChangeText={nome => this.setState({ nome })} />
+                        </View>
+
+                        {/* E-mail */}
+                        <View style={{ marginBottom: 10 }}>
+                            <Text style={{ marginBottom: 10 }}>Digite seu e-mail</Text>
+                            <TextInput name={"email"} style={Styles.textInput} underlineColorAndroid="transparent" keyboardType={"email-address"}
+                                    value={this.state.email} style={Styles.textInput}
+                                    onChangeText={email => this.setState({ email })} />
                         </View>
 
                         {/* Data Nascimento */}
@@ -151,7 +137,7 @@ export class SimuladorNaoParticipantesScreen extends Component {
                         {/* Salário bruto */}
                         <View style={{ marginBottom: 10 }}>
                             <Text style={{ marginBottom: 10 }}>Digite seu salário bruto</Text>
-                            <TextInputMask name={"remuneracaoInicial"} type={'money'} keyboardType={"phone-pad"}
+                            <TextInputMask name={"remuneracaoInicial"} type={'money'} options={{ unit: "" }} keyboardType={"phone-pad"}
                                     style={Styles.textInput} underlineColorAndroid="transparent"
                                     value={this.state.remuneracaoInicial} style={Styles.textInput}
                                     onChangeText={remuneracaoInicial => this.setState({ remuneracaoInicial })} />
@@ -175,7 +161,7 @@ export class SimuladorNaoParticipantesScreen extends Component {
                         {/* Contribuição facultativa */}
                         <View style={{ marginBottom: 10 }}>
                             <Text style={{ marginBottom: 10 }}>Contribuição facultativa</Text>
-                            <TextInputMask name={"contribuicaoFacultativa"} type={'money'} keyboardType={"phone-pad"}
+                            <TextInputMask name={"contribuicaoFacultativa"} type={'money'}options={{ unit: "" }} keyboardType={"phone-pad"}
                                     style={Styles.textInput} underlineColorAndroid="transparent"
                                     value={this.state.contribuicaoFacultativa} style={Styles.textInput}
                                     onChangeText={contribuicaoFacultativa => this.setState({ contribuicaoFacultativa })} />
@@ -280,23 +266,18 @@ export class SimuladorNaoParticipantesScreen extends Component {
                                     onValueChange={(idadeAposentadoria) => this.setState({ idadeAposentadoria })} />
                         </View>
 
-                        {/* Aporte inicial */}
                         <View style={{ marginBottom: 10 }}>
                             <Text style={{ marginBottom: 10 }}>Você deseja sacar à vista um percentual do seu saldo de contas na concessão do benefício?</Text>
-                            <TextInputMask name={"aporte"} type={'money'}
-                                    style={Styles.textInput} underlineColorAndroid="transparent"
-                                    value={this.state.aporte} style={Styles.textInput}
-                                    onChangeText={aporte => this.setState({ aporte })} />
-                        </View>
-
-                        <View style={{ marginBottom: 10 }}>
-                            <Text style={{ marginBottom: 10 }}>Com quantos anos você pretende se aposentar?</Text>
                             <DropDown titulo={"Percentual"} valor={this.state.percentualSaque}
                                     itens={percentuaisSaque} textoVazio={"NÃO"} prefixo={"SIM - "} sufixo={"%"}
                                     onValueChange={(percentualSaque) => this.setState({ percentualSaque })} />
                         </View>
 
-                        {/* Filho Inválido */}
+                        <View style={{ marginBottom: 10 }}>
+                            <Text style={{ marginBottom: 10 }}>Com quantos anos você pretende se aposentar?</Text>
+                            
+                        </View>
+
                         <View style={{ marginBottom: 10 }}>
                             <Text style={{ marginBottom: 10 }}>Taxa de juros</Text>
                             <DropDown titulo={"Selecione uma opção"} valor={this.state.taxaJuros}
@@ -314,7 +295,7 @@ export class SimuladorNaoParticipantesScreen extends Component {
                         <Text style={[ Styles.h3, { color: Variables.colors.secondary} ]}>Dados válidos somente para essa simulação!</Text>
 
                         <Button title={"Próximo"} style={{ marginTop: 10 }}
-                            onClick={() => this.props.navigation.navigate("SimuadorNaoParticipanteResultado", this.state)} />
+                            onClick={this.simular} />
                     </View>
                 </ScrollView>
             </KeyboardAvoidingView>

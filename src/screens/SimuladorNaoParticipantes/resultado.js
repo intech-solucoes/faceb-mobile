@@ -1,85 +1,70 @@
 import React, { Component } from 'react';
-import { Text, View, ScrollView, StyleSheet, BackHandler, AsyncStorage, Slider, TextInput } from "react-native";
-import { TextMask } from "react-native-masked-text";
+import { Text, View, ScrollView, StyleSheet, BackHandler, AsyncStorage, TouchableOpacity, Slider, TextInput, KeyboardAvoidingView } from "react-native";
+import { Picker, Icon, Header, Left, Right, Body, Title } from "native-base";
+import { TextMask, TextInputMask } from "react-native-masked-text";
 import Spinner from 'react-native-loading-spinner-overlay';
 import _ from "lodash";
 
-import Styles, { Variables } from "../styles";
-import { ScreenHeader, ElevatedView, CampoEstatico, Button } from "../components";
+import Styles, { Variables } from "../../styles";
+import { ScreenHeader, ElevatedView, CampoEstatico, Button, DropDown } from "../../components";
+import Separador from '../../components/Separador';
 
 import { SimuladorService } from "@intechprev/advanced-service";
 
-const config = require("../config.json");
-const simuladorService = new SimuladorService(config);
+const config = require("../../config.json");
+const simuladorService  = new SimuladorService(config);
 
-export default class SimuladorCDResultadoScreen extends Component {
+export class SimuladorNaoParticipantesResultadoScreen extends Component {
+
+    state = {
+        dadosSimulacao: {
+            listaPrazos: [],
+            listaSaldoPercentuais: []
+        }
+    }
 
     static navigationOptions = {
-        title: "Sua Aposentadoria",
-        rightMenu: true
+        title: "Resultado",
+        rightMenu: false
     }
 
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            loading: false,
-            dadosSimulacao: {
-                listaPrazos: [],
-                listaSaldoPercentuais: []
-            }
-        }
+    componentDidMount = async () => {
+        var resultado = JSON.parse(this.props.navigation.getParam("resultado", "{}"));
+        await this.setState({
+            dadosSimulacao: resultado
+        });
     }
 
-    async componentDidMount() {
+    aderir = async () => {
         try {
-            await this.setState({ loading: true });
-
-            await this.carregarDados();
-            
-            await this.setState({ loading: false });
+            var { data: resultadoSimulacao } = await simuladorService.Aderir(this.state.dadosSimulacao.nome, this.state.dadosSimulacao.email);
+            console.warn(resultadoSimulacao);
+            await alert(resultadoSimulacao);
         } catch(ex) {
-            await this.setState({ loading: false });
-
-            setTimeout(async () => {
-                if(ex.response)
-                    await alert(ex.response.data);
-                else
-                    await alert(ex);
-
-                await this.props.navigation.pop();
-            }, 300);
+            if(ex.response)
+                await alert(ex.response.data);
+            else
+                await alert(ex);
         }
-    }
-
-    async carregarDados() {
-        var contribBasica = this.props.navigation.getParam("contribBasica", "0");
-        var contribFacultativa = this.props.navigation.getParam("contribFacultativa", "0");
-        var idadeAposentadoria = this.props.navigation.getParam("idadeAposentadoria", "0");
-
-        var saque = this.props.navigation.getParam("saque", "0");
-
-        var result = await simuladorService.SimularCD(contribBasica, contribFacultativa, idadeAposentadoria, saque);
-        this.setState({ dadosSimulacao: result.data });
     }
 
     render() {
         return (
             <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
-                <Spinner visible={this.state.loading} cancelable={true} />
-
                 <View>
                     <Text style={[Styles.h1, { color: Variables.colors.primary, marginBottom: 30, textAlign: 'center' }]}>
                         RESULTADO DA SIMULAÇÃO
                     </Text>
                     
-                    <View style={{ padding: 10, marginBottom: 10 }}>
+                    <View style={{ padding: 10 }}>
 
                         <CampoEstatico titulo={"O seu saldo de contas PROJETADO para a data de aposentadoria é de:"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.valorFuturo} />
                         <CampoEstatico titulo={"Saque do Saldo de Contas à Vista:"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.valorSaque} />
                         <CampoEstatico titulo={"Data da Aposentadoria:"} valor={this.state.dadosSimulacao.dataAposentadoria} />
 
                     </View>
+
+                    <Separador />
 
                     <View style={{ padding: 10, marginBottom: 10 }}>
 
@@ -88,10 +73,7 @@ export default class SimuladorCDResultadoScreen extends Component {
                             Baseado nos parâmetros de simulação informados nos passos anteriores, 
                             seguem as estimativas calculadas para cada opção de recebimento:
                         </Text>
-
-                        {/* <CampoEstatico titulo={"Renda por prazo indeterminado com pensão por morte:"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.rendaPrazoIndeterminadoPensaoMorte} />
-                        <CampoEstatico titulo={"Renda por prazo indeterminado sem pensão por morte:"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.rendaPrazoIndeterminadoSemPensaoMorte} /> */}
-
+                        
                         <View style={{ marginBottom: 15 }}>
                             <Text style={[Styles.h4, { fontWeight: "bold" }]}>
                                 Renda por prazo indeterminado <Text style={{ textDecorationLine: "underline" }}>com pensão</Text> por morte:
@@ -99,16 +81,20 @@ export default class SimuladorCDResultadoScreen extends Component {
                             <TextMask style={[Styles.h2, { color: Variables.colors.primary }]} type={'money'} value={this.state.dadosSimulacao.rendaPrazoIndeterminadoPensaoMorte} />
                         </View>
 
-                        <View style={{ marginBottom: 15 }}>
+                        <View style={{ marginBottom: 0 }}>
                             <Text style={[Styles.h4, { fontWeight: "bold" }]}>
                                 Renda por prazo indeterminado <Text style={{ textDecorationLine: "underline" }}>sem pensão</Text> por morte:
                             </Text>
                             <TextMask style={[Styles.h2, { color: Variables.colors.primary }]} type={'money'} value={this.state.dadosSimulacao.rendaPrazoIndeterminadoSemPensaoMorte} />
                         </View>
 
+                        <Separador />
+
                         {this.state.dadosSimulacao.listaPrazos.map((item, index) => {
                             return <CampoEstatico key={index} titulo={`Renda por prazo certo - ${item.Key} anos`} tipo={"dinheiro"} valor={item.Value} />
                         })}
+
+                        <Separador />
 
                         {this.state.dadosSimulacao.listaSaldoPercentuais.map((item, index) => {
                             return <CampoEstatico key={index} titulo={`Renda por ${item.Key} % do Saldo de Contas`} tipo={"dinheiro"} valor={item.Value} />
@@ -135,8 +121,10 @@ export default class SimuladorCDResultadoScreen extends Component {
                         cujo benefício será mantido em quantitativo de cotas e valorizado pela cota do mês anterior ao pagamento.
                     </Text>
 
+                    <Button title={"Gostei. Quero aderir!"} style={{ marginTop: 10 }} onClick={this.aderir} />
+
                 </View>
             </ScrollView>
         );
     }
-};
+}

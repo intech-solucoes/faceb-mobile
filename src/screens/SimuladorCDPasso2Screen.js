@@ -5,7 +5,7 @@ import Spinner from 'react-native-loading-spinner-overlay';
 import _ from "lodash";
 
 import Styles, { Variables } from "../styles";
-import { ScreenHeader, ElevatedView, CampoEstatico, Button } from "../components";
+import { ScreenHeader, ElevatedView, CampoEstatico, Button, DropDown } from "../components";
 
 import { SimuladorService } from "@intechprev/advanced-service";
 
@@ -28,7 +28,7 @@ export default class SimuladorCDPasso2Screen extends Component {
             idadeMaximAposentadoria: 70,
             idadeMinimaAposentadoria: 48,
             idadeAposentadoria: 48,
-            saque: "N",
+            saque: " ",
             contribBasica: "",
             contribFacultativa: ""
         }
@@ -97,22 +97,18 @@ export default class SimuladorCDPasso2Screen extends Component {
                             <CampoEstatico titulo={"Esse é o seu saldo de conta atualizado"} tipo={"dinheiro"} valor={this.state.dadosSimulacao.saldo} />
                         </View>
 
-                        <Text style={{ padding: 10, marginBottom: 10, fontSize: 16 }}>
+                        <Text style={{ padding: 10, marginBottom: 20, fontSize: 16 }}>
                             Para a simulação da sua aposentadoria, o seu saldo de contas atual será projetado acrescendo as contribuições mensais futuras até a data da sua aposentadoria. 
                             Os valores sofrerão uma valorização de <Text style={{ fontWeight: "bold", color: Variables.colors.primary }}>{this.state.dadosSimulacao.taxaJuros}%</Text> ao ano (valorização fictícia, válida apenas para essa simulação).
                         </Text>
 
-                        <ElevatedView elevation={3} style={{ padding: 10, marginBottom: 10 }}>
+                        <View style={{ marginBottom: 10 }}>
                             <Text style={[Styles.h3, { marginBottom: 10 }]}>Você deseja sacar à vista um percentual do seu saldo de contas na concessão do benefício?</Text>
-                            <Picker
-                                selectedValue={this.state.saque}
-                                onValueChange={(itemValue, itemIndex) => this.setState({ saque: itemValue })}>
-                                <Picker.Item label="Não" value="N" />
-                                {_.range(1, 26).map((percentual, index) => {
-                                    return <Picker.Item key={index} label={percentual + "%"} value={percentual.toString()} />
-                                })}
-                            </Picker>
-                        </ElevatedView>
+
+                            <DropDown titulo={"Selecione uma opção"} valor={this.state.saque}
+                                    itens={_.range(1, 26)} textoVazio={"NÃO"} prefixo={"SIM - "} sufixo={"%"}
+                                    onValueChange={(saque) => this.setState({ saque })} />
+                        </View>
 
                         <Button title={"Continuar"} onClick={() => this.props.navigation.navigate("SimuladorCDResultado", { 
                                 contribBasica: this.state.contribBasica, 
