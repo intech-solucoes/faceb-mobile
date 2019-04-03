@@ -31,12 +31,16 @@ export class SimuladorNaoParticipantesScreen extends Component {
         super(props);
 
         this.state = {
+            // nome: "Rony",
+            // email: "ronymmoura@gmail.com",
+            // dataNascimento: "18/02/1991",
+            // remuneracaoInicial: "5.000,00",
             sexo: "M",
             possuiFilhos: "N",
             sexoFilhoMaisNovo: "M",
             possuiFilhoInvalido: "N",
             sexoFilhoInvalido: "M",
-            percentualSaque: " ",
+            percentualSaque: 0,
             percentualContribuicao: 10,
             idadeAposentadoria: 48,
             taxaJuros: 4.23
@@ -82,12 +86,12 @@ export class SimuladorNaoParticipantesScreen extends Component {
         } catch(ex) {
             await this.setState({ loading: false });
 
-            setTimeout(async () => {
+            setTimeout(() => {
                 if(ex.response)
-                    await alert(ex.response.data);
+                    alert(ex.response.data);
                 else
-                    await alert(ex);
-            }, 300);
+                    alert(ex);
+            });
         }
     }
 
@@ -278,7 +282,7 @@ export class SimuladorNaoParticipantesScreen extends Component {
                         <View style={{ marginBottom: 10 }}>
                             <Text style={{ marginBottom: 10 }}>Você deseja sacar à vista um percentual do seu saldo de contas na concessão do benefício?</Text>
                             <DropDown titulo={"Percentual"} valor={this.state.percentualSaque}
-                                    itens={percentuaisSaque} textoVazio={"NÃO"} prefixo={"SIM - "} sufixo={"%"}
+                                    itens={percentuaisSaque} textoVazio={"NÃO"} valorVazio={0} prefixo={"SIM - "} sufixo={"%"}
                                     onValueChange={(percentualSaque) => this.setState({ percentualSaque })} />
                         </View>
 
