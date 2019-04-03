@@ -171,7 +171,7 @@ export class SimuladorNaoParticipantesScreen extends Component {
                         {/* Contribuição facultativa */}
                         <View style={{ marginBottom: 10 }}>
                             <Text style={{ marginBottom: 10 }}>Contribuição facultativa</Text>
-                            <TextInputMask name={"contribuicaoFacultativa"} type={'money'}options={{ unit: "" }} keyboardType={"phone-pad"}
+                            <TextInputMask name={"contribuicaoFacultativa"} type={'money'} options={{ unit: "" }} keyboardType={"phone-pad"}
                                     style={Styles.textInput} underlineColorAndroid="transparent"
                                     value={this.state.contribuicaoFacultativa} style={Styles.textInput}
                                     onChangeText={contribuicaoFacultativa => this.setState({ contribuicaoFacultativa })} />
@@ -180,7 +180,7 @@ export class SimuladorNaoParticipantesScreen extends Component {
                         {/* Aporte inicial */}
                         <View style={{ marginBottom: 10 }}>
                             <Text style={{ marginBottom: 10 }}>Deseja realizar um aporte inicial?</Text>
-                            <TextInputMask name={"aporte"} type={'money'}
+                            <TextInputMask name={"aporte"} type={'money'} options={{ unit: "" }}
                                     style={Styles.textInput} underlineColorAndroid="transparent"
                                     value={this.state.aporte} style={Styles.textInput}
                                     onChangeText={aporte => this.setState({ aporte })} />
