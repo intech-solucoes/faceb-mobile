@@ -9,7 +9,6 @@
             "ios",
             "android"
         ],
-        "version": "0.1.0",
         "orientation": "portrait",
         "icon": "./assets/icon.png",
         "splash": {
@@ -25,10 +24,11 @@
         ],
         "ios": {
             "supportsTablet": true,
-            "bundleIdentifier": "com.intech.faceb"
+            "bundleIdentifier": "com.faceb.previdencia"
         },
         "android": {
-            "package": "com.intech.faceb"
+            "package": "com.intech.faceb",
+            "versionCode": 43
         }
     }
 }
