@@ -59,6 +59,16 @@ export class SimuladorNaoParticipantesScreen extends Component {
             if(!this.state.remuneracaoInicial || this.state.remuneracaoInicial === "")
                 throw new Error("Preencha o campo \"Salário Bruto\"");
 
+            if(this.state.possuiFilhos === "S") {
+                if(!this.state.nascimentoFilhoMaisNovo || this.state.nascimentoFilhoMaisNovo === "")
+                    throw new Error("Preencha o campo \"Data de nascimento filho mais novo\"");
+            }
+
+            if(this.state.possuiFilhoInvalido === "S") {
+                if(!this.state.nascimentoFilhoInvalido || this.state.nascimentoFilhoInvalido === "")
+                    throw new Error("Preencha o campo \"Data de nascimento filho inválido\"");
+            }
+
             var remuneracao = _.toNumber(this.state.remuneracaoInicial.replace('.', '').replace(',', '.'));
             var contribBasica = remuneracao * (this.state.percentualContribuicao / 100);
 
@@ -203,6 +213,38 @@ export class SimuladorNaoParticipantesScreen extends Component {
                         {this.state.possuiFilhos && this.state.possuiFilhos === "S" &&
                             <View>
                                 <View style={{ marginBottom: 10 }}>
+                                    <Text style={{ marginBottom: 10 }}>Possui filho inválido (portador de necessidades especiais)?</Text>
+                                    <DropDown titulo={"Selecione uma opção"} valor={this.state.possuiFilhoInvalido}
+                                            itens={[
+                                            { titulo: "SIM", valor: "S" },
+                                            { titulo: "NÃO", valor: "N" }
+                                        ]}
+                                        onValueChange={(possuiFilhoInvalido) => this.setState({ possuiFilhoInvalido })} />
+                                </View>
+
+                                {this.state.possuiFilhoInvalido && this.state.possuiFilhoInvalido === "S" &&
+                                    <View>
+                                        <View style={{ marginBottom: 10 }}>
+                                            <Text style={{ marginBottom: 10 }}>Data de nascimento do filho inválido</Text>
+                                            <TextInputMask name={"nascimentoFilhoInvalido"} type={'custom'} options={{ mask: "99/99/9999" }} keyboardType={"phone-pad"}
+                                                    style={Styles.textInput} underlineColorAndroid="transparent"
+                                                    value={this.state.nascimentoFilhoInvalido} style={Styles.textInput}
+                                                    onChangeText={nascimentoFilhoInvalido => this.setState({ nascimentoFilhoInvalido })} />
+                                        </View>
+
+                                        <View style={{ marginBottom: 10 }}>
+                                            <Text style={{ marginBottom: 10 }}>Sexo do filho inválido</Text>
+                                            <DropDown titulo={"Selecione o sexo"} valor={this.state.sexoFilhoInvalido}
+                                                    itens={[
+                                                        { titulo: "MASCULINO", valor: "M" },
+                                                        { titulo: "FEMININO", valor: "F" }
+                                                    ]}
+                                                    onValueChange={(sexoFilhoInvalido) => this.setState({ sexoFilhoInvalido })} />
+                                        </View>
+                                    </View>
+                                }
+
+                                <View style={{ marginBottom: 10 }}>
                                     <Text style={{ marginBottom: 10 }}>Data de nascimento do filho mais novo</Text>
                                     <TextInputMask name={"nascimentoFilhoMaisNovo"} type={'custom'} options={{ mask: "99/99/9999" }} keyboardType={"phone-pad"}
                                             style={Styles.textInput} underlineColorAndroid="transparent"
@@ -218,39 +260,6 @@ export class SimuladorNaoParticipantesScreen extends Component {
                                                 { titulo: "FEMININO", valor: "F" }
                                             ]}
                                             onValueChange={(sexoFilhoMaisNovo) => this.setState({ sexoFilhoMaisNovo })} />
-                                </View>
-                            </View>
-                        }
-
-                        {/* Filho Inválido */}
-                        <View style={{ marginBottom: 10 }}>
-                            <Text style={{ marginBottom: 10 }}>Possui filho inválido (portador de necessidades especiais)?</Text>
-                            <DropDown titulo={"Selecione uma opção"} valor={this.state.possuiFilhoInvalido}
-                                    itens={[
-                                    { titulo: "SIM", valor: "S" },
-                                    { titulo: "NÃO", valor: "N" }
-                                ]}
-                                onValueChange={(possuiFilhoInvalido) => this.setState({ possuiFilhoInvalido })} />
-                        </View>
-
-                        {this.state.possuiFilhoInvalido && this.state.possuiFilhoInvalido === "S" &&
-                            <View>
-                                <View style={{ marginBottom: 10 }}>
-                                    <Text style={{ marginBottom: 10 }}>Data de nascimento do filho inválido</Text>
-                                    <TextInputMask name={"nascimentoFilhoInvalido"} type={'custom'} options={{ mask: "99/99/9999" }} keyboardType={"phone-pad"}
-                                            style={Styles.textInput} underlineColorAndroid="transparent"
-                                            value={this.state.nascimentoFilhoInvalido} style={Styles.textInput}
-                                            onChangeText={nascimentoFilhoInvalido => this.setState({ nascimentoFilhoInvalido })} />
-                                </View>
-
-                                <View style={{ marginBottom: 10 }}>
-                                    <Text style={{ marginBottom: 10 }}>Sexo do filho inválido</Text>
-                                    <DropDown titulo={"Selecione o sexo"} valor={this.state.sexoFilhoInvalido}
-                                            itens={[
-                                                { titulo: "MASCULINO", valor: "M" },
-                                                { titulo: "FEMININO", valor: "F" }
-                                            ]}
-                                            onValueChange={(sexoFilhoInvalido) => this.setState({ sexoFilhoInvalido })} />
                                 </View>
                             </View>
                         }

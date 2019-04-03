@@ -37,20 +37,30 @@ export class SimuladorNaoParticipantesResultadoScreen extends Component {
 
     aderir = async () => {
         try {
+            await this.setState({ loading: true });
             var { data: resultadoSimulacao } = await simuladorService.Aderir(this.state.dadosSimulacao.nome, this.state.dadosSimulacao.email);
-            console.warn(resultadoSimulacao);
-            await alert(resultadoSimulacao);
+            await this.setState({ loading: false });
+
+            setTimeout(() => {
+                alert(resultadoSimulacao);
+            });
         } catch(ex) {
-            if(ex.response)
-                await alert(ex.response.data);
-            else
-                await alert(ex);
+            await this.setState({ loading: false });
+            
+            setTimeout(() => {
+                if(ex.response)
+                    alert(ex.response.data);
+                else
+                    alert(ex);
+            });
         }
     }
 
     render() {
         return (
             <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
+                <Spinner visible={this.state.loading} cancelable={true} />
+
                 <View>
                     <Text style={[Styles.h1, { color: Variables.colors.primary, marginBottom: 30, textAlign: 'center' }]}>
                         RESULTADO DA SIMULAÇÃO
