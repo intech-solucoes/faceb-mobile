@@ -35,7 +35,10 @@ export class SimuladorNaoParticipantesScreen extends Component {
             //email: "ronymmoura@gmail.com",
             //dataNascimento: "18/02/1991",
             //remuneracaoInicial: "5.000,00",
+            //contribuicaoFacultativa: "1.000,00",
+            //aporte: "1.000,00",
             sexo: "M",
+            //nascimentoConjuge: "01/01/1991",
             possuiFilhos: "N",
             sexoFilhoMaisNovo: "M",
             //nascimentoFilhoMaisNovo: "01/01/2011",
@@ -84,9 +87,11 @@ export class SimuladorNaoParticipantesScreen extends Component {
             }
 
             var remuneracao = _.toNumber(this.state.remuneracaoInicial.replace('.', '').replace(',', '.'));
+            var aporte = _.toNumber(this.state.aporte.replace('.', '').replace(',', '.'));
+            var contribuicaoFacultativa = _.toNumber(this.state.contribuicaoFacultativa.replace('.', '').replace(',', '.'));
             var contribBasica = remuneracao * (this.state.percentualContribuicao / 100);
 
-            var { data: resultadoSimulacao } = await simuladorService.SimularNaoParticipante(this.state.nome, this.state.email, contribBasica, this.state.contribuicaoFacultativa, this.state.aporte,
+            var { data: resultadoSimulacao } = await simuladorService.SimularNaoParticipante(this.state.nome, this.state.email, contribBasica, contribuicaoFacultativa, aporte,
                 this.state.idadeAposentadoria, this.state.percentualSaque, this.state.dataNascimento, this.state.sexo, this.state.nascimentoConjuge, 
                 this.state.nascimentoFilhoInvalido, this.state.sexoFilhoInvalido, this.state.nascimentoFilhoMaisNovo, this.state.sexoFilhoMaisNovo, this.state.taxaJuros);
 
@@ -98,7 +103,7 @@ export class SimuladorNaoParticipantesScreen extends Component {
 
             setTimeout(() => {
                 if(ex.response)
-                    alert(ex.response.data);
+                    alert(JSON.stringify(ex.response.data));
                 else
                     alert(ex);
             });
