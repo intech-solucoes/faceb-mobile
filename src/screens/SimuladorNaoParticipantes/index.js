@@ -31,15 +31,17 @@ export class SimuladorNaoParticipantesScreen extends Component {
         super(props);
 
         this.state = {
-            // nome: "Rony",
-            // email: "ronymmoura@gmail.com",
-            // dataNascimento: "18/02/1991",
-            // remuneracaoInicial: "5.000,00",
+            //nome: "Rony",
+            //email: "ronymmoura@gmail.com",
+            //dataNascimento: "18/02/1991",
+            //remuneracaoInicial: "5.000,00",
             sexo: "M",
             possuiFilhos: "N",
             sexoFilhoMaisNovo: "M",
+            //nascimentoFilhoMaisNovo: "01/01/2011",
             possuiFilhoInvalido: "N",
             sexoFilhoInvalido: "M",
+            //nascimentoFilhoInvalido: "01/01/2011",
             percentualSaque: 0,
             percentualContribuicao: 10,
             idadeAposentadoria: 48,
@@ -66,11 +68,19 @@ export class SimuladorNaoParticipantesScreen extends Component {
             if(this.state.possuiFilhos === "S") {
                 if(!this.state.nascimentoFilhoMaisNovo || this.state.nascimentoFilhoMaisNovo === "")
                     throw new Error("Preencha o campo \"Data de nascimento filho mais novo\"");
+            } else {
+                await this.setState({
+                    nascimentoFilhoMaisNovo: ""
+                });
             }
 
             if(this.state.possuiFilhoInvalido === "S") {
                 if(!this.state.nascimentoFilhoInvalido || this.state.nascimentoFilhoInvalido === "")
                     throw new Error("Preencha o campo \"Data de nascimento filho inválido\"");
+            } else {
+                await this.setState({
+                    nascimentoFilhoInvalido: ""
+                });
             }
 
             var remuneracao = _.toNumber(this.state.remuneracaoInicial.replace('.', '').replace(',', '.'));

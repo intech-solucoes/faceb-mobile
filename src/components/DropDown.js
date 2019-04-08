@@ -27,7 +27,7 @@ export const DropDown = (props) => {
                 selectedValue={props.valor} 
                 onValueChange={props.onValueChange}
             >
-                <Picker.Item label={props.textoVazio} value={" "} />
+                <Picker.Item label={props.textoVazio} value={props.valorVazio} />
     
                 {props.itens.map((item, index) => {
                     if(typeof(item) === "string" || typeof(item) === "number")
