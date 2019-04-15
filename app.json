@@ -4,7 +4,7 @@
         "slug": "faceb",
         "privacy": "public",
         "sdkVersion": "32.0.0",
-        "version": "2.1.0",
+        "version": "2.1.5",
         "platforms": [
             "ios",
             "android"

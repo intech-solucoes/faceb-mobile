@@ -1,12 +1,9 @@
 import React from "react";
 import { Text, View, Image, ScrollView, TouchableHighlight } from "react-native";
 import { Icon } from 'native-base';
-import VersionNumber from 'react-native-version-number';
+import { Constants } from 'expo';
 
 import Styles, { Variables } from "../../styles";
-
-if(!VersionNumber.appVersion)
-    VersionNumber.appVersion = "2.0.0";
 
 const styles = {
     container: {
@@ -96,7 +93,7 @@ export class LandingPageScreen extends React.Component {
                     <MenuItem title={"Contato"} subtitle={"Entre em contato com a Faceb"} icon={"ios-chatboxes"} onPress={this.navigateToScreen("Contato")} />
 
                     <Text style={{ marginVertical: 10, padding: 5, textAlign:"center", color: "#AAA" }}>
-                        Versão {VersionNumber.appVersion}
+                        Versão {Constants.manifest.version}
                     </Text>
                 </ScrollView>
             </View>
