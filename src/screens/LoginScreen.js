@@ -54,7 +54,7 @@ export default class LoginScreen extends React.Component {
 
         // Cria o state do componente
         this.state = {
-            //cpf: "28175719168",
+            //cpf: "43156916668",
             //senha: "123",
             cpf: "",
             senha: "",
@@ -69,7 +69,7 @@ export default class LoginScreen extends React.Component {
         
         var cpf = await AsyncStorage.getItem('cpfSalvo');
 
-        if(cpf)
+        if(cpf && this.state.cpf === "")
             await this.setState({ cpf, lembrar: true });
     }
 

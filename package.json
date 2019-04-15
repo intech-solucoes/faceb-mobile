@@ -7,7 +7,8 @@
         "start": "expo start",
         "android": "expo start --android",
         "ios": "expo start --ios",
-        "eject": "expo eject"
+        "eject": "expo eject",
+        "build": "node build.js"
     },
     "dependencies": {
         "@intechprev/advanced-service": "^0.0.15",
@@ -28,6 +29,7 @@
         "react-number-format": "^3.4.4"
     },
     "devDependencies": {
-        "babel-preset-expo": "^5.0.0"
+        "babel-preset-expo": "^5.0.0",
+        "gluegun": "^3.2.0"
     }
 }

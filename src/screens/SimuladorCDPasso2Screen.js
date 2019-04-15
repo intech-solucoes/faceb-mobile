@@ -28,7 +28,7 @@ export default class SimuladorCDPasso2Screen extends Component {
             idadeMaximAposentadoria: 70,
             idadeMinimaAposentadoria: 48,
             idadeAposentadoria: 48,
-            saque: " ",
+            saque: 0,
             contribBasica: "",
             contribFacultativa: ""
         }
@@ -106,7 +106,7 @@ export default class SimuladorCDPasso2Screen extends Component {
                             <Text style={[Styles.h3, { marginBottom: 10 }]}>Você deseja sacar à vista um percentual do seu saldo de contas na concessão do benefício?</Text>
 
                             <DropDown titulo={"Selecione uma opção"} valor={this.state.saque}
-                                    itens={_.range(1, 26)} textoVazio={"NÃO"} prefixo={"SIM - "} sufixo={"%"}
+                                    itens={_.range(1, 26)} textoVazio={"NÃO"} valorVazio={0} prefixo={"SIM - "} sufixo={"%"}
                                     onValueChange={(saque) => this.setState({ saque })} />
                         </View>
 
