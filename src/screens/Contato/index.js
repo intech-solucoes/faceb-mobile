@@ -13,8 +13,10 @@ export class ContatoScreen extends React.Component {
     render() {
         return (
             <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
+            <Text style={Styles.h1}>Previdência</Text>
+
                 <Text style={{ marginTop: 20 }}>
-                    <Text style={{ fontWeight: "bold" }}>TELEFONE:</Text> (61) 3233-0800{'\n'}
+                    <Text style={{ fontWeight: "bold" }}>TELEFONE:</Text> (61) 3312-0201 (opção 2){'\n'}
                     <Text style={{ fontWeight: "bold" }}>* Atendimento telefônico 24h por dia para assuntos de saúde. </Text>
                 </Text>
                 
@@ -25,7 +27,9 @@ export class ContatoScreen extends React.Component {
                 
                 <Text style={{ marginTop: 20 }}>
                     <Text style={{ fontWeight: "bold" }}>ENDEREÇO</Text>{'\n'}
-                    SIA, Área de Serviço Público, Lote C, Zona Industrial
+                    SCS Quadra 4, Bloco A, Lotes 141/ 153{'\n'}
+                    Ed. FACEB,  6º andar, CEP: 70304-905,{'\n'}
+                    Asa Sul – Brasília/ DF{'\n'}
                 </Text>
             </ScrollView>
         );
