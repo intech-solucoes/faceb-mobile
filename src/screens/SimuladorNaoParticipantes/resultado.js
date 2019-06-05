@@ -35,27 +35,6 @@ export class SimuladorNaoParticipantesResultadoScreen extends Component {
         });
     }
 
-    aderir = async () => {
-        try {
-            await this.setState({ loading: true });
-            var { data: resultadoSimulacao } = await simuladorService.Aderir(this.state.dadosSimulacao.nome, this.state.dadosSimulacao.email);
-            await this.setState({ loading: false });
-
-            setTimeout(() => {
-                alert(resultadoSimulacao);
-            });
-        } catch(ex) {
-            await this.setState({ loading: false });
-            
-            setTimeout(() => {
-                if(ex.response)
-                    alert(ex.response.data);
-                else
-                    alert(ex);
-            });
-        }
-    }
-
     render() {
         return (
             <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
@@ -130,8 +109,6 @@ export class SimuladorNaoParticipantesResultadoScreen extends Component {
                         Renda por Percentual do Saldo: aplicação de percentual entre 0,5% e 2% sobre o saldo da Conta Assistido, 
                         cujo benefício será mantido em quantitativo de cotas e valorizado pela cota do mês anterior ao pagamento.
                     </Text>
-
-                    <Button title={"Gostei. Quero aderir!"} style={{ marginTop: 10 }} onClick={this.aderir} />
 
                 </View>
             </ScrollView>
