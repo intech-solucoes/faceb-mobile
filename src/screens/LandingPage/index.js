@@ -15,8 +15,8 @@ const styles = {
         alignItems: "center"
     },
     logo: {
-        height: 80,
-        width: 200
+        width: 250,
+        height: 70
     },
     menuItemContainer: {
         padding: 10,
@@ -81,15 +81,15 @@ export class LandingPageScreen extends React.Component {
             <View style={styles.container}>
                 <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
                     <View style={styles.headerContent}>
-                        <Image source={require("../../assets/faceb.png")} style={styles.logo} />
+                        <Image source={require("../../assets/faceb.png")} style={styles.logo} resizeMode="contain" />
                     </View>
 
-                    <MenuItem title={"Área Restrita"} subtitle={"Acesse aqui a área restrita do participante"} icon={"md-unlock"} onPress={this.navigateToScreen("Login")} />
-                    <MenuItem title={"Quem Somos"} subtitle={"Conheça aqui é a Faceb"} icon={"star"} onPress={this.navigateToScreen("QuemSomos")} />
-                    <MenuItem title={"Planos"} subtitle={"Conheça aqui nossos planos"} icon={"ios-journal"} onPress={this.navigateToScreen("PlanosFaceb")} />
-                    <MenuItem title={"Notícias"} subtitle={"Leia as últimas notícias publicadas pela Faceb"} icon={"md-paper"} onPress={this.navigateToScreen("Noticias")} />
-                    <MenuItem title={"Simulador para Não Participantes"} subtitle={"Simule aqui o benefício para não participantes no plano CEBPREV"} icon={"md-rose"} onPress={this.navigateToScreen("SimuladorNaoParticipantes")} />
+                    <MenuItem title={"Notícias"} subtitle={"Leia as últimas notícias sobre Previdência na FACEB"} icon={"md-paper"} onPress={this.navigateToScreen("Noticias")} />
+                    <MenuItem title={"Planeje Sua Aposentadoria"} subtitle={"Simule aqui a sua aposentadoria"} icon={"md-rose"} onPress={this.navigateToScreen("SimuladorNaoParticipantes")} />
                     <MenuItem title={"Calendário de Pagamentos"} subtitle={"Confira a data de pagamento das aposentadorias e pensões em 2019"} icon={"md-calendar"} onPress={this.navigateToScreen("Calendario")} />
+                    <MenuItem title={"Área Restrita"} subtitle={"Destinado à aposentados, pensionistas e participantes"} icon={"md-unlock"} onPress={this.navigateToScreen("Login")} />
+                    <MenuItem title={"Quem Somos"} subtitle={"Uma breve apresentação da FACEB"} icon={"star"} onPress={this.navigateToScreen("QuemSomos")} />
+                    <MenuItem title={"Planos"} subtitle={"Conheça aqui nossos planos"} icon={"ios-journal"} onPress={this.navigateToScreen("PlanosFaceb")} />
                     <MenuItem title={"Contato"} subtitle={"Entre em contato com a Faceb"} icon={"ios-chatboxes"} onPress={this.navigateToScreen("Contato")} />
 
                     <Text style={{ marginVertical: 10, padding: 5, textAlign:"center", color: "#AAA" }}>

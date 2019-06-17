@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, ScrollView, TextInput, Switch, AsyncStorage, Alert } from "react-native";
+import { Text, View, ScrollView, TextInput, Switch, AsyncStorage } from "react-native";
 import Spinner from 'react-native-loading-spinner-overlay';
 
 import Styles, { Variables } from "../styles";
@@ -54,6 +54,7 @@ export default class LoginScreen extends React.Component {
 
         // Cria o state do componente
         this.state = {
+            //cpf: "50517902168",
             //cpf: "43156916668",
             //cpf: "21423393104",
             //senha: "123",

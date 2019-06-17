@@ -33,7 +33,7 @@ export class SimuladorNaoParticipantesScreen extends Component {
         this.state = {
             //nome: "Rony",
             //email: "ronymmoura@gmail.com",
-            //dataNascimento: "18/02/1991",
+            //dataNascimento: "01/09/1970",
             //remuneracaoInicial: "5.000,00",
             contribuicaoFacultativa: "",
             aporte: "",

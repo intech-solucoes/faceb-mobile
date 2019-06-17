@@ -4,7 +4,7 @@
         "slug": "faceb",
         "privacy": "public",
         "sdkVersion": "32.0.0",
-        "version": "2.1.7",
+        "version": "2.1.8",
         "platforms": [
             "ios",
             "android"
@@ -28,7 +28,7 @@
         },
         "android": {
             "package": "com.intech.faceb",
-            "versionCode": 51
+            "versionCode": 52
         }
     }
 }
