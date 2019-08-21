@@ -26,17 +26,21 @@ export default class SimuladorBDScreen extends Component {
         }
     }
 
-    async componentDidMount() {
+    componentDidMount = async () => {
         await this.setState({ loading: true });
 
-        await this.carregarDados();
+        try {
+            var result = await simuladorService.BuscarDadosSimuladorBD();
+            await this.setState({ dadosSimulacao: result.data });
+        } catch(err) {
+            if(err.response) {
+                alert(err.response.data);
+            } else {
+                alert(err);
+            }
+        }
 
         await this.setState({ loading: false });
-    }
-
-    async carregarDados() {
-        var result = await simuladorService.BuscarDadosSimuladorBD();
-        this.setState({ dadosSimulacao: result.data });
     }
 
     render() {
