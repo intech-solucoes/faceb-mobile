@@ -3,7 +3,7 @@
         "name": "Faceb Previdência",
         "slug": "faceb",
         "privacy": "public",
-        "sdkVersion": "32.0.0",
+        "sdkVersion": "33.0.0",
         "version": "2.1.8",
         "platforms": [
             "ios",

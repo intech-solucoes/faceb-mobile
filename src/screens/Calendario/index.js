@@ -2,6 +2,11 @@ import React from "react";
 import { Text, ScrollView, View } from "react-native";
 import { Variables } from "../../styles";
 
+import { CalendarioService } from "@intechprev/advanced-service";
+
+const config = require("../../config.json");
+const calendarioService  = new CalendarioService(config);
+
 const Item = (props) => {
     return (
         <View style={{ flexDirection: "row", padding: 10, borderColor: "#CCC", borderWidth: 1, marginVertical: 5 }}>
@@ -18,26 +23,33 @@ export class CalendarioScreen extends React.Component {
         rightMenu: false
     }
 
+    state = {
+        calendario: []
+    }
+
+    componentDidMount = async() => {
+        try {
+        var result = await calendarioService.BuscarPorPlano("1");
+        await this.setState({ calendario: result.data });
+        } catch(err) {
+            if(err.response) {
+                console.warn(err.response.data);
+            } else {
+                console.warn(err);
+            }
+        }
+    }
+
     render() {
         return (
             <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
-                <Text style={{ marginBottom: 20 }}>
-                    Confira abaixo a data em que estará disponível o pagamento das aposentadorias e pensões em 2019.
-                </Text>
+                    <Text style={{ marginBottom: 20 }}>
+                        Confira abaixo a data em que estará disponível o pagamento das aposentadorias e pensões em 2019.
+                    </Text>
 
-                <Item mes="Janeiro" dia={25} />
-                <Item mes="Fevereiro" dia={28} />
-                <Item mes="Março" dia={29} />
-                <Item mes="Abril" dia={30} />
-                <Item mes="Maio" dia={31} />
-                <Item mes="Junho" dia={28} />
-                <Item mes="Julho" dia={31} />
-                <Item mes="Agosto" dia={30} />
-                <Item mes="Setembro" dia={27} />
-                <Item mes="Outubro" dia={31} />
-                <Item mes="Novembro" dia={29} />
-                <Item mes="Dezembro" dia={20} />
-                <Item mes="13º" dia={20} />
+                    {this.state.calendario.map((mes, index) => {
+                        return <Item key={index} mes={mes.DES_MES} dia={mes.NUM_DIA} />;
+                    })}
                 
             </ScrollView>
         );
