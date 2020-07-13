@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 5656,
-  "expoServerNgrokUrl": "https://p6-si2.intech.faceb-mobile.exp.direct",
-  "packagerNgrokUrl": "https://packager.p6-si2.intech.faceb-mobile.exp.direct",
-  "ngrokPid": 16732,
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
   "webpackServerPort": null
 }

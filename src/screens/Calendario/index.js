@@ -5,7 +5,7 @@ import { Variables } from "../../styles";
 import { CalendarioService } from "@intechprev/advanced-service";
 
 const config = require("../../config.json");
-const calendarioService  = new CalendarioService(config);
+const calendarioService = new CalendarioService(config);
 
 const Item = (props) => {
     return (
@@ -27,12 +27,12 @@ export class CalendarioScreen extends React.Component {
         calendario: []
     }
 
-    componentDidMount = async() => {
+    componentDidMount = async () => {
         try {
-        var result = await calendarioService.BuscarPorPlano("1");
-        await this.setState({ calendario: result.data });
-        } catch(err) {
-            if(err.response) {
+            var result = await calendarioService.BuscarPorPlano("1");
+            await this.setState({ calendario: result.data });
+        } catch (err) {
+            if (err.response) {
                 console.warn(err.response.data);
             } else {
                 console.warn(err);
@@ -43,14 +43,14 @@ export class CalendarioScreen extends React.Component {
     render() {
         return (
             <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
-                    <Text style={{ marginBottom: 20 }}>
-                        Confira abaixo a data em que estará disponível o pagamento das aposentadorias e pensões em 2019.
+                <Text style={{ marginBottom: 20 }}>
+                    Confira abaixo a data em que estará disponível o pagamento das aposentadorias e pensões em 2019.
                     </Text>
 
-                    {this.state.calendario.map((mes, index) => {
-                        return <Item key={index} mes={mes.DES_MES} dia={mes.NUM_DIA} />;
-                    })}
-                
+                {this.state.calendario.map((mes, index) => {
+                    return <Item key={index} mes={mes.DES_MES} dia={mes.NUM_DIA} />;
+                })}
+
             </ScrollView>
         );
     }

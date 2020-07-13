@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View, Image, ScrollView, TouchableHighlight } from "react-native";
 import { Icon } from 'native-base';
-import { Constants } from 'expo';
+import Constants from 'expo-constants';
 
 import Styles, { Variables } from "../../styles";
 
@@ -30,7 +30,7 @@ const styles = {
         flexDirection: 'row'
     },
     menuItemIconContainer: {
-        justifyContent: 'center', 
+        justifyContent: 'center',
         alignItems: 'center'
     },
     menuItemIcon: {
@@ -54,7 +54,7 @@ const MenuItem = (props) => {
         <TouchableHighlight onPress={props.onPress} style={styles.menuItemContainer} underlayColor={Variables.colors.gray}>
             <View style={styles.menuItemInner}>
                 <View style={styles.menuItemIconContainer}>
-                    <Icon name={props.icon} style={styles.menuItemIcon} /> 
+                    <Icon name={props.icon} style={styles.menuItemIcon} />
                 </View>
 
                 <View style={styles.menuItemContent}>
@@ -92,7 +92,7 @@ export class LandingPageScreen extends React.Component {
                     <MenuItem title={"Planos"} subtitle={"Conheça aqui nossos planos"} icon={"ios-journal"} onPress={this.navigateToScreen("PlanosFaceb")} />
                     <MenuItem title={"Contato"} subtitle={"Entre em contato com a Faceb"} icon={"ios-chatboxes"} onPress={this.navigateToScreen("Contato")} />
 
-                    <Text style={{ marginVertical: 10, padding: 5, textAlign:"center", color: "#AAA" }}>
+                    <Text style={{ marginVertical: 10, padding: 5, textAlign: "center", color: "#AAA" }}>
                         Versão {Constants.manifest.version}
                     </Text>
                 </ScrollView>

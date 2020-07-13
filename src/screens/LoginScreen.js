@@ -20,7 +20,7 @@ const styles = {
         padding: 50,
         alignItems: "center"
     },
-    loginField: { 
+    loginField: {
         backgroundColor: "#F6F7F9",
         borderColor: "#e8e9ea",
         borderWidth: 1
@@ -54,8 +54,8 @@ export default class LoginScreen extends React.Component {
 
         // Cria o state do componente
         this.state = {
-            cpf: "48407569100",
-            //cpf: "43156916668",
+            //cpf: "48407569100",
+            cpf: "30760909172",
             //cpf: "21423393104",
             senha: "123",
             //cpf: "",
@@ -68,10 +68,10 @@ export default class LoginScreen extends React.Component {
     componentDidMount = async () => {
 
         await this.setState({ loading: false });
-        
+
         var cpf = await AsyncStorage.getItem('cpfSalvo');
 
-        if(cpf && this.state.cpf === "")
+        if (cpf && this.state.cpf === "")
             await this.setState({ cpf, lembrar: true });
     }
 
@@ -83,7 +83,7 @@ export default class LoginScreen extends React.Component {
         try {
             await this.setState({ loading: true });
 
-            if(this.state.lembrar) {
+            if (this.state.lembrar) {
                 await AsyncStorage.setItem('cpfSalvo', this.state.cpf);
             }
 
@@ -98,7 +98,7 @@ export default class LoginScreen extends React.Component {
             await this.setState({ loading: false });
 
             setTimeout(() => {
-                if(err.response)
+                if (err.response)
                     alert(err.response.data);
                 else
                     alert(err);
@@ -122,7 +122,7 @@ export default class LoginScreen extends React.Component {
 
                     <View style={styles.remember}>
                         <Switch value={this.state.lembrar} thumbColor={Variables.colors.primary} ios_backgroundColor={"#CCC"}
-                                onValueChange={value => this.setState({ lembrar: value })} />
+                            onValueChange={value => this.setState({ lembrar: value })} />
                         <Text style={styles.labelRemeber}>Lembrar-me</Text>
                     </View>
 
