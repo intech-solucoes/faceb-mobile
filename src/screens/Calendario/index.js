@@ -44,8 +44,8 @@ export class CalendarioScreen extends React.Component {
         return (
             <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
                 <Text style={{ marginBottom: 20 }}>
-                    Confira abaixo a data em que estará disponível o pagamento das aposentadorias e pensões em 2019.
-                    </Text>
+                    Confira abaixo a data em que estará disponível o pagamento das aposentadorias e pensões em 2020.
+                </Text>
 
                 {this.state.calendario.map((mes, index) => {
                     return <Item key={index} mes={mes.DES_MES} dia={mes.NUM_DIA} />;
