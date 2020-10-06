@@ -1,34 +1,33 @@
 {
-    "expo": {
-        "name": "Faceb Previdência",
-        "slug": "faceb",
-        "privacy": "public",
-        "sdkVersion": "35.0.0",
-        "version": "2.2.1",
-        "platforms": [
-            "ios",
-            "android"
-        ],
-        "orientation": "portrait",
-        "icon": "./assets/icon.png",
-        "splash": {
-            "image": "./assets/splash.png",
-            "resizeMode": "contain",
-            "backgroundColor": "#ffffff"
-        },
-        "updates": {
-            "fallbackToCacheTimeout": 0
-        },
-        "assetBundlePatterns": [
-            "**/*"
-        ],
-        "ios": {
-            "supportsTablet": true,
-            "bundleIdentifier": "com.faceb.previdencia"
-        },
-        "android": {
-            "package": "com.intech.faceb",
-            "versionCode": 57
-        }
+  "expo": {
+    "name": "Faceb Previdência",
+    "slug": "faceb",
+    "privacy": "public",
+    "version": "2.2.2",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.faceb.previdencia"
+    },
+    "android": {
+      "package": "com.intech.faceb",
+      "versionCode": 58
     }
+  }
 }

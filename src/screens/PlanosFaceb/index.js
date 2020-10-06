@@ -6,8 +6,9 @@ import Styles from "../../styles";
 
 import { PlanoBDScreen } from "./PlanoBDScreen";
 import { PlanoCDScreen } from "./PlanoCDScreen";
+import { PlanoSaldadoScreen } from "./PlanoSaldadoScreen";
 
-export { PlanoBDScreen, PlanoCDScreen }
+export { PlanoBDScreen, PlanoCDScreen, PlanoSaldadoScreen }
 
 const styles = {
     button: {
@@ -37,6 +38,9 @@ export class PlanosFacebScreen extends React.Component {
                 <Button title={"PLANO CEBPREV CD"}
                         style={[Styles.button, styles.button]} titleStyle={[Styles.h2, styles.buttonText]}
                         onClick={() => this.props.navigation.navigate('PlanoCD')} />
+                <Button title={"PLANO PLANO FACEB SALDADO"}
+                        style={[Styles.button, styles.button]} titleStyle={[Styles.h2, styles.buttonText]}
+                        onClick={() => this.props.navigation.navigate('PlanoSaldado')} />
             </ScrollView>
         );
     }

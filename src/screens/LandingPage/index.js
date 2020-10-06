@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, View, Image, ScrollView, TouchableHighlight } from "react-native";
 import { Icon } from 'native-base';
+import moment from 'moment';
 import Constants from 'expo-constants';
 
 import Styles, { Variables } from "../../styles";
@@ -69,7 +70,7 @@ const MenuItem = (props) => {
 export class LandingPageScreen extends React.Component {
 
     static navigationOptions = {
-        header: null
+        headerShown: false
     }
 
     navigateToScreen = (route) => () => {
@@ -86,7 +87,7 @@ export class LandingPageScreen extends React.Component {
 
                     <MenuItem title={"Notícias"} subtitle={"Leia as últimas notícias sobre Previdência na FACEB"} icon={"md-paper"} onPress={this.navigateToScreen("Noticias")} />
                     <MenuItem title={"Planeje Sua Aposentadoria"} subtitle={"Simule aqui a sua aposentadoria"} icon={"md-rose"} onPress={this.navigateToScreen("SimuladorNaoParticipantes")} />
-                    <MenuItem title={"Calendário de Pagamentos"} subtitle={"Confira a data de pagamento das aposentadorias e pensões em 2019"} icon={"md-calendar"} onPress={this.navigateToScreen("Calendario")} />
+                    <MenuItem title={"Calendário de Pagamentos"} subtitle={`Confira a data de pagamento das aposentadorias e pensões em ${moment().year()}`} icon={"md-calendar"} onPress={this.navigateToScreen("Calendario")} />
                     <MenuItem title={"Área Restrita"} subtitle={"Destinado à aposentados, pensionistas e participantes"} icon={"md-unlock"} onPress={this.navigateToScreen("Login")} />
                     <MenuItem title={"Quem Somos"} subtitle={"Uma breve apresentação da FACEB"} icon={"star"} onPress={this.navigateToScreen("QuemSomos")} />
                     <MenuItem title={"Planos"} subtitle={"Conheça aqui nossos planos"} icon={"ios-journal"} onPress={this.navigateToScreen("PlanosFaceb")} />

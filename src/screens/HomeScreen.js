@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Text, Button, View, StyleSheet, TouchableHighlight, Image, ScrollView, AsyncStorage } from "react-native";
+import { Text, Button, View, StyleSheet, TouchableHighlight, Image, ScrollView, AsyncStorage, TouchableOpacity } from "react-native";
 import { NavigationActions } from 'react-navigation';
+import { Header, Left, Body, Right, Icon } from 'native-base';
 import Spinner from 'react-native-loading-spinner-overlay';
 import Styles, { Variables } from "../styles";
 import ScreenHeader from "../components/ScreenHeader";
@@ -24,9 +25,15 @@ const MenuItem = (props) => {
 
 export default class HomeScreen extends Component {
 
-    static navigationOptions = {
-        title: "Faceb",
-        rightMenu: true
+    static navigationOptions = ({ navigation }) => {
+        return {
+            title: "Faceb",
+            headerRight: () => (
+                <TouchableOpacity onPress={() => navigation.openDrawer() } style={{ padding: 10 }}>
+                    <Icon ios='ios-menu' android="md-menu" style={{ color: 'white' }} />
+                </TouchableOpacity>
+            )
+        }
     }
 
     constructor(props) {

@@ -1,9 +1,14 @@
 import React from "react";
-import { createStackNavigator, createDrawerNavigator } from 'react-navigation'
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import { createDrawerNavigator } from 'react-navigation-drawer';
+
+import { Variables } from "./src/styles";
+
 import { 
     LandingPageScreen,
     QuemSomosScreen,
-    PlanosFacebScreen, PlanoBDScreen, PlanoCDScreen,
+    PlanosFacebScreen, PlanoBDScreen, PlanoCDScreen, PlanoSaldadoScreen,
     SimuladorNaoParticipantesScreen, SimuladorNaoParticipantesResultadoScreen,
     CalendarioScreen,
     NoticiasScreen, NoticiaScreen,
@@ -36,6 +41,7 @@ var MainStack = createStackNavigator({
     PlanosFaceb: PlanosFacebScreen,
     PlanoBD: PlanoBDScreen,
     PlanoCD: PlanoCDScreen,
+    PlanoSaldado: PlanoSaldadoScreen,
     SimuladorNaoParticipantes: SimuladorNaoParticipantesScreen,
     SimuladorNaoParticipantesResultado: SimuladorNaoParticipantesResultadoScreen,
     Calendario: CalendarioScreen,
@@ -60,8 +66,15 @@ var MainStack = createStackNavigator({
     Relacionamento: RelacionamentoScreen
 }, {
     initialRouteName: 'LandingPage',
+    defaultNavigationOptions: {
+        headerBackTitle: ' ',
+        headerTintColor: '#fff',
+        headerStyle: {
+            backgroundColor: Variables.colors.primary,
+        },
+    },
 	navigationOptions: {
-        header: (navigationOptions) => <ScreenHeader {...navigationOptions} />
+        // header: (navigationOptions) => <ScreenHeader {...navigationOptions} />
 	}
 });
 
@@ -72,10 +85,4 @@ const MainDrawer = createDrawerNavigator({
     contentComponent: SideMenu
 });
 
-export default class App extends React.Component {
-    render() {
-        return (
-            <MainDrawer />
-        );
-    }
-}
+export default createAppContainer(MainDrawer);
