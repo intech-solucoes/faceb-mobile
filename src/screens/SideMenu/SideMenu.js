@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { ScrollView, Text, View, Image, TouchableHighlight, AsyncStorage } from 'react-native';
 import { NavigationActions } from 'react-navigation';
-import Constants from 'expo-constants';
 
 import styles from './SideMenu.style';
 import { Variables } from '../../styles';
@@ -93,7 +92,7 @@ class SideMenu extends Component {
                 </ScrollView>
 
                 <View style={styles.footerContainer}>
-                    <Text>Versão {Constants.manifest.version}</Text>
+                    {/* <Text>Versão {Constants.manifest.version}</Text> */}
                 </View>
             </View>
         );

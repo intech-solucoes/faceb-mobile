@@ -1,8 +1,7 @@
 import React from "react";
-import { Text, View, Image, ScrollView, TouchableHighlight } from "react-native";
+import { Text, View, Image, ScrollView, TouchableHighlight, AsyncStorage } from "react-native";
 import { Icon } from 'native-base';
 import moment from 'moment';
-import Constants from 'expo-constants';
 
 import Styles, { Variables } from "../../styles";
 
@@ -77,6 +76,15 @@ export class LandingPageScreen extends React.Component {
         this.props.navigation.navigate(route);
     }
 
+    componentDidMount = async () => {
+        var cpfMuriloRemovido = await AsyncStorage.getItem('cpfMuriloRemovido');
+
+        if(!cpfMuriloRemovido) {
+            await AsyncStorage.removeItem('cpfSalvo');
+            await AsyncStorage.setItem('cpfMuriloRemovido', true.toString());
+        }
+    }
+
     render() {
         return (
             <View style={styles.container}>
@@ -94,7 +102,7 @@ export class LandingPageScreen extends React.Component {
                     <MenuItem title={"Contato"} subtitle={"Entre em contato com a Faceb"} icon={"ios-chatboxes"} onPress={this.navigateToScreen("Contato")} />
 
                     <Text style={{ marginVertical: 10, padding: 5, textAlign: "center", color: "#AAA" }}>
-                        Versão {Constants.manifest.version}
+                        Versão 2.3.0
                     </Text>
                 </ScrollView>
             </View>

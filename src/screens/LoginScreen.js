@@ -62,7 +62,6 @@ export default class LoginScreen extends React.Component {
     }
 
     componentDidMount = async () => {
-
         await this.setState({ loading: false });
 
         var cpf = await AsyncStorage.getItem('cpfSalvo');
@@ -77,6 +76,11 @@ export default class LoginScreen extends React.Component {
 
     login = async () => {
         try {
+            if(this.state.cpf.trim() === "" || this.state.senha.trim() === "") {
+                alert("Os campos CPF e senha são obrigatórios!");
+                return;
+            }
+                
             await this.setState({ loading: true });
 
             if (this.state.lembrar) {
@@ -85,7 +89,7 @@ export default class LoginScreen extends React.Component {
                 await AsyncStorage.removeItem('cpfSalvo');
             }
 
-            var result = await usuarioService.LoginV2(this.state.cpf, this.state.senha);
+            var result = await usuarioService.LoginV3(this.state.cpf, this.state.senha);
             await this.setState({ loading: false });
 
             await AsyncStorage.setItem('token', result.data.AccessToken);
