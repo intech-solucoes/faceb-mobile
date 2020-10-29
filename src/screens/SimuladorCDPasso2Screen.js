@@ -37,19 +37,22 @@ export default class SimuladorCDPasso2Screen extends Component {
     }
 
     async componentDidMount() {
-        await this.setState({ loading: true });
+        try {
+            await this.setState({ loading: true });
 
-        await this.carregarDados();
-        await this.alterarIdade(this.state.idadeMinimaAposentadoria);
-
-        await this.setState({ loading: false });
+            await this.carregarDados();
+            await this.alterarIdade(this.state.idadeMinimaAposentadoria);
+        } finally {
+            await this.setState({ loading: false });
+        }
     }
 
     async carregarDados() {
         var contribBasica = this.props.navigation.getParam("contribBasica", "0");
         var contribFacultativa = this.props.navigation.getParam("contribFacultativa", "0");
 
-        var result = await simuladorService.BuscarDadosSimuladorCDPasso2();
+        var plano = await AsyncStorage.getItem("plano");
+        var result = await simuladorService.BuscarDadosSimuladorCDPasso2(plano);
 
         await this.setState({ 
             dadosSimulacao: result.data,

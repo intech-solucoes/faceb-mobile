@@ -87,8 +87,6 @@ export default class PlanosScreen extends React.Component {
         try {
             var { data: login } = await usuarioService.SelecionarMatricula(matricula);
 
-            console.warn(login);
-
             await AsyncStorage.setItem('token', login.AccessToken);
             await AsyncStorage.setItem("pensionista", login.Pensionista.toString());
 
@@ -96,12 +94,10 @@ export default class PlanosScreen extends React.Component {
                 matriculaSelecionada: true
             });
 
-            console.warn(this.state.matriculaSelecionada);
-
             await this.carregarPlanos();
         } catch (err) {
             var msg = err.response ? err.response.data : err;
-            console.warn(msg);
+            
             alert("Ocorreu um erro ao selecionar esta matrícula. Verifique sua situação no plano junto com a Faceb.");
         }
     }

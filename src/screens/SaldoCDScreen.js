@@ -45,7 +45,8 @@ export default class SaldoCDScreen extends Component {
     }
 
     carregarSaldo = async () => {
-        var result = await saldoService.BuscarSaldoCD();
+        var plano = await AsyncStorage.getItem("plano");
+        var result = await saldoService.BuscarSaldoCD(plano);
         await this.setState({ saldo: result.data });
     }
 

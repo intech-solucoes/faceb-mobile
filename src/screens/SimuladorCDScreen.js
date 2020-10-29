@@ -36,14 +36,19 @@ export default class SimuladorCDScreen extends Component {
     }
 
     async componentDidMount() {
+        try {
         await this.setState({ loading: true });
 
         await this.carregarPlano();
         await this.carregarDados();
         await this.carregarContribuicaoFacultativa();
         await this.alterarPercentual(this.state.dadosSimulacao.percentual);
-
+    } catch(err) {
+        alert(err.response ? err.response.data : err);
+        this.props.navigation.pop();
+    } finally {
         await this.setState({ loading: false });
+    }
     }
 
     async carregarPlano() {
@@ -52,8 +57,8 @@ export default class SimuladorCDScreen extends Component {
     }
 
     async carregarDados() {
-        var result = await simuladorService.BuscarDadosSimuladorCD();
-        this.setState({ dadosSimulacao: result.data });
+            var result = await simuladorService.BuscarDadosSimuladorCD(this.state.plano);
+            this.setState({ dadosSimulacao: result.data });
     }
 
     async carregarContribuicaoFacultativa() {

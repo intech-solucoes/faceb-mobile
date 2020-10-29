@@ -54,12 +54,8 @@ export default class LoginScreen extends React.Component {
 
         // Cria o state do componente
         this.state = {
-            //cpf: "48407569100",
-            cpf: "47150173187",
-            //cpf: "21423393104",
-            senha: "123",
-            //cpf: "",
-            //senha: "",
+            cpf: "",
+            senha: "",
             lembrar: false,
             loading: false
         };
@@ -85,6 +81,8 @@ export default class LoginScreen extends React.Component {
 
             if (this.state.lembrar) {
                 await AsyncStorage.setItem('cpfSalvo', this.state.cpf);
+            } else {
+                await AsyncStorage.removeItem('cpfSalvo');
             }
 
             var result = await usuarioService.LoginV2(this.state.cpf, this.state.senha);
@@ -109,7 +107,6 @@ export default class LoginScreen extends React.Component {
     render() {
         return (
             <ScrollView style={Styles.scrollContainer} contentContainerStyle={Styles.scrollContainerContent}>
-
                 <Spinner visible={this.state.loading} cancelable={true} />
 
                 <View>

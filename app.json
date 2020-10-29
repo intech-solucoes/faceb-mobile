@@ -3,7 +3,7 @@
     "name": "Faceb Previdência",
     "slug": "faceb",
     "privacy": "public",
-    "version": "2.2.2",
+    "version": "2.2.4",
     "platforms": [
       "ios",
       "android"
@@ -27,7 +27,7 @@
     },
     "android": {
       "package": "com.intech.faceb",
-      "versionCode": 58
+      "versionCode": 59
     }
   }
 }
