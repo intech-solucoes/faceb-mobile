@@ -130,7 +130,7 @@ export default class PlanosScreen extends React.Component {
                         <View>
                             {this.state.matriculas.map((matricula, index) => (
                                 <View key={index} style={{ marginBottom: 20 }}>
-                                    <Button title={matricula}
+                                    <Button title={`${matricula.Matricula} - ${matricula.Empresa}`}
                                         titleStyle={[Styles.h2, styles.buttonText]}
                                         onClick={() => this.selecionarMatricula(matricula)} />
                                 </View>

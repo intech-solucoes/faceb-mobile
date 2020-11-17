@@ -19,6 +19,7 @@ import SimuladorBDResultadoScreen from "./SimuladorBDResultadoScreen";
 import SimuladorCDScreen from "./SimuladorCDScreen";
 import SimuladorCDPasso2Screen from "./SimuladorCDPasso2Screen";
 import SimuladorCDResultadoScreen from "./SimuladorCDResultadoScreen";
+import SimuladorSaldadoScreen from "./SimuladorSaldado";
 import RelacionamentoScreen from "./RelacionamentoScreen";
 
 export {
@@ -43,5 +44,6 @@ export {
     SimuladorCDScreen,
     SimuladorCDPasso2Screen,
     SimuladorCDResultadoScreen,
+    SimuladorSaldadoScreen,
     RelacionamentoScreen,
 }

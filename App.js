@@ -28,6 +28,7 @@ import {
     SimuladorCDScreen,
     SimuladorCDPasso2Screen,
     SimuladorCDResultadoScreen,
+    SimuladorSaldadoScreen,
     RelacionamentoScreen
 } from "./src/screens";
 
@@ -63,6 +64,7 @@ var MainStack = createStackNavigator({
     SimuladorCD: SimuladorCDScreen,
     SimuladorCDPasso2: SimuladorCDPasso2Screen,
     SimuladorCDResultado: SimuladorCDResultadoScreen,
+    SimuladorSaldado: SimuladorSaldadoScreen,
     Relacionamento: RelacionamentoScreen
 }, {
     initialRouteName: 'LandingPage',
