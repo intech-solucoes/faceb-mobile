@@ -80,14 +80,16 @@ export default class SimuladorSaldadoScreen extends Component {
               </Text>
 
               <Text style={{ marginBottom: 20 }}>
-                O valor do Benefício Saldado será reajustado anualmente pelo INC
-                até a data da sua aposentadoria.
+                O valor do Benefício Saldado será reajustado anualmente pelo
+                INPC até a data da sua aposentadoria.
               </Text>
 
               <Text>
                 Você receberá o seu benefício ao completar 55 anos
                 (aposentadoria programada) ou aos 53 anos (aposentadoria
-                especial) e quando se aposentar no INSS.
+                especial). Em ambos os casos com a apresentação da carta de
+                aposentadoria pelo INSS e rescisão contratual com a
+                patrocinadora.
               </Text>
             </View>
           </View>

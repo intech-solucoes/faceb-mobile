@@ -102,7 +102,7 @@ export class LandingPageScreen extends React.Component {
                     <MenuItem title={"Contato"} subtitle={"Entre em contato com a Faceb"} icon={"ios-chatboxes"} onPress={this.navigateToScreen("Contato")} />
 
                     <Text style={{ marginVertical: 10, padding: 5, textAlign: "center", color: "#AAA" }}>
-                        Versão 2.3.2
+                        Versão 2.3.4
                     </Text>
                 </ScrollView>
             </View>

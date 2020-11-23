@@ -85,7 +85,7 @@ export default class PlanosScreen extends React.Component {
 
     selecionarMatricula = async (matricula) => {
         try {
-            var { data: login } = await usuarioService.SelecionarMatricula(matricula);
+            var { data: login } = await usuarioService.SelecionarMatricula(matricula.Matricula);
 
             await AsyncStorage.setItem('token', login.AccessToken);
             await AsyncStorage.setItem("pensionista", login.Pensionista.toString());
