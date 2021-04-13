@@ -3,11 +3,8 @@
     "name": "Faceb Previdência",
     "slug": "faceb",
     "privacy": "public",
-    "version": "2.3.4",
-    "platforms": [
-      "ios",
-      "android"
-    ],
+    "version": "2.3.5",
+    "platforms": ["ios", "android"],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -18,16 +15,14 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.faceb.previdencia"
     },
     "android": {
       "package": "com.intech.faceb",
-      "versionCode": 64
+      "versionCode": 65
     }
   }
 }
