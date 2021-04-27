@@ -1,0 +1,47 @@
+﻿import { DependenteEntidade } from "@entidades";
+import { ArquivoUploadItem } from "@src/components/ArquivoUpload";
+
+export class DadosAdesaoEntidade {
+  public CD_PESSOA_PATR: number;
+  public DS_PATROCINADORA: string;
+  public NUM_MATRICULA: string;
+  public NO_PESSOA: string;
+  public DT_INSCRICAO: Date;
+  public DS_SIT_PLANO: string;
+  public CPF_CGC: string;
+  public DT_ADMISSAO: string;
+  public DT_NASCIMENTO: string;
+  public IR_SEXO: string;
+  public DS_SEXO: string;
+  public NR_DOC_IDENT: string;
+  public NO_ORGAO_EXP_IDENT: string;
+  public DT_EMIS_IDENT: string;
+  public CD_ESTADO_CIVIL: string;
+  public DS_ESTADO_CIVIL: string;
+  public NO_MAE: string;
+  public NO_PAI: string;
+  public NR_CEP: string;
+  public DS_ENDERECO: string;
+  public NR_ENDERECO: string;
+  public DS_COMPLEMENTO: string;
+  public NO_BAIRRO: string;
+  public NR_FONE: string;
+  public NR_CELULAR: string;
+  public NO_EMAIL: string;
+  public CD_MUNICIPIO: string;
+  public DS_MUNICIPIO: string;
+  public CD_UF: string;
+  public DS_UF: string;
+  public CD_AGENCIA: string;
+  public NR_CC: string;
+  public DV_CC: string;
+  public CD_BANCO: string;
+  public NO_BANCO: string;
+  public CONTRIB_BASICA: string;
+  public IRRF_OPCAO_TRIBUTACAO: string;
+  public PPE: string;
+  public FPE: string;
+  public USP: string;
+  public ListaDependentes: Array<DependenteEntidade>;
+  public ListaArquivo: Array<ArquivoUploadItem>;
+}

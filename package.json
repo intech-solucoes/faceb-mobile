@@ -11,10 +11,12 @@
         "build": "node build.js"
     },
     "dependencies": {
-        "@intechprev/advanced-service": "file:../advanced-service",
+        "@intech/expo-service": "^1.1.0",
         "@intechprev/react-lib": "^0.0.6",
         "@react-native-community/masked-view": "0.1.10",
-        "expo": "^39.0.0",
+        "@react-native-community/slider": "^3.0.3",
+        "expo": "^41.0.0",
+        "expo-cli": "^4.4.2",
         "expo-constants": "~9.2.0",
         "expo-file-system": "~9.2.0",
         "lodash": "^4.17.10",
@@ -28,7 +30,7 @@
         "react-native-masked-text": "^1.7.2",
         "react-native-reanimated": "~1.13.0",
         "react-native-render-html": "^4.1.2",
-        "react-native-safe-area-context": "3.1.4",
+        "react-native-safe-area-context": "^3.2.0",
         "react-native-screens": "~2.10.1",
         "react-native-vector-icons": "^6.1.0",
         "react-native-webview": "10.7.0",
@@ -38,7 +40,10 @@
         "react-number-format": "^3.4.4"
     },
     "devDependencies": {
+        "@types/react": "~16.9.35",
+        "@types/react-native": "~0.63.2",
         "babel-preset-expo": "^8.3.0",
-        "gluegun": "^3.2.0"
+        "gluegun": "^3.2.0",
+        "typescript": "~4.0.0"
     }
 }

@@ -1,3 +1,5 @@
 {
-  "apiUrl": "http://app.faceb.com.br/api"
+  "apiUrl": "http://168.205.255.226/FacebAPI",
+  "appName": "Faceb",
+  "dir": "Z:\\FacebPortalHomolog"
 }
